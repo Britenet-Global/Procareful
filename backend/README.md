@@ -71,7 +71,12 @@ $ npm run start:prod
 ```
 
 The server will typically start on port defined in your `.env` (default often 3000).
-Swagger API documentation is usually available at `/api/docs` or similar endpoint depending on configuration.
+
+### API Documentation (Swagger) 📄
+
+- **URL**: [http://localhost:3000/api](http://localhost:3000/api)
+- **Availability**: Development mode only (`NODE_ENV=development`).
+- **Spec File**: On startup, a `swagger-spec.json` file is automatically generated in the `backend/swagger/` directory.
 
 
 

@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "noUnusedParameters": true,
+    "types": ["vite/client", "vitest", "vite-plugin-svgr/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@Procareful/common/*": ["libs/common/src/*"],
+      "@Procareful/games": ["libs/games/src/index.ts"],
+      "@Procareful/ui": ["libs/ui/src/lib/index.ts"],
+      "@Procareful/ui/*": ["libs/ui/src/lib/*"],
+      "@Procareful/ui/assets/*": ["libs/ui/src/lib/assets/*"],
+      "@ProcarefulAdmin/*": ["apps/procareful-admin/src/app/*"],
+      "@ProcarefulAdminAssets/*": ["apps/procareful-admin/src/assets/*"],
+      "@ProcarefulApp/*": ["apps/procareful/src/app/*"],
+      "@ProcarefulAppAssets/*": ["apps/procareful/src/assets/*"],
+      "@ProcarefulGamesAssets/*": ["libs/games/src/assets/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"],
+  "include": [".types/**/*.ts"]
+}

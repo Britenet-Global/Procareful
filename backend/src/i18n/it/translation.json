@@ -1,0 +1,2656 @@
+{
+  "healthy": "Server is healthy!",
+  "notification": {
+    "negative": {
+      "common": {
+        "validation": {
+          "title": "Errore di validazione",
+          "message": "Si è verificato un problema durante la validazione dei dati inseriti. Controlla i tuoi dati e riprova."
+        }
+      }
+    }
+  },
+  "common": {
+    "admin_not_found": {
+      "notification": {
+        "title": "Amministratore non trovato",
+        "message": "L'amministratore indicato non esiste."
+      }
+    },
+    "user_not_found": {
+      "notification": {
+        "title": "Utente non trovato",
+        "message": "L'utente indicato non esiste."
+      }
+    },
+    "users_not_found": {
+      "notification": {
+        "title": "Utenti non trovati",
+        "message": "Nessun utente trovato."
+      }
+    }
+  },
+  "admin_institution": {
+    "GET_FORMAL_CAREGIVERS": {
+      "notification": {
+        "title": "Caregiver formali",
+        "message": "Caregiver formali recuperati"
+      }
+    }
+  },
+  "admin": {
+    "service": {
+      "RESEND_ACTIVATION_LINK": {
+        "admin_not_found": {
+          "notification": {
+            "title": "Amministratore non trovato",
+            "message": "L'amministratore indicato non esiste."
+          }
+        },
+        "cannot_resend_link": {
+          "notification": {
+            "title": "Impossibile reinviare il link di attivazione",
+            "message": "Il link di attivazione può essere reinviato solo agli amministratori con stato 'creato'."
+          }
+        },
+        "forbidden": {
+          "notification": {
+            "title": "Vietato",
+            "message": "Non hai il permesso di reinviare i link di attivazione."
+          }
+        },
+        "link_resent": {
+          "notification": {
+            "title": "Link di attivazione reinviato",
+            "message": "Il link di attivazione è stato reinviato all'amministratore."
+          }
+        }
+      },
+      "CHANGE_INSTITUTION_OWNER": {
+        "owner_not_found": {
+          "notification": {
+            "title": "Precedente responsabile non trovato",
+            "message": "Il precedente responsabile indicato non esiste."
+          }
+        },
+        "institution_not_found": {
+          "notification": {
+            "title": "Organizzazione non trovata",
+            "message": "L'organizzazione indicata non esiste o ha lo stato inattivo."
+          }
+        },
+        "institution_changed": {
+          "notification": {
+            "title": "Il responsabile dell'organizzazione è stato modificato",
+            "message": "Il responsabile dell'organizzazione è stato modificato con successo."
+          }
+        }
+      },
+      "DEACTIVATE_INSTITUTION": {
+        "institution_not_found": {
+          "notification": {
+            "title": "Organizzazione non trovata",
+            "message": "L'organizzazione indicata non esiste o ha lo stato inattivo."
+          }
+        },
+        "status_not_found": {
+          "notification": {
+            "title": "Stato inattivo non trovato",
+            "message": "Lo stato indicato non è stato trovato."
+          }
+        },
+        "deactivated": {
+          "notification": {
+            "title": "Organizzazione disattivata",
+            "message": "L'organizzazione e suoi amministratori sono stati disattivati con successo"
+          }
+        }
+      },
+      "ACTIVATE_INSTITUTION": {
+        "institution_not_found": {
+          "notification": {
+            "title": "Organizzazione non trovata",
+            "message": "L'organizzazione indicata non esiste o è già attiva."
+          }
+        },
+        "status_not_found": {
+          "notification": {
+            "title": "Stato non trovato",
+            "message": "Lo stato indicato non è stato trovato."
+          }
+        },
+        "activated": {
+          "notification": {
+            "title": "Organizzazione attivata",
+            "message": "L'organizzazione e suoi amministratori sono stati attivati con successo"
+          }
+        }
+      }
+    },
+    "caregiver": {
+      "service": {
+        "ADD_USER": {
+          "status_not_found": {
+            "notification": {
+              "title": "Stato non trovato",
+              "message": "Lo stato {property} non esiste."
+            }
+          },
+          "user_added": {
+            "notification": {
+              "title": "Utente aggiunto",
+              "message": "L'utente è stato aggiunto con successo."
+            }
+          }
+        },
+        "GET_USERS": {
+          "users_not_found": {
+            "notification": {
+              "title": "Utenti non trovati",
+              "message": "Nessun utente trovato."
+            }
+          },
+          "users_fetched": {
+            "notification": {
+              "title": "Utenti recuperati",
+              "message": "Gli utenti sono stati recuperati con successo."
+            }
+          }
+        },
+        "UPDATE_USER_INFO": {
+          "data_updated": {
+            "notification": {
+              "title": "Dati aggiornati",
+              "message": "Le informazioni sull'utente sono state aggiornate con successo."
+            }
+          }
+        },
+        "GET_MY_USER": {
+          "user_fetched": {
+            "notification": {
+              "title": "Utente recuperato",
+              "message": "Le informazioni sull'utente sono state recuperate con successo."
+            }
+          }
+        },
+        "UPDATE_CONTACT_TO_USER": {
+          "property_in_use": {
+            "notification": {
+              "title": "Proprietà in uso",
+              "message": "Proprietà già in uso"
+            }
+          },
+          "data_updated": {
+            "notification": {
+              "title": "Dati aggiornati",
+              "message": "Le informazioni di contatto dell'utente sono state aggiornate"
+            }
+          }
+        },
+        "ASSIGN_USERS_ADDRESS": {
+          "address_updated": {
+            "notification": {
+              "title": "Indirizzo aggiornato",
+              "message": "L'indirizzo dell'utente è stato aggiornato con successo"
+            }
+          }
+        },
+        "EXECUTE_TRANSACTION": {
+          "failed_to_update": {
+            "notification": {
+              "title": "Transazione non riuscita",
+              "message": "Impossibile aggiornare."
+            }
+          }
+        },
+        "GET_USER_INFO": {
+          "user_fetched": {
+            "notification": {
+              "title": "Informazioni dell'utente recuperate",
+              "message": "Le informazioni dell'utente sono state recuperate con successo."
+            }
+          }
+        },
+        "ASSIGN_IC_AS_SUPPORTING_CONTACT_TO_SENIOR": {
+          "ic_not_found": {
+            "notification": {
+              "title": "Caregiver informale non trovato",
+              "message": "Caregiver informale non trovato"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "senior_already_assigned": {
+            "notification": {
+              "title": "L'utente è già assegnato a questo caregiver informale",
+              "message": "L'utente è già assegnato a questo caregiver informale"
+            }
+          },
+          "senior_already_assigned_different_IC": {
+            "notification": {
+              "title": "L'utente è già assegnato a un altro caregiver informale",
+              "message": "L'utente è già assegnato a un altro caregiver informale"
+            }
+          },
+          "supporting_contact_already_assigned": {
+            "notification": {
+              "title": "L'utente ha già assegnato questo caregiver informale come contatto di supporto",
+              "message": "L'utente ha già assegnato questo caregiver informale come contatto di supporto"
+            }
+          },
+          "caregiver_assigned": {
+            "notification": {
+              "title": "Caregiver informale assegnato all'utente",
+              "message": "Caregiver informale assegnato all'utente"
+            }
+          }
+        },
+        "ADD_FAMILY_DOCTOR": {
+          "already_assigned": {
+            "notification": {
+              "title": "Medico già assegnato",
+              "message": "Il medico di medicina generale con il numero di telefono fornito è già assegnato a questo utente"
+            }
+          },
+          "doctor_added": {
+            "notification": {
+              "title": "Medico aggiunto",
+              "message": "Il medico di medicina generale è stato aggiunto con successo al profilo dell'utente."
+            }
+          }
+        },
+        "UPDATE_EMERGENCY_CONTACT": {
+          "contact_not_found": {
+            "notification": {
+              "title": "Contatto non trovato",
+              "message": "Il contatto di emergenza indicato non è stato trovato."
+            }
+          },
+          "contact_updated": {
+            "notification": {
+              "title": "Contatto aggiornato",
+              "message": "Le informazioni di contatto di emergenza sono state aggiornate con successo."
+            }
+          }
+        },
+        "GET_FAMILY_DOCTOR": {
+          "doctor_not_found": {
+            "notification": {
+              "title": "Medico non trovato",
+              "message": "Nessun medico di medicina generale trovato."
+            }
+          },
+          "doctors_fetched": {
+            "notification": {
+              "title": "Medici recuperati",
+              "message": "I medici di medicina generale sono stati recuperati con successo."
+            }
+          }
+        },
+        "ADD_EMERGENCY_CONTACT": {
+          "already_assigned": {
+            "notification": {
+              "title": "Già assegnato",
+              "message": "Il contatto di emergenza con {conflictMessages} fornito è già assegnato a questo utente"
+            }
+          },
+          "already_assigned2": {
+            "notification": {
+              "title": "Già assegnato",
+              "message": "Il contatto di emergenza con {conflictMessages} fornito è già assegnato a questo utente"
+            }
+          },
+          "ic_already_assigned": {
+            "notification": {
+              "title": "Caregiver informale già assegnato",
+              "message": "Questo utente ha già un caregiver informale assegnato, non puoi assegnarne un altro."
+            }
+          },
+          "email_required": {
+            "notification": {
+              "title": "Email necessaria",
+              "message": "L'email è richiesta per l'utente con il ruolo di caregiver informale."
+            }
+          },
+          "contact_added": {
+            "notification": {
+              "title": "Contatto aggiunto",
+              "message": "Il contatto di emergenza è stato aggiunto con successo."
+            }
+          },
+          "contact_cannot_be_added": {
+            "notification": {
+              "title": "Questo utente non può essere un caregiver informale",
+              "message": "L'utente con l'indirizzo email o il numero di telefono fornito non è registrato come caregiver informale."
+            }
+          },
+          "contact_already_exists": {
+            "notification": {
+              "title": "Il contatto di emergenza esiste già.",
+              "message": "Il contatto di emergenza esiste già."
+            }
+          }
+        },
+        "GET_EMERGENCY_CONTACT": {
+          "contact_fetched": {
+            "notification": {
+              "title": "Contatto recuperato",
+              "message": "Le informazioni di contatto di emergenza sono state recuperate con successo."
+            }
+          }
+        },
+        "GET_PERSONAL_DETAILS": {
+          "details_fetched": {
+            "notification": {
+              "title": "Dettagli recuperati",
+              "message": "I dettagli personali sono stati recuperati con successo."
+            }
+          }
+        },
+        "DELETE_EMERGENCY_CONTACT": {
+          "contact_not_found": {
+            "notification": {
+              "title": "Contatto non trovato",
+              "message": "Il contatto di emergenza indicato non è stato trovato."
+            }
+          },
+          "contact_deleted": {
+            "notification": {
+              "title": "Contatto eliminato",
+              "message": "Il contatto di emergenza è stato eliminato con successo."
+            }
+          }
+        },
+        "ADD_ADDITIONAL_INFO": {
+          "failed_to_create": {
+            "notification": {
+              "title": "Creazione fallita",
+              "message": "Impossibile creare le informazioni aggiuntive."
+            }
+          },
+          "assessment_not_found": {
+            "notification": {
+              "title": "Valutazione non trovata",
+              "message": "La valutazione indicata non è stata trovata."
+            }
+          },
+          "failed_to_upload": {
+            "notification": {
+              "title": "Caricamento non riuscito",
+              "message": "Impossibile caricare le informazioni aggiuntive."
+            }
+          },
+          "info_added": {
+            "notification": {
+              "title": "Informazioni aggiunte",
+              "message": "Le informazioni aggiuntive sono state aggiunte con successo."
+            }
+          }
+        },
+        "ADD_USER_ASSESSMENT": {
+          "moca_too_low": {
+            "notification": {
+              "title": "Punteggio MoCA troppo basso",
+              "message": "Il punteggio MoCA è troppo basso per assegnare la valutazione all'utente"
+            }
+          },
+          "user_bedridden": {
+            "notification": {
+              "title": "Utente costretto a letto",
+              "message": "I campi aggiuntivi non devono essere forniti quando l'utente è costretto a letto, non può camminare senza supporto e ha gravi problemi di equilibrio"
+            }
+          },
+          "assessment_failed": {
+            "notification": {
+              "title": "L'inserimento della valutazione è fallito",
+              "message": "Errore del server. La valutazione dell'utente è fallita."
+            }
+          },
+          "assessment_added": {
+            "notification": {
+              "title": "Valutazione aggiunta",
+              "message": "La valutazione dell'utente è stata aggiunta con successo."
+            }
+          }
+        },
+        "GET_SENIOR_FORM_STEPS": {
+          "user_form_not_found": {
+            "notification": {
+              "title": "Modulo non trovato",
+              "message": "Nessun passo del modulo utente trovato."
+            }
+          },
+          "user_form_fetched": {
+            "notification": {
+              "title": "Modulo recuperato",
+              "message": "I passi del modulo utente sono stati recuperati con successo."
+            }
+          }
+        },
+        "UPDATE_ADD_SENIOR_FORM_STEPS": {
+          "form_not_found": {
+            "notification": {
+              "title": "Modulo non trovato",
+              "message": "Il modulo indicato non è stato trovato."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Valore del passo non valido",
+              "message": "Il valore del passo deve essere compreso tra 1 e {property}."
+            }
+          },
+          "already_completed": {
+            "notification": {
+              "title": "Fase già completata",
+              "message": "Il passo del modulo è già stato completato."
+            }
+          },
+          "forms_completed": {
+            "notification": {
+              "title": "Passi completati",
+              "message": "Tutti i passaggi del modulo senior sono stati completati."
+            }
+          },
+          "form_step_updated": {
+            "notification": {
+              "title": "Passo del modulo aggiornato",
+              "message": "Il passo del modulo è stato aggiornato con successo."
+            }
+          }
+        },
+        "GET_USER_ASSESSMENT_SCORES": {
+          "scores_not_found": {
+            "notification": {
+              "title": "Punteggi non trovati",
+              "message": "Nessun punteggio di valutazione è stato trovato per l'utente."
+            }
+          },
+          "score_fetched": {
+            "notification": {
+              "title": "Punteggi recuperati",
+              "message": "I punteggi di valutazione dell'utente sono stati recuperati con successo."
+            }
+          }
+        },
+        "GET_MOBILITY_LEVEL": {
+          "not_found": {
+            "notification": {
+              "title": "Livello di mobilità non trovato",
+              "message": "Nessun punteggio di valutazione è stato trovato per l'utente."
+            }
+          },
+          "level_fetched": {
+            "notification": {
+              "title": "Livello di mobilità recuperato",
+              "message": "Il livello di mobilità è stato recuperato con successo."
+            }
+          }
+        },
+        "VIEW_DOCUMENTS": {
+          "documents_not_found": {
+            "notification": {
+              "title": "Documenti non trovati",
+              "message": "Nessun documento trovato"
+            }
+          },
+          "error_fetching_document": {
+            "notification": {
+              "title": "Errore nel recupero del documento",
+              "message": "Errore nel recupero del documento"
+            }
+          },
+          "document_not_found": {
+            "notification": {
+              "title": "Documento non trovato",
+              "message": "Documento non trovato"
+            }
+          },
+          "documents_fetched": {
+            "notification": {
+              "title": "Documenti recuperati",
+              "message": "Documenti recuperati con successo"
+            }
+          }
+        },
+        "GET_DOCUMENTS": {
+          "documents_fetched": {
+            "notification": {
+              "title": "Documenti recuperati",
+              "message": "Documenti recuperati con successo"
+            }
+          }
+        },
+        "DELETE_SENIOR_DOCUMENT": {
+          "document_not_found": {
+            "notification": {
+              "title": "Documento non trovato",
+              "message": "Nessun documento trovato per l'utente."
+            }
+          },
+          "failed_to_delete_document": {
+            "notification": {
+              "title": "Impossibile eliminare il documento",
+              "message": "Si è verificato un problema durante l'eliminazione del documento. Si prega di riprovare più tardi."
+            }
+          },
+          "document_deleted": {
+            "notification": {
+              "title": "Documento eliminato",
+              "message": "Documento eliminato con successo."
+            }
+          }
+        },
+        "CHECK_IF_INFORMAL_CAREGIVERS_EXISTS": {
+          "informal_caregiver_found": {
+            "notification": {
+              "title": "Caregiver informale trovato",
+              "message": "Caregiver informale trovato"
+            }
+          },
+          "informal_caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver informale non trovato",
+              "message": "Caregiver informale non trovato"
+            }
+          }
+        },
+        "GET_SENIOR_DOCUMENT": {
+          "document_not_found": {
+            "notification": {
+              "title": "Documento non trovato",
+              "message": "Il documento per questo utente non è stato trovato."
+            }
+          },
+          "document_retrieved": {
+            "notification": {
+              "title": "Documento recuperato",
+              "message": "Il documento è stato recuperato con successo."
+            }
+          },
+          "failed_to_get_document": {
+            "notification": {
+              "title": "Impossibile recuperare il documento",
+              "message": "C'è stato un problema nel recupero del documento. Si prega di riprovare più tardi."
+            }
+          }
+        },
+        "SEND_LANDING_PAGE_LINK_VIA_EMAIL": {
+          "email_sent": {
+            "notification": {
+              "title": "Email inviata",
+              "message": "Email inviata con successo"
+            }
+          },
+          "no_email_address": {
+            "notification": {
+              "title": "Impossibile inviare l'email",
+              "message": "Questo utente non ha un indirizzo email"
+            }
+          }
+        },
+        "GET_SECURITY_CODE": {
+          "code_fetched": {
+            "notification": {
+              "title": "Codice di sicurezza recuperato",
+              "message": "Codice di sicurezza recuperato"
+            }
+          }
+        },
+        "DELETE_USER": {
+          "user_deleted": {
+            "notification": {
+              "title": "Utente eliminato",
+              "message": "Utente eliminato con successo"
+            }
+          }
+        },
+        "NEED_DISPLAY_PERFORMANCE_WARNING": {
+          "performance_not_found": {
+            "notification": {
+              "title": "Prestazione non trovata",
+              "message": "Riscontro sulle performance non trovato"
+            }
+          },
+          "assessment_not_found": {
+            "notification": {
+              "title": "Valutazione non trovata",
+              "message": "Valutazione dell'utente non trovata"
+            }
+          },
+          "performance_check_not_needed_user_created": {
+            "notification": {
+              "title": "Controllo prestazione non necessario",
+              "message": "Non sono trascorsi 30 giorni dalla creazione dell'utente."
+            }
+          },
+          "performance_check_not_needed_last_warning": {
+            "notification": {
+              "title": "Controllo prestazione non necessario",
+              "message": "Avviso sulle prestazioni recentemente inviato."
+            }
+          },
+          "below_above_required_level": {
+            "notification": {
+              "title": "Controllo prestazione completato",
+              "message": "Le prestazioni dell'utente sono {property} rispetto al livello richiesto basato sulla loro motivazione."
+            }
+          }
+        },
+        "SEND_PERFORMANCE_WARNING": {
+          "formal_caregiver_not_found": {
+            "notification": {
+              "title": "Non trovato",
+              "message": "Caregiver formale non trovato"
+            }
+          },
+          "warning_sent": {
+            "notification": {
+              "title": "Avviso inviato",
+              "message": "Notifica di avviso sulle prestazioni inviata"
+            }
+          }
+        }
+      },
+      "dashboards": {
+        "service": {
+          "GET_MOST_ACTIVE_SENIORS": {
+            "users_fetched": {
+              "notification": {
+                "title": "Utenti recuperati",
+                "message": "L'utente è stato recuperato con successo."
+              }
+            }
+          },
+          "GET_DASHBOARD_INSTITUTION_VIEW": {
+            "caregivers_not_found": {
+              "notification": {
+                "title": "Nessun caregiver trovato",
+                "message": "Nessun caregiver trovato"
+              }
+            },
+            "dashboard_fetched": {
+              "notification": {
+                "title": "Pannello di controllo recuperato",
+                "message": "Pannello di controllo recuperato con successo"
+              }
+            }
+          },
+          "GET_DASHBOARD_GAMES_ENGAGEMENT": {
+            "engagement_retrieved": {
+              "notification": {
+                "title": "Dati di coinvolgimento nei giochi recuperati",
+                "message": "Dati di coinvolgimento nei giochi cognitivi recuperati con successo"
+              }
+            }
+          },
+          "GET_USER_PERFORMANCE": {
+            "performance_fetched": {
+              "notification": {
+                "title": "Prestazione utente recuperata",
+                "message": "Prestazione dell'utente recuperata con successo"
+              }
+            },
+            "no_schedule": {
+              "notification": {
+                "title": "Programma non trovato",
+                "message": "L'utente non ha ancora un programma assegnato, quindi non ci sono dati sulle prestazioni"
+              }
+            }
+          },
+          "EDIT_CARE_PLAN_REASON": {
+            "assessment_not_found": {
+              "notification": {
+                "title": "Valutazione non trovata",
+                "message": "Valutazione non trovata"
+              }
+            },
+            "care_plan_reason_updated": {
+              "notification": {
+                "title": "Motivo di modifica del piano di allenamento aggiornato",
+                "message": "Motivo di modifica del piano di allenamento aggiornato con successo"
+              }
+            }
+          },
+          "GET_PHYSICAL_ACTIVITY_PERFORMANCE": {
+            "performance_fetched": {
+              "notification": {
+                "title": "Prestazione attività fisica recuperata",
+                "message": "Performance relativa all'attività fisica recuperata con successo"
+              }
+            }
+          }
+        }
+      },
+      "schedules": {
+        "service": {
+          "CAN_ASSIGN_USER_SCHEDULE": {
+            "user_condition_assessment_scores_not_found": {
+              "notification": {
+                "title": "Punteggi della valutazione delle condizioni dell'utente non trovati",
+                "message": "Punteggi della valutazione delle condizioni dell'utente non trovati"
+              }
+            },
+            "cannot_assign_different_phys_activity": {
+              "notification": {
+                "title": "Impossibile assegnare l'utente a un'altra attività fisica",
+                "message": "Impossibile assegnare l'utente a un'altra attività fisica"
+              }
+            },
+            "can_assign_user_schedule": {
+              "notification": {
+                "title": "È possibile assegnare il programma all'utente",
+                "message": "È possibile assegnare il programma all'utente"
+              }
+            }
+          },
+          "GENERATE_SCHEDULES": {
+            "cannot_be_generated": {
+              "notification": {
+                "title": "Impossibile generare programmi per questo utente.",
+                "message": "Impossibile generare programmi per questo utente."
+              }
+            },
+            "success": {
+              "notification": {
+                "title": "Tre tipi di programmi sono stati generati",
+                "message": "Tre tipi di programmi sono stati generati"
+              }
+            }
+          },
+          "GET_USER_SCHEDULE": {
+            "not_found": {
+              "notification": {
+                "title": "Programma utente non trovato",
+                "message": "Programma utente non trovato"
+              }
+            },
+            "success": {
+              "notification": {
+                "title": "Programma utente recuperato",
+                "message": "Programma utente recuperato"
+              }
+            }
+          },
+          "FIND_CONDITION_ASSESSMENT": {
+            "activities_already_exist": {
+              "notification": {
+                "title": "Le attività dell'utente sono già presenti",
+                "message": "Le attività dell'utente per l'utente specificato esistono già nel database"
+              }
+            },
+            "assessment_not_found": {
+              "notification": {
+                "title": "Valutazione delle condizioni dell'utente non trovata",
+                "message": "La valutazione specificata delle condizioni non esiste"
+              }
+            }
+          },
+          "ADD_CUSTOM_SCHEDULE": {
+            "added": {
+              "notification": {
+                "title": "Attività utente aggiunte",
+                "message": "Attività utente aggiunte"
+              }
+            },
+            "updated": {
+              "notification": {
+                "title": "Attività utente aggiornate",
+                "message": "Attività utente aggiornate"
+              }
+            },
+            "custom_updated": {
+              "notification": {
+                "title": "Programma personalizzato aggiornato",
+                "message": "Programma personalizzato aggiornato"
+              }
+            }
+          },
+          "GET_WALKING_TIME": {
+            "success": {
+              "notification": {
+                "title": "Tempo di camminata recuperato",
+                "message": "Tempo di camminata recuperato"
+              }
+            }
+          }
+        }
+      }
+    },
+    "auth": {
+      "service": {
+        "HANDLE_LOGIN": {
+          "code_sent": {
+            "notification": {
+              "title": "Codice di verifica inviato",
+              "message": "Codice di verifica inviato all'email."
+            }
+          },
+          "logged_in": {
+            "notification": {
+              "title": "Accesso riuscito",
+              "message": "Hai effettuato l'accesso."
+            }
+          }
+        },
+        "VALIDATE_VERIFICATION_CODE": {
+          "code_not_found": {
+            "notification": {
+              "title": "Codice di verifica non trovato",
+              "message": "Codice di verifica non trovato, oppure hai già effettuato l'accesso."
+            }
+          },
+          "not_authenticated": {
+            "notification": {
+              "title": "Utente non autenticato",
+              "message": "Utente non autenticato."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Verifica riuscita",
+              "message": "Verifica riuscita, sei connesso."
+            }
+          },
+          "failure": {
+            "notification": {
+              "title": "Fallimento della convalida",
+              "message": "Codice di validazione non valido o utente non trovato."
+            }
+          }
+        },
+        "LOGOUT": {
+          "logged_out": {
+            "notification": {
+              "title": "Disconnessione riuscita",
+              "message": "Disconnessione effettuata con successo."
+            }
+          }
+        },
+        "SEND_FORGOT_PASSWORD_EMAIL": {
+          "success": {
+            "notification": {
+              "title": "Email inviata",
+              "message": "È stata inviata un'email con le istruzioni per reimpostare la password."
+            }
+          }
+        },
+        "RESET_ADMIN_PASSWORD": {
+          "forbidden": {
+            "notification": {
+              "title": "Vietato",
+              "message": "Non hai accesso a questa risorsa."
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Nessun utente trovato con le informazioni fornite."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Successo",
+              "message": "Password salvata con successo."
+            }
+          }
+        },
+        "SIGNUP": {
+          "invalid_credentials": {
+            "notification": {
+              "title": "Credenziali non valide",
+              "message": "Hai fornito credenziali non valide."
+            }
+          },
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Nessun utente trovato con le informazioni fornite."
+            }
+          },
+          "already_active": {
+            "notification": {
+              "title": "Già attivo",
+              "message": "L'utente è già attivo"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Stato non trovato",
+              "message": "Lo stato indicato non esiste."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Successo",
+              "message": "Sei registrato."
+            }
+          }
+        },
+        "GET_ME": {
+          "success": {
+            "notification": {
+              "title": "Successo",
+              "message": "Dettagli dell'amministratore recuperati."
+            }
+          }
+        },
+        "VERIFY_SIGNUP_CREDENTIALS": {
+          "invalid_credentials": {
+            "notification": {
+              "title": "Credenziali non valide",
+              "message": "Hai fornito credenziali non valide."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Credenziali valide",
+              "message": "Le credenziali sono valide, procedi alla registrazione"
+            }
+          }
+        },
+        "SAVE_NEW_PASSWORD_TO_DB": {
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Nessun utente trovato con le informazioni fornite."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Successo",
+              "message": "La nuova password è stata salvata nel database."
+            }
+          }
+        },
+        "CHANGE_PASSWORD": {
+          "current_password_mismatch": {
+            "notification": {
+              "title": "Le password non corrispondono",
+              "message": "La password attuale non corrisponde a quella esistente"
+            }
+          },
+          "same_as_current": {
+            "notification": {
+              "title": "La nuova password deve essere diversa",
+              "message": "La nuova password deve essere diversa da quella attuale"
+            }
+          },
+          "new_password_mismatch": {
+            "notification": {
+              "title": "Le password non corrispondono",
+              "message": "I campi NuovaPassword e confermaNuovaPassword non corrispondono"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Password aggiornata",
+              "message": "Password aggiornata con successo"
+            }
+          }
+        },
+        "CHANGE_PASSWORD_CONFIRM": {
+          "forbidden": {
+            "notification": {
+              "title": "Vietato",
+              "message": "Non hai accesso a questa risorsa."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Password modificata, per favore accedi di nuovo con la nuova password",
+              "message": "Password cambiata con successo, effettua nuovamente l'accesso con la nuova password"
+            }
+          }
+        }
+      }
+    },
+    "admin_institution": {
+      "service": {
+        "UPDATE_MY_INSTITUTION_DETAILS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Amministratore non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dettagli dell'organizzazione aggiornati",
+              "message": "Dettagli dell'organizzazione aggiornati con successo"
+            }
+          },
+          "institution_not_assigned": {
+            "notification": {
+              "title": "L'amministratore non ha un'organizzazione assegnata",
+              "message": "L'amministratore non ha un'organizzazione assegnata"
+            }
+          },
+          "property_already_in_use": {
+            "notification": {
+              "title": "Proprietà già in uso",
+              "message": "La proprietà è già in uso"
+            }
+          }
+        },
+        "GET_INFORMAL_CAREGIVER": {
+          "not_found": {
+            "notification": {
+              "title": "Caregiver informale non trovato",
+              "message": "Caregiver informale non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dettagli del caregiver informale",
+              "message": "Dettagli del caregiver informale"
+            }
+          }
+        },
+        "ADD_INFORMAL_CAREGIVER": {
+          "status_not_found": {
+            "notification": {
+              "title": "Stato non trovato",
+              "message": "Lo stato {property} non esiste."
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Ruolo non trovato",
+              "message": "Il ruolo specificato {property} non esiste."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Caregiver informale aggiunto, inviato link di attivazione via email.",
+              "message": "Caregiver informale aggiunto, inviato link di attivazione via email."
+            }
+          }
+        },
+        "UPDATE_WORKING_HOURS": {
+          "user_or_institution_not_found": {
+            "notification": {
+              "title": "Utente o organizzazione non trovati"
+            }
+          },
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Orari di lavoro aggiornati con successo",
+              "message": "Orari di lavoro aggiornati con successo"
+            }
+          }
+        },
+        "GET_WORKING_HOURS": {
+          "no_working_hours_for_this_institution": {
+            "notification": {
+              "title": "Non ci sono orari di lavoro per questa organizzazione"
+            }
+          },
+          "no_working_hours_for_this_caregiver": {
+            "notification": {
+              "title": "Non ci sono orari di lavoro per questo caregiver"
+            }
+          },
+          "admin_institution_not_found": {
+            "notification": {
+              "title": "Amministratore o organizzazione non trovati",
+              "message": "Amministratore o organizzazione non trovati"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dettagli sugli orari di lavoro",
+              "message": "Dettagli sugli orari di lavoro"
+            }
+          }
+        },
+        "GET_INSTITUTION_ADMIN": {
+          "not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Amministratore non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dettagli dell'amministratore dell'organizzazione",
+              "message": "Dettagli dell'amministratore dell'organizzazione"
+            }
+          }
+        },
+        "EDIT_SENIORS_FORMAL_CAREGIVER": {
+          "fc_not_assigned": {
+            "notification": {
+              "title": "Questo utente non ha un caregiver formale assegnato",
+              "message": "Questo utente non ha un caregiver formale assegnato"
+            }
+          },
+          "fc_not_found": {
+            "notification": {
+              "title": "Caregiver formale non trovato",
+              "message": "Caregiver formale non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Caregiver formale dell'utente aggiornato",
+              "message": "Caregiver formale dell'utente aggiornato"
+            }
+          }
+        },
+        "SET_USER_STATUS": {
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "unable_to_change_status": {
+            "notification": {
+              "title": "Impossibile cambiare lo stato",
+              "message": "Impossibile cambiare lo stato, l'utente ha attualmente lo stato {property}"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Stato non trovato",
+              "message": "Lo stato indicato non esiste."
+            }
+          },
+          "user_already_has_status": {
+            "notification": {
+              "title": "Stato già assegnato",
+              "message": "L'utente ha già lo stato {property}"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Stato dell'utente aggiornato con successo",
+              "message": "Stato dell'utente aggiornato con successo"
+            }
+          }
+        },
+        "UPLOAD_IMAGE": {
+          "cannot_upload": {
+            "notification": {
+              "title": "Impossibile caricare",
+              "message": "{property} non può caricare l'immagine per l'utente"
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato.",
+              "message": "Utente non trovato."
+            }
+          },
+          "failed_to_create_bucket": {
+            "notification": {
+              "title": "Impossibile creare il bucket.",
+              "message": "Impossibile creare il bucket."
+            }
+          },
+          "failed_to_delete_image": {
+            "notification": {
+              "title": "Impossibile eliminare l'immagine.",
+              "message": "Impossibile eliminare l'immagine."
+            }
+          },
+          "failed_to_upload_image": {
+            "notification": {
+              "title": "Impossibile caricare l'immagine.",
+              "message": "Impossibile caricare l'immagine."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Immagine caricata con successo.",
+              "message": "Immagine caricata con successo."
+            }
+          }
+        },
+        "GET_IMAGE": {
+          "not_found": {
+            "notification": {
+              "title": "Immagine non trovata",
+              "message": "Immagine non trovata"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Immagine recuperata.",
+              "message": "Immagine recuperata."
+            }
+          },
+          "error": {
+            "notification": {
+              "title": "Errore nel recupero dell'immagine",
+              "message": "Errore nel recupero dell'immagine"
+            }
+          }
+        },
+        "DELETE_IMAGE": {
+          "cannot_delete": {
+            "notification": {
+              "title": "Impossibile eliminare",
+              "message": "{property} non può eliminare l'immagine dell'utente."
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato.",
+              "message": "Utente non trovato."
+            }
+          },
+          "no_image": {
+            "notification": {
+              "title": "Nessuna immagine da eliminare.",
+              "message": "Nessuna immagine da eliminare."
+            }
+          },
+          "error": {
+            "notification": {
+              "title": "Impossibile eliminare l'immagine.",
+              "message": "Impossibile eliminare l'immagine."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Immagine eliminata con successo.",
+              "message": "Immagine eliminata con successo."
+            }
+          }
+        },
+        "SET_MY_PERSONAL_SETTINGS": {
+          "already_in_use": {
+            "notification": {
+              "title": "Proprietà già in uso",
+              "message": "Proprietà già in uso"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Impostazioni personali aggiornate",
+              "message": "Impostazioni personali aggiornate"
+            }
+          }
+        },
+        "SET_MY_FIRST_NAME": {
+          "success": {
+            "notification": {
+              "title": "Nome aggiornato",
+              "message": "Nome aggiornato"
+            }
+          }
+        },
+        "UPDATE_ADMIN_INSTITUTION_CONTACT": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Amministratore non trovato"
+            }
+          },
+          "already_in_use": {
+            "notification": {
+              "title": "Proprietà già in uso",
+              "message": "Proprietà già in uso"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informazioni di contatto dell'amministratore aggiornate",
+              "message": "Informazioni di contatto dell'amministratore aggiornate"
+            }
+          }
+        },
+        "UPDATE_ADMIN_INSTITUTION_INFO": {
+          "not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Amministratore non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informazioni di contatto dell'amministratore aggiornate",
+              "message": "Informazioni di contatto dell'amministratore aggiornate"
+            }
+          }
+        },
+        "UPDATE_ONBOARDING_STEPS": {
+          "not_found": {
+            "notification": {
+              "title": "Inserimento non trovato.",
+              "message": "Inserimento non trovato."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Valore del passo non valido",
+              "message": "Il valore del passo deve essere compreso tra 1 e {property}"
+            }
+          },
+          "already_completed": {
+            "notification": {
+              "title": "Fase già completata.",
+              "message": "Fase già completata."
+            }
+          },
+          "all_steps_completed": {
+            "notification": {
+              "title": "Tutte le fasi dell'inserimento sono state completate.",
+              "message": "Tutte le fasi dell'inserimento sono state completate."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Fase dell'inserimento aggiornata.",
+              "message": "Fase dell'inserimento aggiornata."
+            }
+          }
+        },
+        "GET_ONBOARDING_STEPS": {
+          "success": {
+            "notification": {
+              "title": "Fasi dell'inserimento",
+              "message": "Fasi dell'inserimento"
+            }
+          }
+        },
+        "GET_ONBOARDING_STEP_STATUS": {
+          "not_found": {
+            "notification": {
+              "title": "Inserimento non trovato.",
+              "message": "Inserimento non trovato."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Valore del passo non valido",
+              "message": "Il valore del passo deve essere compreso tra 1 e {property}."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Stato della fase dell'inserimento recuperato.",
+              "message": "Stato della fase dell'inserimento recuperato."
+            }
+          }
+        },
+        "ASSIGN_INFORMAL_CAREGIVER_TO_SENIOR": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver non trovato",
+              "message": "Caregiver non trovato"
+            }
+          },
+          "already_assigned": {
+            "notification": {
+              "title": "Caregiver già assegnato a questo utente",
+              "message": "Caregiver già assegnato a questo utente"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "senior_already_has_ic": {
+            "notification": {
+              "title": "L'utente ha già un caregiver informale assegnato",
+              "message": "L'utente ha già un caregiver informale assegnato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Caregiver informale assegnato all'utente",
+              "message": "Caregiver informale assegnato all'utente"
+            }
+          }
+        },
+        "REVOKE_INFORMAL_CAREGIVER_FROM_SENIOR": {
+          "not_found": {
+            "notification": {
+              "title": "Caregiver informale o utente non trovati",
+              "message": "Caregiver informale o utente non trovati"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Caregiver informale revocato per l'utente",
+              "message": "Caregiver informale revocato per l'utente"
+            }
+          }
+        },
+        "DELETE_USER": {
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Utente eliminato con successo",
+              "message": "Utente eliminato con successo"
+            }
+          }
+        },
+        "ASSIGN_FORMAL_CAREGIVER_TO_SENIOR": {
+          "not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "already_assigned": {
+            "notification": {
+              "title": "Questo caregiver è già assegnato all'utente",
+              "message": "Questo caregiver è già assegnato all'utente"
+            }
+          },
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver non trovato",
+              "message": "Caregiver non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Caregiver formale assegnato all'utente",
+              "message": "Caregiver formale assegnato all'utente"
+            }
+          }
+        },
+        "UPDATE_FORMAL_CAREIVER_ROLE": {
+          "fc_not_found": {
+            "notification": {
+              "title": "Caregiver formale non trovato",
+              "message": "Caregiver formale non trovato"
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Ruolo non trovato",
+              "message": "Ruolo non trovato"
+            }
+          },
+          "role_removed": {
+            "notification": {
+              "title": "Ruolo rimosso",
+              "message": "Ruolo {property} rimosso dal caregiver"
+            }
+          },
+          "role_added": {
+            "notification": {
+              "title": "Ruolo aggiunto",
+              "message": "Ruolo {property} aggiunto al caregiver"
+            }
+          }
+        },
+        "REMOVE_FORMAL_CAREGIVER_SENIOR_ASSIGNMENT": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver non trovato",
+              "message": "Caregiver non trovato"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "logged_in_admin_not_found": {
+            "notification": {
+              "title": "Amministratore registrato non trovato",
+              "message": "Amministratore registrato non trovato"
+            }
+          },
+          "not_fc": {
+            "notification": {
+              "title": "L'amministratore specificato non è un caregiver formale",
+              "message": "L'amministratore specificato non è un caregiver formale"
+            }
+          },
+          "not_same_institution": {
+            "notification": {
+              "title": "Caregiver, utente e amministratore non sono nella stessa organizzazione",
+              "message": "Caregiver, utente e amministratore non sono nella stessa organizzazione"
+            }
+          },
+          "caregiver_not_assigned_to_senior": {
+            "notification": {
+              "title": "Il caregiver specificato non è assegnato all'utente",
+              "message": "Il caregiver specificato non è assegnato all'utente"
+            }
+          },
+          "cannot_remove": {
+            "notification": {
+              "title": "Non è possibile rimuovere l'unico caregiver formale assegnato all'utente",
+              "message": "Non è possibile rimuovere l'unico caregiver formale assegnato all'utente"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Assegnazione caregiver formale-utente rimossa con successo",
+              "message": "Assegnazione caregiver formale-utente rimossa con successo"
+            }
+          }
+        },
+        "ADD_INSTITUTION_ADMIN": {
+          "role_not_found": {
+            "notification": {
+              "title": "Ruolo non trovato",
+              "message": "Il ruolo di amministratore dell'organizzazione non esiste"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Stato non trovato",
+              "message": "Lo stato creato non esiste"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Amministratore dell'organizzazione aggiunto",
+              "message": "Amministratore dell'organizzazione aggiunto, inviato link di attivazione via email"
+            }
+          }
+        },
+        "GET_ADMINS_INSTITUTION": {
+          "admins_not_found": {
+            "notification": {
+              "title": "Amministratori non trovati",
+              "message": "Nessun amministratore trovato"
+            }
+          },
+          "admins_fetched": {
+            "notification": {
+              "title": "Amministratori recuperati",
+              "message": "Amministratori recuperati con successo"
+            }
+          }
+        },
+        "GET_USERS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Nessun amministratore trovato"
+            }
+          },
+          "admin_fetched": {
+            "notification": {
+              "title": "Utenti recuperati",
+              "message": "Utenti recuperati con successo"
+            }
+          }
+        },
+        "GET_USER_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "user_fetched": {
+            "notification": {
+              "title": "Dettagli utente recuperati",
+              "message": "Utente recuperato con successo"
+            }
+          }
+        },
+        "UPDATE_INFO_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informazioni di base aggiornate",
+              "message": "Dettagli dell'utente aggiornati con successo"
+            }
+          }
+        },
+        "UPDATE_CONTACT_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informazioni di contatto aggiornate",
+              "message": "Informazioni di contatto dell'utente aggiornate con successo"
+            }
+          },
+          "property_already_in_use": {
+            "notification": {
+              "title": "Proprietà già in uso",
+              "message": "La proprietà è già in uso"
+            }
+          }
+        },
+        "GET_INSTITUTION_DETAILS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Amministratore non trovato"
+            }
+          },
+          "institution_fetched": {
+            "notification": {
+              "title": "Dettagli dell'organizzazione recuperati",
+              "message": "Dettagli dell'organizzazione recuperati con successo"
+            }
+          }
+        },
+        "ADD_FORMAL_CAREGIVER": {
+          "role_not_found": {
+            "notification": {
+              "title": "Ruolo non trovato",
+              "message": "Ruolo caregiver formale non trovato nel database"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Stato non trovato",
+              "message": "Stato creato non trovato nel database"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Caregiver formale aggiunto, inviato link di attivazione via email",
+              "message": "Caregiver formale aggiunto, inviato link di attivazione via email"
+            }
+          }
+        },
+        "UPDATE_CAREGIVER_INFO": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver non trovato",
+              "message": "Caregiver non trovato"
+            }
+          },
+          "no_institution": {
+            "notification": {
+              "title": "Nessuna organizzazione",
+              "message": "L'amministratore non appartiene a nessuna organizzazione"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informazioni sul caregiver aggiornate",
+              "message": "Informazioni sul caregiver aggiornate con successo"
+            }
+          }
+        },
+        "UPDATE_ADMIN_ROLES": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Amministratore non trovato",
+              "message": "Amministratore non trovato"
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Ruolo non trovato",
+              "message": "Ruolo non trovato"
+            }
+          },
+          "no_institution": {
+            "notification": {
+              "title": "Nessuna organizzazione",
+              "message": "L'amministratore non appartiene a nessuna organizzazione"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Ruoli dell'amministratore aggiornati",
+              "message": "Ruoli dell'amministratore aggiornati con successo"
+            }
+          },
+          "role_already_assigned": {
+            "notification": {
+              "title": "Ruolo già assegnato",
+              "message": "Ruolo già assegnato all'amministratore"
+            }
+          },
+          "cannot_remove_role": {
+            "notification": {
+              "title": "Impossibile rimuovere l'unico ruolo dall'amministratore",
+              "message": "Impossibile rimuovere l'unico ruolo dall'amministratore"
+            }
+          },
+          "no_role_to_remove": {
+            "notification": {
+              "title": "Nessun ruolo da rimuovere",
+              "message": "L'amministratore non ha il ruolo da rimuovere"
+            }
+          },
+          "no_role_changes": {
+            "notification": {
+              "title": "Nessun cambiamento di ruolo",
+              "message": "Nessun cambiamento di ruolo"
+            }
+          }
+        },
+        "GET_FORMAL_CAREGIVER_ROLES": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Caregiver non trovato",
+              "message": "Non trovato"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Ruoli caregiver formale recuperati",
+              "message": "Ruoli caregiver formale recuperati con successo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "user": {
+    "service": {
+      "UPDATE_USER_PHYSICAL_ACTIVITIES_SCORES": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Attività utente non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "activities_updated": {
+          "notification": {
+            "title": "Punteggi dell'attività fisica dell'utente aggiornati",
+            "message": "Punteggi per l'attività fisica dell'utente aggiornati con successo"
+          }
+        },
+        "invalid_activity": {
+          "notification": {
+            "title": "Attività non valida",
+            "message": "L'attività fornita '{activity}' non è valida. Le attività accettate sono: {acceptedActivities}"
+          }
+        },
+        "time_of_day_required_physical": {
+          "notification": {
+            "title": "L'orario è richiesto",
+            "message": "È necessario specificare l'ora del giorno per gli esercizi di respirazione con un livello intenso di attività fisica."
+          }
+        },
+        "time_of_day_required_breathing": {
+          "notification": {
+            "title": "L'orario è richiesto",
+            "message": "È necessario indicare l'orario per gli esercizi di respirazione con livello di respirazione intenso."
+          }
+        }
+      },
+      "GET_DAY_STREAK_TROPHY": {
+        "day_streak": {
+          "notification": {
+            "title": "Serie di attività",
+            "message": "Hai svolto una serie di attività per {streak} giorni. Continua così!"
+          }
+        }
+      },
+      "GET_DASHBOARD": {
+        "dashboard_fetched": {
+          "notification": {
+            "title": "Pannello di controllo recuperato",
+            "message": "Pannello di controllo recuperato con successo"
+          }
+        },
+        "assessment_not_found": {
+          "notification": {
+            "title": "Nessuna valutazione trovata",
+            "message": "Nessuna valutazione trovata"
+          }
+        },
+        "not_found": {
+          "notification": {
+            "title": "Nessuna attività trovata",
+            "message": "Nessuna attività trovata"
+          }
+        }
+      },
+      "GET_USER_COMPLETED_ACTIVITIES": {
+        "user_completed_activities_not_found": {
+          "notification": {
+            "title": "Attività utente non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "user_completed_activities_fetched": {
+          "notification": {
+            "title": "Le attività completate dall'utente sono state recuperate",
+            "message": "Attività completate dall'utente recuperate con successo"
+          }
+        }
+      },
+      "UPDATE_USER_FEEDBACK": {
+        "feedback_not_found": {
+          "notification": {
+            "title": "Riscontro non trovato",
+            "message": "Il risconto con l'identificativo fornito non è stato trovato"
+          }
+        },
+        "feedback_updated": {
+          "notification": {
+            "title": "Riscontro aggiornato",
+            "message": "Il riscontro sulla sfida è stato aggiornato con successo"
+          }
+        }
+      },
+      "ADD_USER_RATE": {
+        "rate_not_found": {
+          "notification": {
+            "title": "Sfida non trovata per la valutazione",
+            "message": "La sfida con l'identificativo fornito non è stata trovata"
+          }
+        },
+        "rate_already_exists": {
+          "notification": {
+            "title": "Valutazione esistente",
+            "message": "Esiste già una valutazione per la sfida fornita"
+          }
+        },
+        "rate_added": {
+          "notification": {
+            "title": "Valutazione aggiunta",
+            "message": "La valutazione della sfida è stata aggiunta con successo"
+          }
+        }
+      },
+      "SET_PERSONAL_GROWTH_CHALLENGE_TO_ACTIVE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Sfida di crescita personale non trovata",
+            "message": "Sfida di crescita personale non trovata"
+          }
+        },
+        "challenge_marked_as_active": {
+          "notification": {
+            "title": "Sfida contrassegnata come attiva",
+            "message": "Sfida contrassegnata come attiva con successo"
+          }
+        }
+      },
+      "SET_PERSONAL_GROWTH_CHALLENGE_TO_COMPLETED": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Sfida di crescita personale non trovata",
+            "message": "Sfida di crescita personale non trovata"
+          }
+        },
+        "challenge_marked_as_completed": {
+          "notification": {
+            "title": "Sfida contrassegnata come completata",
+            "message": "Sfida contrassegnata come completata con successo"
+          }
+        },
+        "active_not_found": {
+          "notification": {
+            "title": "Impossibile completare la sfida",
+            "message": "La sfida non è attiva o è già stata contrassegnata come completata."
+          }
+        }
+      },
+      "GET_COMPLETED_PERSONAL_GROWTH_CHALLENGES": {
+        "completed_challenges_fetched": {
+          "notification": {
+            "title": "Sfide di crescita personale recuperate",
+            "message": "Sfide di crescita personale recuperate con successo"
+          }
+        }
+      },
+      "SKIP_CHALLENGE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Sfida non trovata",
+            "message": "Nessuna sfida attiva trovata con l'identificativo fornito."
+          }
+        },
+        "cannot_skip": {
+          "notification": {
+            "title": "Impossibile saltare la sfida",
+            "message": "Nessun'altra sfida trovata."
+          }
+        },
+        "skipped": {
+          "notification": {
+            "title": "Sfida saltata",
+            "message": "Sfida saltata con successo."
+          }
+        }
+      },
+      "GET_PERSONAL_GROWTH_CHALLENGE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Sfida di crescita personale non trovata",
+            "message": "Sfida di crescita personale non trovata"
+          }
+        },
+        "challenge_fetched": {
+          "notification": {
+            "title": "Sfida di crescita personale recuperata",
+            "message": "Sfida di crescita personale recuperata con successo"
+          }
+        }
+      },
+      "GET_USER_ACTIVITY": {
+        "user_activity_fetched": {
+          "notification": {
+            "title": "Attività utente recuperata",
+            "message": "Attività dell'utente recuperata con successo"
+          }
+        },
+        "user_exercise_group_repetitions_not_found": {
+          "notification": {
+            "title": "Ripetizioni del gruppo di esercizi dell'utente non trovate",
+            "message": "Ripetizioni del gruppo di esercizi dell'utente non trovate"
+          }
+        },
+        "user_activity_not_found": {
+          "notification": {
+            "title": "Attività dell'utente non trovata",
+            "message": "Attività dell'utente non trovata"
+          }
+        }
+      },
+      "GET_ACTIVE_PERSONAL_GROWTH_CHALLENGE": {
+        "user_activities_not_found": {
+          "notification": {
+            "title": "Attività utente non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "challenge_not_found": {
+          "notification": {
+            "title": "Sfida di crescita personale attiva non trovata",
+            "message": "Sfida di crescita personale attiva non trovata"
+          }
+        },
+        "no_more_challenges": {
+          "notification": {
+            "title": "Non ci sono più sfide",
+            "message": "Non ci sono più sfide"
+          }
+        },
+        "challenge_fetched": {
+          "notification": {
+            "title": "Sfida di crescita personale attiva recuperata",
+            "message": "Sfida di crescita personale attiva recuperata"
+          }
+        }
+      },
+      "CAN_SKIP_CHALLENGE": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Attività non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "can_skip": {
+          "notification": {
+            "title": "Opzione salta la sfida selezionata",
+            "message": "Opzione salto della sfida recuperata"
+          }
+        }
+      },
+      "ADD_GAME_FEEDBACK_INCREASED_DIFFICULTY_LEVEL": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Attività non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "difficulty_feedback_not_found": {
+          "notification": {
+            "title": "Riscontro sulla difficoltà non trovato",
+            "message": "Riscontro sulla difficoltà non trovato"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Riscontro sul gioco aggiunto",
+            "message": "Il riscontro sul gioco è stato aggiunto con successo"
+          }
+        }
+      },
+      "ADD_GAME_FEEDBACK_CLOSING_GAME_BEFORE_COMPLETION": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Attività non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "experience_feedback_not_found": {
+          "notification": {
+            "title": "Riscontro sull'esperienza non trovato",
+            "message": "Riscontro sull'esperienza non trovato"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Riscontro sul gioco aggiunto",
+            "message": "Il riscontro sul gioco è stato aggiunto con successo"
+          }
+        }
+      },
+      "GET_FEEDBACK_DISPLAY_OPTIONS": {
+        "success": {
+          "notification": {
+            "title": "Opzioni di visualizzazione del riscontro recuperate",
+            "message": "Opzioni di visualizzazione del riscontro recuperate con successo"
+          }
+        }
+      },
+      "ADD_FEEDBACK_SECOND_LOSS": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Attività non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "experience_feedback_not_found": {
+          "notification": {
+            "title": "Riscontro sulla difficoltà non trovato",
+            "message": "Riscontro sulla difficoltà non trovato"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Riscontro sul gioco aggiunto",
+            "message": "Il riscontro sul gioco è stato aggiunto con successo"
+          }
+        }
+      },
+      "UPDATE_BRAIN_POINTS": {
+        "success": {
+          "notification": {
+            "title": "I punti per le attività cognitive sono stati aggiornati",
+            "message": "I punti per le attività cognitive sono stati aggiornati con successo"
+          }
+        }
+      },
+      "GET_BRAIN_POINTS": {
+        "brain_points_doesnt_exist": {
+          "notification": {
+            "title": "I punti per le attività cognitive non esistono",
+            "message": "I punti per le attività cognitive non sono disponibili per questo utente"
+          }
+        },
+        "brain_points_fetched": {
+          "notification": {
+            "title": "I punti per le attività cognitive sono stati recuperati",
+            "message": "I punti per le attività cognitive sono stati recuperati con successo"
+          }
+        }
+      },
+      "GET_USER_ACTIVITIES_LIST": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Attività utente non trovate",
+            "message": "Attività utente non trovate"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Elenco delle attività utente recuperato",
+            "message": "Elenco delle attività utente recuperato con successo"
+          }
+        }
+      },
+      "GET_LANG": {
+        "success": {
+          "notification": {
+            "title": "Lingua recuperata",
+            "message": "Lingua recuperata con successo"
+          }
+        }
+      }
+    },
+    "auth": {
+      "service": {
+        "GENERATE_PIN": {
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "pin_sent_to_users_email": {
+            "notification": {
+              "title": "Codice PIN inviato all'email dell'utente",
+              "message": "Il codice PIN è stato inviato all'email dell'utente"
+            }
+          },
+          "pin_sent_to_caregiver": {
+            "notification": {
+              "title": "Codice PIN inviato al caregiver",
+              "message": "Il codice PIN è stato inviato al caregiver"
+            }
+          }
+        },
+        "LOGOUT": {
+          "logged_out": {
+            "notification": {
+              "title": "Disconnesso",
+              "message": "Disconnessione avvenuta con successo"
+            }
+          }
+        },
+        "VALIDATE_USER": {
+          "account_locked": {
+            "notification": {
+              "title": "Account bloccato",
+              "message": "Se ritieni che si tratti di un errore o hai bisogno di assistenza, contatta la tua organizzazione o riprova tra {remainingTime} minuti. [{email}] [{phone}]"
+            }
+          }
+        }
+      }
+    },
+    "games": {
+      "service": {
+        "GET_GAME_RULES": {
+          "game_not_found": {
+            "notification": {
+              "title": "Gioco non trovato",
+              "message": "Gioco non trovato"
+            }
+          },
+          "game_rules": {
+            "notification": {
+              "title": "Regole del gioco",
+              "message": "Regole del gioco recuperate"
+            }
+          }
+        },
+        "GET_GAME_SCORES": {
+          "missing_view_param": {
+            "notification": {
+              "title": "Parametro di visualizzazione mancante",
+              "message": "È necessario specificare il parametro di visualizzazione"
+            }
+          },
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "scores_not_found": {
+            "notification": {
+              "title": "Punteggi non trovati",
+              "message": "Punteggi non trovati"
+            }
+          },
+          "game_scores": {
+            "notification": {
+              "title": "Punteggi del gioco",
+              "message": "Punteggi del gioco recuperati"
+            }
+          }
+        },
+        "GET_RECENT_GAME_SCORE": {
+          "not_found_recent_scores": {
+            "notification": {
+              "title": "Punteggi recenti non trovati",
+              "message": "Nessun punteggio recente trovato"
+            }
+          },
+          "recent_game_scores": {
+            "notification": {
+              "title": "Punteggi recenti del gioco",
+              "message": "Punteggi recenti del gioco recuperati"
+            }
+          }
+        },
+        "ADD_GAME_SCORE": {
+          "user_not_found": {
+            "notification": {
+              "title": "Utente non trovato",
+              "message": "Utente non trovato"
+            }
+          },
+          "game_score_added": {
+            "notification": {
+              "title": "Punteggio del gioco aggiunto",
+              "message": "Punteggio del gioco aggiunto"
+            }
+          },
+          "scores_not_found": {
+            "notification": {
+              "title": "Punteggi non trovati",
+              "message": "Punteggi non trovati"
+            }
+          }
+        },
+        "GET_GAME_DIFFICULTY_LEVELS": {
+          "games_not_found": {
+            "notification": {
+              "title": "Giochi non trovati",
+              "message": "Giochi non trovati"
+            }
+          },
+          "game_difficulty_levels": {
+            "notification": {
+              "title": "Livelli di difficoltà del gioco",
+              "message": "Livelli di difficoltà di {property} recuperati"
+            }
+          }
+        }
+      }
+    }
+  },
+  "ml": {
+    "service": {
+      "GET_GAMES_LIST": {
+        "success": {
+          "notification": {
+            "title": "Elenco dei giochi recuperato",
+            "message": "Elenco dei giochi recuperato con successo"
+          }
+        }
+      }
+    }
+  },
+  "physical_exercises": {
+    "exercise_for_feet_exercise_in_bed": "La persona giace comodamente sulla schiena nel letto, le gambe rilassate alla larghezza delle anche, le braccia rilassate lungo il corpo, la testa appoggiata su un cuscino. Chiedi alla persona di tirare le dita dei piedi verso il mento e poi spingerli verso il basso (verso l'esterno). La persona esegue l'esercizio al meglio delle sue capacità, con assistenza se necessario.",
+    "bending_a_leg_exercise_in_bed": "La persona giace comodamente sulla schiena nel letto, le gambe rilassate alla larghezza delle anche, le braccia rilassate lungo il corpo, la testa appoggiata su un cuscino. Chiedi alla persona di trascinare il tallone sulla superficie verso i glutei in una posizione contratta e poi estendere la gamba indietro sulla superficie fino alla posizione supina. Alternare l'esercizio con prima la gamba destra e poi la sinistra. La persona esegue l'esercizio al meglio delle sue capacità e viene assistita se necessario.",
+    "lifting_the_heels_exercise_in_bed": "La persona giace comodamente sulla schiena nel letto, le gambe rilassate alla larghezza delle anche, le braccia lungo i fianchi e la testa appoggiata su un cuscino; un cuscino o un supporto è posizionato sotto le ginocchia. Chiedi alla persona di sollevare i talloni dalla superficie, mantenere la posizione per alcuni secondi e poi abbassarli lentamente di nuovo sulla superficie. La persona esegue l'esercizio al meglio delle sue capacità, con assistenza se necessario.",
+    "lifting_of_the_hips_exercise_in_bed": "La persona è sdraiata comodamente sulla schiena nel letto, le braccia lungo il corpo e la testa appoggiata su un cuscino. Alla persona viene chiesto di piegare le gambe ad angolo retto, sollevare i glutei dalla superficie, mantenere la posizione per alcuni secondi e abbassare i glutei di nuovo sulla superficie. La persona esegue l'esercizio al meglio delle sue capacità e viene assistita se necessario.",
+    "knee_exercise_with_a_ball_exercise_in_bed": "La persona giace comodamente sulla schiena nel letto, le braccia lungo il corpo, la testa appoggiata sul cuscino e le gambe piegate ad angolo retto. Metti una palla tra le ginocchia della persona e chiedi di stringere la palla tra le ginocchia con tutta la forza possibile, mantenerla per alcuni secondi e poi rilasciarla. La persona esegue l'esercizio al meglio delle sue capacità e viene assistita se necessario.",
+    "opening_a_book_knee_exercise_exercise_in_bed": "La persona è sdraiata comodamente sulla schiena nel letto, le braccia lungo il corpo, la testa appoggiata su un cuscino, le gambe piegate ad angolo retto. Chiedi alla persona di aprire le gambe verso l'esterno e poi richiuderle. La persona esegue l'esercizio al meglio delle sue capacità e viene assistita se necessario.",
+    "touching_knee_with_an_opposite_hand_exercise_in_bed": "La persona è sdraiata comodamente sulla schiena nel letto, le braccia lungo il corpo, la testa appoggiata sul cuscino, le gambe piegate ad angolo retto. Chiedi alla persona di cercare di toccare il ginocchio destro con la mano sinistra e ripetere l'esercizio con l'altra mano. La persona esegue l'esercizio al meglio delle sue capacità e viene assistita se necessario.",
+    "lifting_arms_above_your_head_exercise_in_bed": "La persona giace comodamente sulla schiena nel letto, la testa appoggiata su un cuscino, le gambe piegate ad angolo retto; chiedi di piegare le braccia davanti a sé, sollevarle sopra la testa e poi abbassarle lentamente di nuovo davanti a sé. La persona esegue l'esercizio al meglio delle sue capacità, con assistenza se necessario.",
+    "hip_flexibility_exercise_exercise_in_bed": "La persona è sdraiata comodamente sulla schiena nel letto, con le gambe rilassate alla larghezza delle anche, le braccia lungo il corpo e la testa appoggiata su un cuscino. Chiedi alla persona di piegare la gamba destra, estendere la gamba sinistra il più possibile, mantenere la posizione per alcuni secondi e poi rilassare ed estendere la gamba destra all'indietro. Ripeti l'esercizio con l'altra gamba. La persona esegue l'esercizio al meglio delle sue capacità e viene assistita se necessario.",
+    "standing_on_toes_fall_prevention": "Stai in piedi rilassato e diritto davanti allo schienale della sedia (petto in fuori, pancia in dentro), piedi paralleli e alla larghezza delle anche, con lo schienale della sedia davanti a te in modo da poterlo tenere con entrambe le mani. Sollevati lentamente sulle punte dei piedi, mantieni la posizione e abbassa di nuovo il piede. Il ritmo è lento a quattro battute: 1 - solleva, 2 - mantieni, 3 - abbassa, 4 - riposa. È essenziale eseguire tutti gli esercizi in modo fluido, come in una danza. Nota che la quarta battuta dell'esercizio serve a rilassare tutto il corpo prima di ricominciare.",
+    "lifting_leg_forwards_fall_prevention": "Stai in posizione rilassata e in piedi (petto in fuori, pancia in dentro) con i piedi paralleli alla larghezza dei fianchi; stai di lato rispetto alla sedia in modo da poter tenere lo schienale della sedia con la mano destra. Il peso del corpo è sulla gamba lontana dallo schienale, quindi pratichiamo con questa gamba per essere stabili e non perdere l'equilibrio. Per prima cosa, allunga la gamba destra in avanti e poi fai un passo in un ritmo a quattro tempi: 1 - solleva la gamba in avanti, 2 - tienila in aria, 3 - abbassala a terra nella posizione di partenza, 4 - riposa oscillando leggermente, rilassato e piegando le ginocchia. Dopo le ripetizioni, fai un mezzo giro in modo da poter tenere lo schienale della sedia con la mano sinistra e ripetere l'esercizio con la gamba sinistra.",
+    "lifting_leg_backwards_fall_prevention": "Stai in piedi, in posizione rilassata ed eretta (petto in fuori, pancia in dentro) con i piedi paralleli e alla larghezza delle anche; posizionati di lato alla sedia in modo da tenere lo schienale della sedia con la mano destra. Il peso del corpo deve essere sulla gamba distante dallo schienale, perciò fai l’esercizio con la gamba destra, quella accanto alla sedia, così da essere stabile e non perdere l'equilibrio. Solleva da terra la gamba accanto alla sedia portandola indietro, fino a un'altezza a cui ti senti ancora stabile, inclinando leggermente il torso in avanti. Ripeti l’esercizio seguendo questi quattro passaggi: 1 - solleva la gamba all'indietro, 2 - mantienila in aria, 3 - abbassala a terra per tornare alla posizione di partenza, 4 - riposala facendola ondeggiare leggermente, rilassandola e piegandoti sulle ginocchia. Dopo le ripetizioni, fai un mezzo giro in modo da aggrapparti allo schienale della sedia con la mano sinistra e ripeti l'esercizio con la gamba sinistra.",
+    "lifting_leg_to_the_side_fall_prevention": "Stai in posizione rilassata e eretta davanti allo schienale della sedia (petto in fuori, pancia in dentro), piedi paralleli e alla larghezza dei fianchi, con lo schienale della sedia davanti a te in modo da poterti tenere con entrambe le mani. Prima solleva la gamba destra estesa lateralmente fino a un'altezza dove ti senti ancora stabile. Esegui l'esercizio in un ritmo a quattro tempi: 1 - solleva la gamba lateralmente, 2 - mantienila in aria, 3 - abbassala a terra fino alla posizione di partenza, 4 - riposa inclinando leggermente il corpo, rilassandoti e piegando le ginocchia. Dopo le ripetizioni, ripeti l'esercizio con la gamba sinistra.",
+    "bending_knee_lifting_leg_and_touching_it_with_opposite_hand_fall_prevention": "Stai in posizione rilassata e eretta (petto in fuori, pancia in dentro) con i piedi paralleli e le gambe leggermente divaricate alla larghezza dei fianchi. Posizionati al lato dello schienale della sedia per poterti tenere con la mano destra. Solleva il ginocchio della gamba destra a un'altezza in cui ti senti ancora stabile. Nel farlo, contrai i muscoli della gamba a terra e gli addominali. Per aumentare la difficoltà e l'efficacia dell'esercizio, posiziona la mano sinistra (opposta alla gamba) sul ginocchio della gamba piegata e sollevata. Esegui l'esercizio a un ritmo di quattro tempi: 1 - piega la gamba, solleva il ginocchio e toccalo con la mano opposta; 2 - mantieni la posizione; 3 - abbassa la gamba a terra fino alla posizione di partenza; 4 - riposati dondolandoti in modo rilassato, piegando leggermente le ginocchia. Dopo le ripetizioni, ruota di 180 gradi in modo da poterti tenere allo schienale della sedia con la mano sinistra e ripeti l'esercizio con la gamba sinistra.",
+    "leaning_the_body_forward_fall_prevention": "Ci posizioniamo davanti allo schienale della sedia in modo che possa fornire un supporto di sicurezza in caso ci inclinassimo troppo in avanti e perdessimo l'equilibrio. Estendi le braccia perpendicolari al corpo, con i palmi rivolti verso l'alto. Poi, inclina lentamente il corpo in avanti mantenendolo dritto tutto il tempo, senza piegarti sui fianchi, addome, torace o collo, solo sulle caviglie. Continua ad inclinarti finché riesci a mantenere l'equilibrio usando i muscoli della parte posteriore delle gambe e i muscoli addominali. Mantieni sempre il piede appoggiato (incluso il tallone!) a terra. Inclina in avanti in un ritmo a quattro tempi: 1 - inclina in avanti, 2 - mantieni la posizione, 3 - torna alla posizione neutra, 4 - riposa."
+  },
+  "breathe_exercises": {
+    "breathing_with_the_prefix_exercise_in_bed": "La persona è sdraiata comodamente sulla schiena a letto, con le gambe rilassate alla larghezza dei fianchi e la testa appoggiata su un cuscino. È meglio eseguire l'esercizio insieme alla persona. Posiziona i palmi delle mani sul terzo inferiore del torace (costole). Inspira lentamente attraverso il naso, sentendo il torace espandersi sotto le tue mani. Trattieni il respiro per un momento. Espira lentamente con le labbra chiuse, sentendo il torace sotto le tue mani tornare alla posizione originale.",
+    "lifting_the_elbow_away_from_the_body_exercise_in_bed": "La persona è sdraiata comodamente sulla schiena a letto, con le gambe rilassate alla larghezza dei fianchi e la testa appoggiata su un cuscino. È meglio eseguire l'esercizio insieme alla persona. Piega le braccia con gomiti a angolo retto rispetto al corpo. Inspira lentamente attraverso il naso e apri le braccia all'altezza delle spalle. Trattieni il respiro per un momento. Espira lentamente, abbassando le braccia alla posizione originale.",
+    "blowing_newspaper_strips_on_the_trapeze_exercise_in_bed": "Per questo esercizio, abbiamo bisogno di un trapezio. La persona è sdraiata comodamente sulla schiena a letto, se può, con la testa leggermente sollevata e un cuscino sotto le ginocchia, con le braccia appoggiate lungo il corpo - questo permetterà alla persona di essere più comoda ed eseguire l'esercizio più facilmente. Incolla strisce di giornale al trapezio. Si chiede alla persona di inspirare lentamente attraverso il naso e trattenere il respiro. Durante l'espirazione, incoraggia la persona a soffiare le strisce di giornale il più in alto possibile.",
+    "blowing_the_whistle_exercise_in_bed": "Per questo esercizio, abbiamo bisogno di un fischietto. La persona è sdraiata comodamente sulla schiena a letto, se possibile, con la testa leggermente sollevata e un cuscino sotto le ginocchia, con le braccia appoggiate accanto al corpo - questo renderà l'esercizio più confortevole e più facile da fare. Se la persona è abbastanza forte, può eseguire l'esercizio anche seduta, appoggiata a un tavolo. La persona inspira lentamente attraverso il naso e trattiene il respiro. Durante l'espirazione, soffia l'aria attraverso il fischietto.",
+    "blowing_ping_pong_balls_exercise_in_bed": "Per questo esercizio, abbiamo bisogno di un tavolo e di palline da ping-pong. Se la persona è sdraiata a letto, solleva il cuscino e metti il tavolo davanti a lei, poi metti le palline da ping-pong sul tavolo. Se la persona è abbastanza forte, può fare l'esercizio anche seduta, appoggiandosi al tavolo. La persona inspira lentamente attraverso il naso e trattiene il respiro. Espirando, soffia le palline da ping-pong fuori dal tavolo.",
+    "blowing_soap_bubbles_exercise_in_bed": "Per questo esercizio, abbiamo bisogno di uno strumento per le bolle di sapone. L'esercizio è divertente e adatto soprattutto alle persone più difficili da motivare a fare esercizi di respirazione. La persona può eseguire l'esercizio sdraiata a letto o seduta, appoggiata al letto. La persona inspira lentamente attraverso il naso e trattiene il respiro. Soffia attraverso l'anello delle bolle di sapone durante l'espirazione.",
+    "chest_expansion_breathing_exercise_sitting": "Siediti o stai in piedi eretto. Posiziona le mani sul terzo inferiore del torace (costole). Inspira lentamente attraverso il naso, sentendo il torace espandersi sotto le tue mani. Trattieni il respiro per un momento. Espira lentamente con le labbra chiuse e senti le dita delle tue mani tornare alla posizione originale.",
+    "chest_opening_breaths_exercise_sitting": "Siediti o stai in piedi eretto. Posiziona le mani sulla parte posteriore del collo. Inspira lentamente attraverso il naso, aprendo i gomiti (come se stessi aprendo un libro). Trattieni il respiro per un momento. Poi espira lentamente con le labbra chiuse. Spingi i gomiti insieme (chiudendo il libro) mentre pieghi la testa e la parte superiore del torso.",
+    "abdominal_breathing_exercise_sitting": "Straiati o stai seduto eretto. Rilassa le spalle e il torace superiore. Posiziona una mano sull'addome (a livello dell'ombelico) e l'altra sulla parte superiore del torace. Inspira lentamente attraverso il naso. L'addome dovrebbe gonfiarsi verso l'esterno. Inoltre, la mano che riposa sull'addome dovrebbe sollevarsi più della mano che riposa sulla parte superiore del torace. Espira lentamente attraverso la bocca mentre abbassi l'addome."
+  },
+  "personal_growth_challenges": {
+    "challenge1": {
+      "title": "Un insegnante che ricordo con gioia e orgoglio",
+      "description": "Albert Einstein apprezzava gli insegnanti, definendo l'insegnamento un'arte che risveglia gioia, creatività e conoscenza. Racconta una storia su un insegnante che ti ha ispirato e chiedi al tuo compagno di attività di fare lo stesso."
+    },
+    "challenge2": {
+      "title": "Camminiamo insieme",
+      "description": "Invita un compagno di attività o qualcuno che non vedi da un po' a fare una passeggiata. Osserva l'ambiente circostante e condividi almeno una cosa positiva che è successa a ciascuno di voi di recente. Se camminare è difficile, fate insieme un esercizio preferito."
+    },
+    "challenge3": {
+      "title": "Di cosa sono orgoglioso e per cosa sono grato",
+      "description": "L'autunno, come le nostre vite, è pieno di abbondanza e colore. Rifletti sul tuo percorso: annota un grande traguardo, una difficoltà superata e un momento felice. Attività: chiedi al tuo compagno di attività quale sia il loro più grande successo o un momento felice. Ascolta attentamente, ringraziali e condividi una delle tue esperienze. Condividere ci aiuta a capirci meglio."
+    },
+    "challenge4": {
+      "title": "Condividi un piccolo sorriso con me",
+      "description": "Il buon umore e i sorrisi gentili possono sollevare l'umore. Partecipa a una competizione amichevole con il tuo compagno di attività o con qualcuno a tua scelta per vedere chi riesce a sorridere e salutare più persone in un giorno."
+    },
+    "challenge5": {
+      "title": "Le nostre radici",
+      "description": "Conoscere le nostre radici ci radica. Condividi storie familiari con il tuo compagno di attività, sia della tua famiglia più stretta che dei tuoi antenati. Se cambi i compagni di attività, invita un parente e condividi queste storie. Crea una buona atmosfera ed esprimi il tuo desiderio di tramandare questa preziosa storia familiare."
+    },
+    "challenge6": {
+      "title": "Alcune cose erano diverse",
+      "description": "Negli ultimi decenni, il mondo è cambiato rapidamente nei viaggi, nelle faccende domestiche e nella tecnologia. Ricordi come erano diverse le cose quando eri giovane? Condividi una storia con il tuo compagno di attività e chiedi anche dei loro ricordi—potrebbero ricordare qualcosa di simile o di diverso."
+    },
+    "challenge7": {
+      "title": "Una storia d'amore",
+      "description": "L'amore ha plasmato chi siamo—romantico, genitoriale o tra amici. Qual è la prima storia d'amore che ti viene in mente della tua vita? Condividila con il tuo compagno di attività e chiedi anche della loro storia d'amore."
+    },
+    "challenge8": {
+      "title": "Condividiamo un piccolo ricordo prezioso",
+      "description": "Condividi un paio di ricordi preziosi dal tuo telefono con il tuo compagno di attività e chiedigli di fare lo stesso. Se le foto non sono disponibili, usa un album fotografico. Condividi le storie dietro una o due foto ciascuna, concentrandoti su momenti delle ultime settimane o mesi."
+    },
+    "challenge9": {
+      "title": "Questa foto/immagine mi ricorda di…",
+      "description": "Nei prossimi giorni o questa settimana, presta attenzione alle foto e alle immagini che ti circondano con il tuo compagno di attività. Scegli una che ti piace e condividila quando vi incontrate di nuovo. Spiega perché ti piace e se ti ricorda qualcosa."
+    },
+    "challenge10": {
+      "title": "La mia casa",
+      "description": "Uno dei pensatori sloveni ha detto che amare la nostra patria ci dà una libertà che è radicata. Nonostante le critiche, questo amore ci offre una libertà profonda. Dedica un incontro a condividere ciò che ami del tuo paese. Nonostante le sue sfide, c'è molto da apprezzare."
+    },
+    "challenge11": {
+      "title": "Il mio libro preferito",
+      "description": "Pensando a tutti i libri che hai letto nella tua vita, c'è un libro che ti viene in mente, magari un libro che ti piace particolarmente? Presenta quel libro al tuo partner di sfida e chiedi qual è il suo libro preferito."
+    },
+    "challenge12": {
+      "title": "La musica ci unisce",
+      "description": "Condividi una canzone preferita o una che stai ascoltando attualmente con il tuo compagno di attività o con la persona scelta, insieme a una storia personale legata alla musica. Chiedi a questa persona quale canzone preferisce. Se possibile, ascoltate una canzone suggerita da ciascuno di voi. I tuoi gusti musicali sono cambiati nel corso degli anni?"
+    },
+    "challenge13": {
+      "title": "Una lettera al mio futuro io",
+      "description": "Scrivi una breve lettera al futuro te stesso (tra qualche mese, un anno o 2–3 anni), in cui esprimi cosa speri di raggiungere, come vuoi crescere o quale consiglio ti daresti. Condividila con il/la tuo/a compagno/a di attività e chiedi di fare lo stesso. Condividete i vostri pensieri e sogni."
+    },
+    "challenge14": {
+      "title": "Un piccolo atto di gentilezza",
+      "description": "Compi un piccolo atto di gentilezza verso uno sconosciuto, un amico o un familiare – qualcosa di semplice come tenere aperta una porta, fare un complimento o aiutare qualcuno in difficoltà. Incoraggia il/la tuo/a compagno/a a fare lo stesso e poi condividete le esperienze."
+    },
+    "challenge15": {
+      "title": "Un pasto del passato",
+      "description": "Il cibo è strettamente legato ai nostri ricordi e alla nostra cultura. Prepara o condividi un piatto che ti ricorda l’infanzia, una persona speciale o un evento importante della tua vita. Invita il/la tuo/a compagno/a a fare lo stesso e parlate del significato che quei pasti hanno per voi. Se cucinare insieme è troppo complicato, potete semplicemente parlarne e magari scambiarvi la ricetta."
+    },
+    "challenge16": {
+      "title": "Cose che ci piacciono fare",
+      "description": "Da bambino probabilmente amavi fare cose diverse nel tempo libero – leggere, fare sport, ballare o collezionare qualcosa. Rifletti sugli ultimi 5–10 anni. Cosa ti piace fare adesso nel tempo libero? È cambiato rispetto a quando eri piccolo? Condividi la tua esperienza con il/la tuo/a compagno/a e chiedi anche a lui/lei di farlo."
+    },
+    "challenge17": {
+      "title": "Se potessi rivivere un giorno della mia vita…",
+      "description": "C'è un giorno della tua vita che vorresti rivivere – non per cambiare qualcosa, ma solo per godertelo ancora una volta? Magari un viaggio, una festa o una giornata perfetta. Chiedi anche al tuo/a compagno/a di attività di condividere il suo giorno speciale."
+    },
+    "challenge18": {
+      "title": "Una lezione da un momento difficile",
+      "description": "Invece di concentrarti sulle difficoltà, condividi un momento in cui hai affrontato una sfida e ne hai tratto un insegnamento prezioso. Invita anche il/la tuo/a compagno/a a fare lo stesso."
+    },
+    "challenge19": {
+      "title": "Un gesto gentile che qualcuno ha fatto per me",
+      "description": "Ripensa a un momento in cui qualcuno ti ha mostrato gentilezza. Può essere stato un piccolo gesto o qualcosa che ti ha cambiato la vita. Condividi la tua esperienza con il/la tuo/a compagno/a e chiedi di raccontare la sua."
+    },
+    "challenge20": {
+      "title": "Il posto più bello che abbia mai visto",
+      "description": "Descrivi un luogo che hai visitato e che ti ha lasciato senza fiato. Potrebbe essere stato nella natura, una città o un momento semplice ma speciale. Chiedi anche al tuo/a compagno/a di condividere qualcosa di bello o speciale che ha visto."
+    },
+    "challenge21": {
+      "title": "Un ottimo consiglio che ho ricevuto…",
+      "description": "Qual è un consiglio che ti è rimasto impresso e ti ha aiutato nella vita? Chi te lo ha dato? Qual era la situazione? Condividilo e scopri se anche il/la tuo/a compagno/a di attività ha una perla di saggezza da trasmettere."
+    },
+    "challenge22": {
+      "title": "Il barattolo delle domande",
+      "description": "L’elenco delle sfide sta per finire. Ma forse hai ancora idee o argomenti di cui vorresti parlare con il/la tuo/a compagno/a di attività. Potreste preparare insieme un barattolo con dei foglietti contenenti spunti per iniziare una conversazione (es. “Cosa hai sempre voluto provare?” o “Come hai vissuto la pensione? / il primo amore? …”). Nei prossimi incontri – magari prima di un caffè o una passeggiata – potete pescare un foglietto e usarlo come tema di discussione."
+    }
+  },
+  "validation": {
+    "STRING": "{property} deve essere una stringa",
+    "BOOLEAN": "{property} deve essere un valore booleano",
+    "PHONE_NUMBER": "Numero di telefono errato. Il formato corretto è: +[prefisso internazionale]-[numero]",
+    "EMAIL": "L'email deve essere un'email",
+    "PAGE_SIZE_MIN": "La dimensione della pagina deve essere almeno {constraints.0}",
+    "PAGE_SIZE_INT": "La dimensione della pagina deve essere un numero intero",
+    "PAGE_INT": "La pagina deve essere un numero intero",
+    "CAREGIVER_ROLE": "Ruolo del caregiver errato",
+    "STATUS_NAME": "Nome dello stato errato",
+    "SORT_BY": "Valore di ordinamento errato",
+    "SORT_ORDER": "Valore dell'ordine di ordinamento errato",
+    "NOT_EMPTY": "{property} non può essere vuoto",
+    "MIN": "Il valore deve essere almeno {constraints.0}",
+    "MAX": "Il valore deve essere minore o uguale a {constraints.0}",
+    "ENUM": "{property} deve essere uno dei seguenti valori: {constraints.1}",
+    "AUTH_PASSWORD": "La password deve contenere almeno 8 caratteri, inclusa una lettera maiuscola, una lettera minuscola, una cifra e almeno un carattere speciale.",
+    "UNIQUE": "{property} deve essere unico",
+    "NUMBER": "{property} deve essere un numero",
+    "DATE": "{property} deve essere un'istanza di Date",
+    "LENGTH": "{property} deve essere lungo {constraints.0} caratteri",
+    "WAKE_UP_TIME_FORMAT": "{property} deve essere un formato orario valido (HH:mm)",
+    "TIME_OF_DAY": "{property} può essere fornito solo se il nome è uno dei seguenti valori: {acceptedValues}",
+    "FEEDBACK_RATING": "{property} può essere fornito solo se la valutazione è uno dei seguenti valori: {acceptedValues}",
+    "EXCLUDED_VALUES": "Ogni valore in {property} deve essere uno dei seguenti valori: {allowedValues}",
+    "EMAIL_ALREADY_EXIST": "L'indirizzo e-mail esiste già",
+    "PHONE_NUMBER_ALREADY_EXIST": "Il numero di telefono esiste già",
+    "INSTITUTION_NAME_ALREADY_EXIST": "Il nome dell'istituzione esiste già"
+  },
+  "notificationEmails": {
+    "performance_decline": {
+      "subject": "Calo delle prestazioni",
+      "body": "Abbiamo notato un calo nelle metriche di prestazione dell'utente {name} sotto la tua supervisione. Si prega di esaminare i dettagli seguenti per comprendere la situazione e intraprendere le azioni necessarie per garantire il suo benessere.<br><br>Per ulteriori approfondimenti, visita il profilo dell'utente {name}.",
+      "button": "Controlla"
+    },
+    "user_inactive_for_7_plus_days": {
+      "subject": "Utente inattivo da più di 7 giorni",
+      "body": "Vediamo che {name} non è attivo da oltre 7 giorni. Si prega di controllare per garantire il suo benessere.",
+      "button": "Controlla stato"
+    },
+    "monitoring_visit_request": {
+      "subject": "Richiesta di visita di monitoraggio",
+      "body": "È necessaria una visita di monitoraggio per {name}. Si prega di programmare e completare la visita al più presto."
+    },
+    "new_senior_assigned": {
+      "subject": "Nuovo utente assegnato",
+      "body": "Ti è stato assegnato un nuovo utente.",
+      "button": "Visualizza dettagli utente"
+    },
+    "new_informal_caregiver_assigned_to_senior": {
+      "subject": "Nuovo caregiver informale assegnato",
+      "body": "Un nuovo caregiver informale è stato assegnato a un utente.",
+      "button": "Visualizza dettagli caregiver"
+    },
+    "new_formal_caregiver_assigned_to_senior": {
+      "subject": "Nuovo caregiver formale assegnato all'utente",
+      "body": "Un nuovo caregiver formale è stato assegnato a {name}. Si prega di controllarne i dettagli e garantire una transizione fluida e senza intoppi per un'assistenza continua.",
+      "button": "Visualizza dettagli caregiver"
+    },
+    "user_completed_their_daily_assignment": {
+      "subject": "L'utente ha completato la sua attività quotidiana",
+      "body": "Siamo lieti di informarti che {name} ha completato con successo la sua attività quotidiana. Continua così e continua a supportare i suoi progressi."
+    },
+    "new_note_added": {
+      "subject": "Aggiunta una nuova nota",
+      "body": "È stata aggiunta una nuova nota al profilo di {name}. Si prega di controllare questa nota per aggiornamenti importanti e per intraprendere le azioni necessarie.",
+      "button": "Visualizza nota"
+    },
+    "new_document_uploaded": {
+      "subject": "Nuovo documento caricato",
+      "body": "È stato caricato un nuovo documento per {name}. Si prega di esaminare questo documento per rimanere informati e garantire un'assistenza adeguata.",
+      "button": "Visualizza documento"
+    },
+    "new_care_plan_assigned": {
+      "subject": "Nuovo piano di allenamento assegnato",
+      "body": "Un nuovo piano di allenamento è stato assegnato a {name}. Per controllare il piano di allenamento e iniziare, si prega di cliccare sul link qui sotto.",
+      "button": "Controlla piano di allenamento"
+    },
+    "first_entry_email" : {
+      "activate_your_account" : "Attiva il tuo Account",
+      "welcome": "Benvenuto/a in PROCAREFUL! Per attivare il tuo account e iniziare, per favore clicca sotto"
+    },
+    "landing_page_email": {
+      "download_our_app": "Scarica la nostra App",
+      "thank_you": "Grazie per il tuo interesse verso la nostra App! Puoi scaricare la app utilizzando il seguente link"
+    },
+    "password_change_email": {
+      "confirm_password_change": "Conferma la modifica della password",
+      "change_pass_info": "Hai recentemente chiesto di modificare la password del tuo account PROCAREFUL. Per favore conferma la modifica inserendo il codice di verifica che trovi qui sotto nel nostro sito web.",
+      "contact_institution": "Se non hai richiesto questa modifica, contatta immediatamente la tua organizzazione.",
+      "info": "Password cambiata con successo"
+    },
+    "pin_code_email": {
+      "complete_verification_process": "Per completare il processo di verifica, inserisci il codice di verifica qui sotto. Questo codice ci aiuterà a garantire la sicurezza del tuo account e verificare la tua identità.",
+      "verification_code": "Codice di verifica"
+    },
+    "footer": "Se ritieni che questo sia un errore, ignora questa email.",
+    "or_click_link": "Oppure fai clic su un link",
+    "important": "Importante",
+    "expire_link": "Questo link scadrà in {time} ore.",
+    "expire_code": "Questo codice di verifica scadrà in {time} ore.",
+    "activate": "Attiva",
+    "download": "Scarica",
+    "hello": "Ciao"
+  },
+  "assessment_report": {
+    "keys": {
+      "k_moca": "MoCA",
+      "k_ipaq": "IPAQ",
+      "k_psqi": "PSQI",
+      "k_eq_vas": "EQ-VAS",
+      "k_eq_5d_5l": "EQ-5D-5L",
+      "k_de_jong_gierveld": "De Jong Gierveld Scale (Short)",
+      "k_condition_assessment_report": "Referto sulla salute dell'utente",
+      "k_senior": "Utente",
+      "k_formal_caregiver": "Professionista",
+      "k_summary": "Sintesi",
+      "k_area": "Area",
+      "k_questionnaire": "Questionario",
+      "k_results": "Risultati",
+      "k_cognitive_abilities": "Abilità cognitive",
+      "k_physical_activity_level": "Livello di attività fisica",
+      "k_screening": "Valutazione ",
+      "k_emotional_loneliness": "Solitudine emotiva (SE)",
+      "k_social_loneliness": "Solitudine sociale (SS)",
+      "k_motivation": "Motivazione",
+      "k_quality_of_life": "Qualità di vita ",
+      "k_general_health": "Salute generale",
+      "k_sleep": "Sonno",
+      "k_question": "Domanda",
+      "k_answer": "Risposta",
+      "k_additional_notes": "Note",
+      "k_currently_bedridden": "È costretto a letto?",
+      "k_can_walk_without_support": "Riesce a camminare più di qualche passo senza sostegno?",
+      "k_severe_balance_problems": "Ha gravi problemi di equilibrio?",
+      "k_vigorous_activity_days_last_week": "Negli ultimi 7 giorni, per quanti giorni ha compiuto attività fisiche INTENSE, come ad esempio sollevamento di pesi, lavori pesanti in giardino, attivita’ aerobiche come corse o giri in bicicletta a velocità sostenuta?",
+      "k_vigorous_activity_minutes_per_day": "Di solito, quanto tempo in totale trascorre compiendo attività fisiche INTENSE in uno di questi giorni?",
+      "k_moderate_activity_days_last_week": "Negli ultimi 7 giorni, per quanti giorni ha compiuto attività fisiche MODERATE, come ad esempio trasporto di pesi leggeri, giri in bicicletta ad una velocità regolare, attività in palestra, lavoro in giardino, lavoro fisico prolungato in casa? Non consideri le camminate.",
+      "k_moderate_activity_minutes_per_day": "Di solito, quanto tempo in totale trascorre compiendo attività fisiche MODERATE in uno di questi giorni?",
+      "k_walking_days_last_week": "Negli ultimi 7 giorni, per quanti giorni ha camminato per almeno 10 minuti? (Consideri le camminate compiute al lavoro e a casa, quelle per spostarsi da un posto ad un altro ed ogni altra camminata che le e’ capitato di fare per piacere, esercizio o sport)",
+      "k_walking_minutes_per_day": "Di solito, per quanto tempo cammina in una giornata? ",
+      "k_time_sitting_last_week": "Negli ultimi 7 giorni, quanto tempo in totale ha trascorso rimanendo seduto, durante un giorno lavorativo?",
+      "k_experience_of_emptiness": "Provo una sensazione generale di vuoto [SE]",
+      "k_miss_having_people_around": "Mi manca avere persone intorno a me [SE]",
+      "k_feel_rejected": "Spesso mi sento rifiutato [SE]",
+      "k_rely_on_people": "Ci sono molte persone su cui posso fare affidamento quando ho problemi [SS]",
+      "k_trust_completely": "Ci sono molte persone di cui posso fidarmi completamente [SS]",
+      "k_enough_people_feel_close": "Ci sono abbastanza persone a cui mi sento vicino [SS]",
+      "k_mobility": "Capacità di movimento",
+      "k_self_care": "Cura della persona",
+      "k_usual_activities": "Attività abituali",
+      "k_pain_discomfort": "Dolore o Fastidio ",
+      "k_anxiety_depression": "Ansia o depressione ",
+      "k_general_health_desc": "Valutazione dell'attuale salute dell'utente in una scala da 0 a 100.",
+      "k_bed_time": "Durante l'ultimo mese, a che ora è andato a letto?",
+      "k_fall_asleep_duration": "Durante l'ultimo mese, quanto tempo (espresso in minuti) ha impiegato ad addormentarsi ogni notte? ",
+      "k_wake_up_time": "Durante l'ultimo mese, a che ora si è risvegliato la mattina?",
+      "k_actual_sleep_hours": "Durante l'ultimo mese, quante ore ha dormito realmente la notte (possono essere differenti dal numero di ore passate a letto)?",
+      "k_trouble_sleeping": "Durante l'ultimo mese, quanto spesso ha avuto problemi a dormire? Perchè...",
+      "k_cannot_sleep_within_30_minutes": "Non riusciva ad addormentarsi entro 30 minuti da quando era andato a letto",
+      "k_wake_up_midnight_or_early_morning": "Si svegliava nel mezzo della notte o presto la mattina",
+      "k_need_to_use_bathroom": "Doveva alzarsi per andare in bagno",
+      "k_cannot_breathe_comfortably": "Non riusciva a respirare bene",
+      "k_cough_or_snore_loudly": "Tossiva o russava rumorosamente",
+      "k_feel_too_cold": "Sentiva freddo",
+      "k_feel_too_hot": "Sentiva caldo",
+      "k_had_bad_dreams": "Faceva brutti sogni",
+      "k_other_reasons_for_trouble_sleeping": "Altre ragioni",
+      "k_medicine_for_sleep": "Durante l'ultimo mese, quanto spesso ha assunto farmaci (prescritti o di sua iniziativa) per dormire?",
+      "k_trouble_staying_awake_frequency": "Durante l'ultimo mese, quanto spesso ha avuto problemi a stare sveglio, mentre, per esempio, guidava, mangiava, o era impegnato in qualche attività sociale?",
+      "k_enthusiasm_to_get_things_done": "Durante l'ultimo mese, quanto problematico è stato per lei mantenere l'entusiasmo per le cose che faceva?",
+      "k_sleep_quality_rating": "Durante l'ultimo mese, come valuterebbe la sua qualità del sonno?",
+      "k_have_bed_partner_or_room_mate": "Ha una persona con cui condivide il letto o la stanza?",
+      "k_room_mate_or_bed_partner": "Se ha un compagno di stanza o un partner di letto, gli chieda con quale frequenza, nel corso del mese passato, lei...",
+      "k_loud_snoring": "Russava rumorosamente",
+      "k_breathing_pause": "Aveva lunghe pause tra i respiri mentre dormiva",
+      "k_legs_twitching": "Aveva contrazioni o scosse delle gambe mentre dormiva",
+      "k_sleep_disorientation": "Aveva episodi di disorientamento o di confusione durante il sonno",
+      "k_cough_or_snore_loudly_room_mate": "Tossiva o russava rumorosamente ",
+      "k_feel_too_cold_room_mate": "Sentiva freddo",
+      "k_feel_too_hot_room_mate": "Sentiva caldo",
+      "k_had_bad_dreams_room_mate": "Faceva brutti sogni",
+      "k_have_pain_room_mate": "Aveva dolore",
+      "k_other_restlessness": "Aveva altri tipi di agitazione mentre dormiva; per favore, descriva"
+    },
+    "answers": {
+      "frequency": {
+        "not_past_month": "Mai durante l'ultimo mese",
+        "less_than_once": "Meno di una volta alla settimana",
+        "once_or_twice": "Una o due volte alla settimana",
+        "three_or_more_times": "Tre o più volte alla settimana"
+      },
+      "quality": {
+        "very_good": "Molto buona",
+        "fairly_good": "Abbastanza buona",
+        "fairly_bad": "Abbastanza cattiva",
+        "very_bad": "Molto cattiva"
+      },
+      "enthusiasm": {
+        "no_problem": "Nessun problema",
+        "very_slight_problem": "Problema molto modesto",
+        "somewhat_a_problem": "Un discreto problema",
+        "a_very_big_problem": "Un problema molto serio"
+      },
+      "levels": {
+        "low": "Bassa",
+        "medium": "Media",
+        "high": "Alta",
+        "intense": "Intenso",
+        "light": "Leggero",
+        "moderate": "Moderato"
+      },
+      "activities": {
+        "bedridden_activities": "Allettato/a",
+        "mobility_limitation_activities": "Limitazioni nella mobilità",
+        "without_limitation_activities": "Nessuna limitazione"
+      },
+      "common": {
+        "yes": "Si",
+        "no": "No",
+        "more_or_less": "Più o meno"
+      },
+      "quality_of_life": {
+        "mobility": {
+          "none": "Non ho difficoltà nel camminare",
+          "slight": "Ho lievi difficoltà nel camminare ",
+          "moderate": "Ho moderate difficoltà nel camminare",
+          "severe": "Ho gravi difficoltà nel camminare",
+          "extreme": "Non sono in grado di camminare"
+        },
+        "self_care": {
+          "none": "Non ho difficoltà nel lavarmi o vestirmi ",
+          "slight": "Ho lievi difficoltà nel lavarmi o vestirmi ",
+          "moderate": "Ho moderate difficoltà nel lavarmi o vestirmi",
+          "severe": "Ho gravi difficoltà nel lavarmi o vestirmi ",
+          "extreme": "Non sono in grado di lavarmi o vestirmi"
+        },
+        "usual_activities": {
+          "none": "Non ho difficoltà nello svolgimento delle attività abituali",
+          "slight": "Ho lievi difficoltà nello svolgimento delle attività abituali",
+          "moderate": "Ho moderate difficoltà nello svolgimento delle attività abituali",
+          "severe": "Ho gravi difficoltà nello svolgimento delle attività abituali ",
+          "extreme": "Non sono in grado di svolgere le mie attività abituali"
+        },
+        "pain_discomfort": {
+          "none": "Non provo alcun dolore o fastidio",
+          "slight": "Provo lieve dolore o fastidio",
+          "moderate": "Provo moderato dolore o fastidio",
+          "severe": "Provo grave dolore o fastidio",
+          "extreme": "Provo estremo dolore o fastidio"
+        },
+        "anxiety_depression": {
+          "none": "Non sono ansiosa/o o depressa/o",
+          "slight": "Sono lievemente ansiosa/o o depressa/o",
+          "moderate": "Sono moderatamente ansiosa/o o depressa/o",
+          "severe": "Sono gravemente ansiosa/o o depressa/o",
+          "extreme": "Sono estremamente ansiosa/o o depressa/o"
+        }
+      },
+      "bed_partner_or_room_mate": {
+        "no_partner_or_roommate": "Nessun partner o compagno",
+        "partner_in_other_room": "Partner o compagno in altra stanza",
+        "partner_same_room_not_bed": "Partner nella stanza ma non nel letto",
+        "partner_same_bed": "Partner nello stesso letto"
+      }
+    }
+  }
+}

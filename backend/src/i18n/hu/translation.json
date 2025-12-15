@@ -1,0 +1,2656 @@
+{
+  "healthy": "Server is healthy!",
+  "notification": {
+    "negative": {
+      "common": {
+        "validation": {
+          "title": "Validációs hiba",
+          "message": "A bevitt adatok érvényesítésénél probléma merült fel. Ellenőrizze az adatokat, és próbálja meg újra"
+        }
+      }
+    }
+  },
+  "common": {
+    "admin_not_found": {
+      "notification": {
+        "title": "Admin nem található",
+        "message": "A megadott admin nem létezik."
+      }
+    },
+    "user_not_found": {
+      "notification": {
+        "title": "Felhasználó nem található",
+        "message": "A megadott felhasználó nem létezik."
+      }
+    },
+    "users_not_found": {
+      "notification": {
+        "title": "Felhasználó nem található",
+        "message": "Nem találtunk felhasználót."
+      }
+    }
+  },
+  "admin_institution": {
+    "GET_FORMAL_CAREGIVERS": {
+      "notification": {
+        "title": "Hivatalos gondozók",
+        "message": "Hivatalos ápolók elhozva"
+      }
+    }
+  },
+  "admin": {
+    "service": {
+      "RESEND_ACTIVATION_LINK": {
+        "admin_not_found": {
+          "notification": {
+            "title": "Admin nem található",
+            "message": "A megadott admin nem létezik."
+          }
+        },
+        "cannot_resend_link": {
+          "notification": {
+            "title": "Az aktiváló linket nem lehet újraküldeni",
+            "message": "Az aktiválási linket csak a 'created' státuszú adminok számára lehet újra elküldeni."
+          }
+        },
+        "forbidden": {
+          "notification": {
+            "title": "Tiltott",
+            "message": "Nincs engedélye aktiválási linkek újraküldésére."
+          }
+        },
+        "link_resent": {
+          "notification": {
+            "title": "Aktivációs link újraküldés",
+            "message": "Az aktiválási linket újra elküldtük az adminisztrátornak."
+          }
+        }
+      },
+      "CHANGE_INSTITUTION_OWNER": {
+        "owner_not_found": {
+          "notification": {
+            "title": "Előző felhasználó nem található",
+            "message": "A megadott régi tulajdonos nem létezik."
+          }
+        },
+        "institution_not_found": {
+          "notification": {
+            "title": "Intézmény nem található",
+            "message": "A megadott intézmény nem létezik vagy inaktív státuszú."
+          }
+        },
+        "institution_changed": {
+          "notification": {
+            "title": "Intézményi tulajdonos változása",
+            "message": "Az intézmény tulajdonosa sikeresen megváltozott."
+          }
+        }
+      },
+      "DEACTIVATE_INSTITUTION": {
+        "institution_not_found": {
+          "notification": {
+            "title": "Intézmény nem található",
+            "message": "A megadott intézmény nem létezik vagy inaktív státuszú."
+          }
+        },
+        "status_not_found": {
+          "notification": {
+            "title": "Inaktív státusz nem található",
+            "message": "A megadott állapot nem található."
+          }
+        },
+        "deactivated": {
+          "notification": {
+            "title": "Intézmény deaktiválva",
+            "message": "Intézmény és adminjai sikeresen deaktiválva"
+          }
+        }
+      },
+      "ACTIVATE_INSTITUTION": {
+        "institution_not_found": {
+          "notification": {
+            "title": "Intézmény nem található",
+            "message": "A megadott intézmény nem létezik, vagy már aktív."
+          }
+        },
+        "status_not_found": {
+          "notification": {
+            "title": "Állapot nem található",
+            "message": "A megadott állapot nem található."
+          }
+        },
+        "activated": {
+          "notification": {
+            "title": "Intézmény aktiválva",
+            "message": "Intézmény és adminjai sikeresen aktiválva"
+          }
+        }
+      }
+    },
+    "caregiver": {
+      "service": {
+        "ADD_USER": {
+          "status_not_found": {
+            "notification": {
+              "title": "Állapot nem található",
+              "message": "A megadott állapot {property} nem létezik."
+            }
+          },
+          "user_added": {
+            "notification": {
+              "title": "Felhasználó felvéve",
+              "message": "A felhasználó sikeresen hozzá lett adva."
+            }
+          }
+        },
+        "GET_USERS": {
+          "users_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Nem találtunk felhasználót."
+            }
+          },
+          "users_fetched": {
+            "notification": {
+              "title": "Felhasználók lekérdezett",
+              "message": "A felhasználók sikeresen lekérdezésre kerültek."
+            }
+          }
+        },
+        "UPDATE_USER_INFO": {
+          "data_updated": {
+            "notification": {
+              "title": "Frissített adatok",
+              "message": "A felhasználói adatok frissítése sikeresen megtörtént."
+            }
+          }
+        },
+        "GET_MY_USER": {
+          "user_fetched": {
+            "notification": {
+              "title": "Felhasználó elhozta",
+              "message": "Az Ön felhasználói adatait sikeresen lekérdeztük."
+            }
+          }
+        },
+        "UPDATE_CONTACT_TO_USER": {
+          "property_in_use": {
+            "notification": {
+              "title": "Használatban lévő ingatlan.",
+              "message": "Az ingatlan már használatban van."
+            }
+          },
+          "data_updated": {
+            "notification": {
+              "title": "Frissített adatok",
+              "message": "A felhasználó elérhetőségi adatai frissítésre kerültek."
+            }
+          }
+        },
+        "ASSIGN_USERS_ADDRESS": {
+          "address_updated": {
+            "notification": {
+              "title": "Frissített cím",
+              "message": "A felhasználó címe sikeresen frissült."
+            }
+          }
+        },
+        "EXECUTE_TRANSACTION": {
+          "failed_to_update": {
+            "notification": {
+              "title": "Tranzakció sikertelen",
+              "message": "A frissítés sikertelen."
+            }
+          }
+        },
+        "GET_USER_INFO": {
+          "user_fetched": {
+            "notification": {
+              "title": "Felhasználói információk lekérdezése",
+              "message": "A felhasználói adatok sikeresen lekérdezésre kerültek."
+            }
+          }
+        },
+        "ASSIGN_IC_AS_SUPPORTING_CONTACT_TO_SENIOR": {
+          "ic_not_found": {
+            "notification": {
+              "title": "Nem hivatalos gondozó nem található",
+              "message": "Nem hivatalos gondozó nem található"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Idős nem található",
+              "message": "Idős nem található"
+            }
+          },
+          "senior_already_assigned": {
+            "notification": {
+              "title": "Az idősebb személyt már hozzárendelték ehhez az informális gondozóhoz.",
+              "message": "Az idősebb személyt már hozzárendelték ehhez az informális gondozóhoz."
+            }
+          },
+          "senior_already_assigned_different_IC": {
+            "notification": {
+              "title": "Az idős személy már egy másik informális gondozóhoz van rendelve.",
+              "message": "Az idős személy már egy másik informális gondozóhoz van rendelve."
+            }
+          },
+          "supporting_contact_already_assigned": {
+            "notification": {
+              "title": "Az idős személy már kijelölte ezt az informális gondozót támogató kapcsolattartóként.",
+              "message": "Az idős személy már kijelölte ezt az informális gondozót támogató kapcsolattartóként."
+            }
+          },
+          "caregiver_assigned": {
+            "notification": {
+              "title": "Kijelölt informális gondozó az idős emberhez",
+              "message": "Kijelölt informális gondozó az idős emberhez"
+            }
+          }
+        },
+        "ADD_FAMILY_DOCTOR": {
+          "already_assigned": {
+            "notification": {
+              "title": "Az orvost már kijelölte",
+              "message": "A megadott telefonszámú háziorvos már hozzá van rendelve ehhez a felhasználóhoz."
+            }
+          },
+          "doctor_added": {
+            "notification": {
+              "title": "Orvos felvéve",
+              "message": "A háziorvos sikeresen hozzá lett adva a felhasználóhoz."
+            }
+          }
+        },
+        "UPDATE_EMERGENCY_CONTACT": {
+          "contact_not_found": {
+            "notification": {
+              "title": "Kapcsolat nem található",
+              "message": "A megadott sürgősségi kapcsolattartó nem található."
+            }
+          },
+          "contact_updated": {
+            "notification": {
+              "title": "Kapcsolat frissítve",
+              "message": "A vészhelyzeti kapcsolattartási adatokat sikeresen frissítettük."
+            }
+          }
+        },
+        "GET_FAMILY_DOCTOR": {
+          "doctor_not_found": {
+            "notification": {
+              "title": "Orvos nem található",
+              "message": "Háziorvost nem találtak."
+            }
+          },
+          "doctors_fetched": {
+            "notification": {
+              "title": "Orvosok felkeresték",
+              "message": "A háziorvosokat sikeresen visszahívták."
+            }
+          }
+        },
+        "ADD_EMERGENCY_CONTACT": {
+          "already_assigned": {
+            "notification": {
+              "title": "Már hozzárendelt",
+              "message": "A megadott {conflictMessages} vészhelyzeti kapcsolattartó már hozzárendelt ehhez a felhasználóhoz."
+            }
+          },
+          "already_assigned2": {
+            "notification": {
+              "title": "Már hozzárendelt",
+              "message": "A megadott {conflictMessages} vészhelyzeti kapcsolattartó már hozzárendelt ehhez a felhasználóhoz."
+            }
+          },
+          "ic_already_assigned": {
+            "notification": {
+              "title": "Már kijelölt informális gondozó",
+              "message": "Ennek a felhasználónak már van informális gondozója, nem rendelhet hozzá másik gondozót."
+            }
+          },
+          "email_required": {
+            "notification": {
+              "title": "Email szükséges",
+              "message": "Az informális gondozói szerepkörrel rendelkező felhasználóknak kötelező az e-mail cím megadása."
+            }
+          },
+          "contact_added": {
+            "notification": {
+              "title": "Hozzáadott kapcsolat",
+              "message": "Sikeresen hozzáadtuk a vészhelyzeti kapcsolattartót."
+            }
+          },
+          "contact_cannot_be_added": {
+            "notification": {
+              "title": "Ez a felhasználó nem lehet informális gondozó",
+              "message": "A megadott e-mail címmel vagy telefonszámmal rendelkező felhasználó nem informális gondozóként van regisztrálva."
+            }
+          },
+          "contact_already_exists": {
+            "notification": {
+              "title": "A vészhelyzeti kapcsolat már létezik.",
+              "message": "A vészhelyzeti kapcsolat már létezik."
+            }
+          }
+        },
+        "GET_EMERGENCY_CONTACT": {
+          "contact_fetched": {
+            "notification": {
+              "title": "Kapcsolatfelvétel",
+              "message": "Sikeresen lekérdeztük a vészhelyzeti kapcsolattartási adatokat."
+            }
+          }
+        },
+        "GET_PERSONAL_DETAILS": {
+          "details_fetched": {
+            "notification": {
+              "title": "Részletek lekérdezve",
+              "message": "A személyes adatokat sikeresen lekérdeztük."
+            }
+          }
+        },
+        "DELETE_EMERGENCY_CONTACT": {
+          "contact_not_found": {
+            "notification": {
+              "title": "Kapcsolat nem található",
+              "message": "A megadott sürgősségi kapcsolattartó nem található."
+            }
+          },
+          "contact_deleted": {
+            "notification": {
+              "title": "Kapcsolat törölve",
+              "message": "A sürgősségi kapcsolat sikeresen törlődött."
+            }
+          }
+        },
+        "ADD_ADDITIONAL_INFO": {
+          "failed_to_create": {
+            "notification": {
+              "title": "Alkotás sikertelen",
+              "message": "Nem sikerült létrehozni a kiegészítő információkat."
+            }
+          },
+          "assessment_not_found": {
+            "notification": {
+              "title": "Nem talált értékelés",
+              "message": "A megadott értékelés nem található."
+            }
+          },
+          "failed_to_upload": {
+            "notification": {
+              "title": "A feltöltés sikertelen",
+              "message": "Nem sikerült feltölteni a kiegészítő információkat."
+            }
+          },
+          "info_added": {
+            "notification": {
+              "title": "Hozzáadott információ",
+              "message": "A további információkat sikeresen hozzáadtuk."
+            }
+          }
+        },
+        "ADD_USER_ASSESSMENT": {
+          "moca_too_low": {
+            "notification": {
+              "title": "Túl alacsony MoCA pontszám",
+              "message": "A MoCA pontszám túl alacsony ahhoz, hogy az értékelést a felhasználóhoz lehessen rendelni."
+            }
+          },
+          "user_bedridden": {
+            "notification": {
+              "title": "Felhasználó ágyhoz kötött",
+              "message": "Additional fields should not be provided when the user is bedridden, cannot walk without support, and has severe balance problems"
+            }
+          },
+          "assessment_failed": {
+            "notification": {
+              "title": "Értékelés hozzáadása sikertelen",
+              "message": "Szerverhiba. A felhasználói értékelés sikertelen."
+            }
+          },
+          "assessment_added": {
+            "notification": {
+              "title": "Hozzáadott értékelés",
+              "message": "A felhasználói értékelés sikeresen hozzá lett adva."
+            }
+          }
+        },
+        "GET_SENIOR_FORM_STEPS": {
+          "user_form_not_found": {
+            "notification": {
+              "title": "Formanyomtatvány nem található",
+              "message": "Nem találtunk felhasználói űrlap lépéseket."
+            }
+          },
+          "user_form_fetched": {
+            "notification": {
+              "title": "Lekérdezett űrlap",
+              "message": "A felhasználói űrlap lépései sikeresen lekérdezésre kerültek."
+            }
+          }
+        },
+        "UPDATE_ADD_SENIOR_FORM_STEPS": {
+          "form_not_found": {
+            "notification": {
+              "title": "Formanyomtatvány nem található",
+              "message": "A megadott űrlapot nem találtuk."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Érvénytelen lépésérték",
+              "message": "A lépésértéknek 1 és {tulajdonság} között kell lennie."
+            }
+          },
+          "already_completed": {
+            "notification": {
+              "title": "A lépés már befejeződött",
+              "message": "Az űrlap lépcsőfokát már kitöltötték."
+            }
+          },
+          "forms_completed": {
+            "notification": {
+              "title": "Befejezett lépések",
+              "message": "A felsőbb évesek űrlapjának minden lépése befejeződött."
+            }
+          },
+          "form_step_updated": {
+            "notification": {
+              "title": "Formanyomtatvány lépés frissítve",
+              "message": "Az űrlap lépése sikeresen frissült."
+            }
+          }
+        },
+        "GET_USER_ASSESSMENT_SCORES": {
+          "scores_not_found": {
+            "notification": {
+              "title": "Nem talált pontszámok",
+              "message": "A felhasználó esetében nem találtak értékelési pontszámot."
+            }
+          },
+          "score_fetched": {
+            "notification": {
+              "title": "Megszerezett pontszámok",
+              "message": "A felhasználói értékelési pontszámok sikeresen lekérdezésre kerültek."
+            }
+          }
+        },
+        "GET_MOBILITY_LEVEL": {
+          "not_found": {
+            "notification": {
+              "title": "Mobilitási szint nem található",
+              "message": "A felhasználó esetében nem találtak értékelési pontszámot."
+            }
+          },
+          "level_fetched": {
+            "notification": {
+              "title": "Mobilitási szint lekérdezett",
+              "message": "A mobilitási szint sikeresen lekérdezésre került."
+            }
+          }
+        },
+        "VIEW_DOCUMENTS": {
+          "documents_not_found": {
+            "notification": {
+              "title": "Nem talált dokumentumok",
+              "message": "Nem talált semmilyen dokumentumot"
+            }
+          },
+          "error_fetching_document": {
+            "notification": {
+              "title": "Hiba a dokumentum lekérdezésében",
+              "message": "Hiba a dokumentum lekérdezésében"
+            }
+          },
+          "document_not_found": {
+            "notification": {
+              "title": "Nem talált dokumentumok",
+              "message": "Nem talált dokumentumok"
+            }
+          },
+          "documents_fetched": {
+            "notification": {
+              "title": "Előkerült dokumentumok",
+              "message": "Sikeresen lekérdezett dokumentumok"
+            }
+          }
+        },
+        "GET_DOCUMENTS": {
+          "documents_fetched": {
+            "notification": {
+              "title": "Előkerült dokumentumok",
+              "message": "Sikeresen lekérdezett dokumentumok"
+            }
+          }
+        },
+        "DELETE_SENIOR_DOCUMENT": {
+          "document_not_found": {
+            "notification": {
+              "title": "Nem talált dokumentumok",
+              "message": "A felhasználóhoz nem találtak dokumentumot."
+            }
+          },
+          "failed_to_delete_document": {
+            "notification": {
+              "title": "Nem sikerült törölni a dokumentumot",
+              "message": "A dokumentum törlése során probléma merült fel. Kérjük, próbálja meg később újra."
+            }
+          },
+          "document_deleted": {
+            "notification": {
+              "title": "Dokumentum törölve",
+              "message": "A dokumentum sikeresen törlésre került."
+            }
+          }
+        },
+        "CHECK_IF_INFORMAL_CAREGIVERS_EXISTS": {
+          "informal_caregiver_found": {
+            "notification": {
+              "title": "Informális gondozót találtak",
+              "message": "Informális gondozót találtak"
+            }
+          },
+          "informal_caregiver_not_found": {
+            "notification": {
+              "title": "Nem hivatalos gondozó nem található",
+              "message": "Nem hivatalos gondozó nem található"
+            }
+          }
+        },
+        "GET_SENIOR_DOCUMENT": {
+          "document_not_found": {
+            "notification": {
+              "title": "Nem talált dokumentumok",
+              "message": "A felhasználóhoz tartozó dokumentumot nem találtuk."
+            }
+          },
+          "document_retrieved": {
+            "notification": {
+              "title": "Visszakeresett dokumentum",
+              "message": "A dokumentumot sikeresen lekérdeztük."
+            }
+          },
+          "failed_to_get_document": {
+            "notification": {
+              "title": "Nem sikerült lekérni a dokumentumot",
+              "message": "Probléma adódott a dokumentum letöltésével. Kérjük, próbálja meg később újra."
+            }
+          }
+        },
+        "SEND_LANDING_PAGE_LINK_VIA_EMAIL": {
+          "email_sent": {
+            "notification": {
+              "title": "Elküldött e-mail",
+              "message": "E-mail sikeresen elküldve"
+            }
+          },
+          "no_email_address": {
+            "notification": {
+              "title": "Nem sikerült e-mailt küldeni",
+              "message": "Ennek a felhasználónak nincs e-mail címe"
+            }
+          }
+        },
+        "GET_SECURITY_CODE": {
+          "code_fetched": {
+            "notification": {
+              "title": "Biztonsági kód lekérése",
+              "message": "Biztonsági kód lekérése"
+            }
+          }
+        },
+        "DELETE_USER": {
+          "user_deleted": {
+            "notification": {
+              "title": "Felhasználó törölve",
+              "message": "Felhasználó sikeresen törölve"
+            }
+          }
+        },
+        "NEED_DISPLAY_PERFORMANCE_WARNING": {
+          "performance_not_found": {
+            "notification": {
+              "title": "Teljesítmény nem található",
+              "message": "Felhasználó sikeresen törölve"
+            }
+          },
+          "assessment_not_found": {
+            "notification": {
+              "title": "Nem talált értékelés",
+              "message": "A teljesítményre adott válasz nem található"
+            }
+          },
+          "performance_check_not_needed_user_created": {
+            "notification": {
+              "title": "Teljesítményellenőrzés nem szükséges",
+              "message": "A felhasználó létrehozása óta nem telt el 30 nap."
+            }
+          },
+          "performance_check_not_needed_last_warning": {
+            "notification": {
+              "title": "Teljesítményellenőrzés nem szükséges",
+              "message": "Teljesítményfigyelmeztetést küldtek nemrég."
+            }
+          },
+          "below_above_required_level": {
+            "notification": {
+              "title": "Teljesítményellenőrzés befejezve",
+              "message": "A felhasználó teljesítménye {tulajdonság} a motivációján alapuló szükséges szint."
+            }
+          }
+        },
+        "SEND_PERFORMANCE_WARNING": {
+          "formal_caregiver_not_found": {
+            "notification": {
+              "title": "Nem található",
+              "message": "Hivatalos gondozó nem található"
+            }
+          },
+          "warning_sent": {
+            "notification": {
+              "title": "Figyelmeztetés elküldve",
+              "message": "Teljesítményfigyelmeztető értesítés küldése"
+            }
+          }
+        }
+      },
+      "dashboards": {
+        "service": {
+          "GET_MOST_ACTIVE_SENIORS": {
+            "users_fetched": {
+              "notification": {
+                "title": "Felhasználók lekérdezett",
+                "message": "Teljesítményre vonatkozó figyelmeztető értesítés küldése"
+              }
+            }
+          },
+          "GET_DASHBOARD_INSTITUTION_VIEW": {
+            "caregivers_not_found": {
+              "notification": {
+                "title": "Nem találtak gondozókat",
+                "message": "Nem találtak gondozókat"
+              }
+            },
+            "dashboard_fetched": {
+              "notification": {
+                "title": "Műszerfal lekérdezett",
+                "message": "Műszerfal sikeresen lekérdezve"
+              }
+            }
+          },
+          "GET_DASHBOARD_GAMES_ENGAGEMENT": {
+            "engagement_retrieved": {
+              "notification": {
+                "title": "A játékokkal kapcsolatos adatok lekérdezése",
+                "message": "Sikeresen lekérdezett kognitív játékok bevonási adatai"
+              }
+            }
+          },
+          "GET_USER_PERFORMANCE": {
+            "performance_fetched": {
+              "notification": {
+                "title": "Felhasználói teljesítmény",
+                "message": "Felhasználói teljesítmény sikeresen lekérdezve"
+              }
+            },
+            "no_schedule": {
+              "notification": {
+                "title": "Ütemterv nem található",
+                "message": "A felhasználónak még nincs semmilyen ütemterv hozzárendelve, így nincsenek teljesítményadatok"
+              }
+            }
+          },
+          "EDIT_CARE_PLAN_REASON": {
+            "assessment_not_found": {
+              "notification": {
+                "title": "Nem talált értékelés",
+                "message": "Nem talált értékelés"
+              }
+            },
+            "care_plan_reason_updated": {
+              "notification": {
+                "title": "Szerkesztés gondozási terv oka frissítve",
+                "message": "Az ápolási terv okának szerkesztése sikeresen frissült"
+              }
+            }
+          },
+          "GET_PHYSICAL_ACTIVITY_PERFORMANCE": {
+            "performance_fetched": {
+              "notification": {
+                "title": "Fizikai aktivitás teljesítménye",
+                "message": "Fizikai aktivitás teljesítménye sikeresen behozott"
+              }
+            }
+          }
+        }
+      },
+      "schedules": {
+        "service": {
+          "CAN_ASSIGN_USER_SCHEDULE": {
+            "user_condition_assessment_scores_not_found": {
+              "notification": {
+                "title": "A felhasználói állapotértékelési pontszámok nem találhatók",
+                "message": "A felhasználói állapotértékelési pontszámok nem találhatók"
+              }
+            },
+            "cannot_assign_different_phys_activity": {
+              "notification": {
+                "title": "Nem lehet a felhasználót más fizikai tevékenységhez rendelni",
+                "message": "Nem lehet a felhasználót más fizikai tevékenységhez rendelni"
+              }
+            },
+            "can_assign_user_schedule": {
+              "notification": {
+                "title": "Hozzárendelhet felhasználói ütemezést",
+                "message": "Hozzárendelhet felhasználói ütemezést"
+              }
+            }
+          },
+          "GENERATE_SCHEDULES": {
+            "cannot_be_generated": {
+              "notification": {
+                "title": "Ennek a felhasználónak az ütemterveit nem lehet létrehozni.",
+                "message": "Ennek a felhasználónak az ütemterveit nem lehet létrehozni."
+              }
+            },
+            "success": {
+              "notification": {
+                "title": "Háromféle ütemterv generálása",
+                "message": "Háromféle ütemterv generálása"
+              }
+            }
+          },
+          "GET_USER_SCHEDULE": {
+            "not_found": {
+              "notification": {
+                "title": "Felhasználói ütemterv nem található",
+                "message": "Felhasználói ütemterv nem található"
+              }
+            },
+            "success": {
+              "notification": {
+                "title": "Felhasználói ütemterv lekérdezve",
+                "message": "Felhasználói ütemterv lekérdezve"
+              }
+            }
+          },
+          "FIND_CONDITION_ASSESSMENT": {
+            "activities_already_exist": {
+              "notification": {
+                "title": "A felhasználói tevékenységek már léteznek",
+                "message": "A megadott felhasználó felhasználói tevékenységei már léteznek az adatbázisban"
+              }
+            },
+            "assessment_not_found": {
+              "notification": {
+                "title": "Felhasználói állapotfelmérés nem található",
+                "message": "A megadott állapotfelmérés nem létezik"
+              }
+            }
+          },
+          "ADD_CUSTOM_SCHEDULE": {
+            "added": {
+              "notification": {
+                "title": "Felhasználói tevékenységek hozzáadása",
+                "message": "Felhasználói tevékenységek hozzáadása"
+              }
+            },
+            "updated": {
+              "notification": {
+                "title": "Felhasználói tevékenységek frissítése",
+                "message": "Felhasználói tevékenységek frissítése"
+              }
+            },
+            "custom_updated": {
+              "notification": {
+                "title": "Egyéni ütemterv frissítve",
+                "message": "Egyéni ütemterv frissítve"
+              }
+            }
+          },
+          "GET_WALKING_TIME": {
+            "success": {
+              "notification": {
+                "title": "Gyaloglási idő elhozva",
+                "message": "Gyaloglási idő elhozva"
+              }
+            }
+          }
+        }
+      }
+    },
+    "auth": {
+      "service": {
+        "HANDLE_LOGIN": {
+          "code_sent": {
+            "notification": {
+              "title": "Ellenőrző kód elküldve",
+              "message": "Ellenőrző kódot küldtek e-mailben."
+            }
+          },
+          "logged_in": {
+            "notification": {
+              "title": "Bejelentkezés sikeres",
+              "message": "Ön bejelentkezett."
+            }
+          }
+        },
+        "VALIDATE_VERIFICATION_CODE": {
+          "code_not_found": {
+            "notification": {
+              "title": "Ellenőrző kód nem található",
+              "message": "Verification code not found, or you are already logged in."
+            }
+          },
+          "not_authenticated": {
+            "notification": {
+              "title": "Felhasználó nem hitelesített",
+              "message": "User not authenticated."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Ellenőrzés sikere",
+              "message": "Az ellenőrzés sikeres, Ön bejelentkezett."
+            }
+          },
+          "failure": {
+            "notification": {
+              "title": "Érvényesítési hiba",
+              "message": "Érvénytelen érvényesítési kód vagy nem talált felhasználó."
+            }
+          }
+        },
+        "LOGOUT": {
+          "logged_out": {
+            "notification": {
+              "title": "Sikeres kijelentkezés",
+              "message": "Sikeresen kijelentkezett."
+            }
+          }
+        },
+        "SEND_FORGOT_PASSWORD_EMAIL": {
+          "success": {
+            "notification": {
+              "title": "Elküldött e-mail",
+              "message": "A jelszó visszaállítására vonatkozó utasításokat tartalmazó e-mailt küldtünk."
+            }
+          }
+        },
+        "RESET_ADMIN_PASSWORD": {
+          "forbidden": {
+            "notification": {
+              "title": "Tiltott",
+              "message": "Ön nem fér hozzá ehhez az erőforráshoz."
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Nem találtunk felhasználót a megadott információkkal."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Siker",
+              "message": "Jelszó sikeresen mentve."
+            }
+          }
+        },
+        "SIGNUP": {
+          "invalid_credentials": {
+            "notification": {
+              "title": "Érvénytelen hitelesítő adatok",
+              "message": "Érvénytelen hitelesítő adatokat adott meg."
+            }
+          },
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Nem találtunk felhasználót a megadott információkkal."
+            }
+          },
+          "already_active": {
+            "notification": {
+              "title": "Már aktív",
+              "message": "A felhasználó már aktív"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Állapot nem található",
+              "message": "A megadott állapot nem létezik."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Siker",
+              "message": "Ön feliratkozott."
+            }
+          }
+        },
+        "GET_ME": {
+          "success": {
+            "notification": {
+              "title": "Siker",
+              "message": "Admin adatok lekérdezése."
+            }
+          }
+        },
+        "VERIFY_SIGNUP_CREDENTIALS": {
+          "invalid_credentials": {
+            "notification": {
+              "title": "Érvénytelen hitelesítő adatok",
+              "message": "Érvénytelen hitelesítő adatokat adott meg."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Érvényes hitelesítő adatok",
+              "message": "A hitelesítő adatok érvényesek, folytassa a regisztrációt"
+            }
+          }
+        },
+        "SAVE_NEW_PASSWORD_TO_DB": {
+          "not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Nem találtunk felhasználót a megadott információkkal."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Siker",
+              "message": "Új jelszó mentése az adatbázisban."
+            }
+          }
+        },
+        "CHANGE_PASSWORD": {
+          "current_password_mismatch": {
+            "notification": {
+              "title": "Jelszavak nem egyeznek",
+              "message": "A jelenlegi jelszó nem egyezik a meglévő jelszóval"
+            }
+          },
+          "same_as_current": {
+            "notification": {
+              "title": "Az új jelszónak másnak kell lennie",
+              "message": "Az új jelszónak különböznie kell a jelenlegitől"
+            }
+          },
+          "new_password_mismatch": {
+            "notification": {
+              "title": "Jelszavak nem egyeznek",
+              "message": "Az új jelszó és a jelszó megerősítése mezők nem egyeznek meg"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Jelszó frissítve",
+              "message": "Jelszó sikeresen frissítve"
+            }
+          }
+        },
+        "CHANGE_PASSWORD_CONFIRM": {
+          "forbidden": {
+            "notification": {
+              "title": "Tiltott",
+              "message": "Ön nem fér hozzá ehhez az erőforráshoz."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Jelszó megváltozott, kérjük, jelentkezzen be újra az új jelszóval",
+              "message": "A jelszó sikeresen megváltozott, kérjük, jelentkezzen be újra az új jelszóval."
+            }
+          }
+        }
+      }
+    },
+    "admin_institution": {
+      "service": {
+        "UPDATE_MY_INSTITUTION_DETAILS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Intézményi adatok frissítve",
+              "message": "Az intézmény adatai sikeresen frissültek"
+            }
+          },
+          "institution_not_assigned": {
+            "notification": {
+              "title": "Az admin nem rendelkezik kijelölt intézménnyel",
+              "message": "Az admin nem rendelkezik kijelölt intézménnyel"
+            }
+          },
+          "property_already_in_use": {
+            "notification": {
+              "title": "Már használatban lévő ingatlan",
+              "message": "Az ingatlan már használatban van"
+            }
+          }
+        },
+        "GET_INFORMAL_CAREGIVER": {
+          "not_found": {
+            "notification": {
+              "title": "Nem hivatalos gondozó nem található",
+              "message": "Nem hivatalos gondozó nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informális gondozó részletek",
+              "message": "Informális gondozó részletek"
+            }
+          }
+        },
+        "ADD_INFORMAL_CAREGIVER": {
+          "status_not_found": {
+            "notification": {
+              "title": "Állapot nem található",
+              "message": "A megadott állapot {property} nem létezik."
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Nem talált szerep",
+              "message": "A megadott szerepkör {property} nem létezik."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informális gondozó hozzáadva, aktiválási linket küldött e-mailben.",
+              "message": "Informális gondozó hozzáadva, aktiválási linket küldött e-mailben."
+            }
+          }
+        },
+        "UPDATE_WORKING_HOURS": {
+          "user_or_institution_not_found": {
+            "notification": {
+              "title": "Felhasználó vagy intézmény nem található"
+            }
+          },
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Gondozó nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Munkaidő sikeresen frissítve",
+              "message": "Munkaidő sikeresen frissítve"
+            }
+          }
+        },
+        "GET_WORKING_HOURS": {
+          "no_working_hours_for_this_institution": {
+            "notification": {
+              "title": "Az intézménynek nincs munkaideje"
+            }
+          },
+          "no_working_hours_for_this_caregiver": {
+            "notification": {
+              "title": "Ennek a gondozónak nincs munkaideje."
+            }
+          },
+          "admin_institution_not_found": {
+            "notification": {
+              "title": "Admin vagy intézmény nem található",
+              "message": "Admin vagy intézmény nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Munkaidő részletek",
+              "message": "Munkaidő részletek"
+            }
+          }
+        },
+        "GET_INSTITUTION_ADMIN": {
+          "not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Intézmény Admin adatok",
+              "message": "Intézmény Admin adatok"
+            }
+          }
+        },
+        "EDIT_SENIORS_FORMAL_CAREGIVER": {
+          "fc_not_assigned": {
+            "notification": {
+              "title": "Ennek az idősnek nincs kijelölt hivatalos gondozója.",
+              "message": "Ennek az idősnek nincs kijelölt hivatalos gondozója."
+            }
+          },
+          "fc_not_found": {
+            "notification": {
+              "title": "Hivatalos gondozó nem található",
+              "message": "Hivatalos gondozó nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Az idősek hivatalos gondozójának frissítése",
+              "message": "Az idősek hivatalos gondozójának frissítése"
+            }
+          }
+        },
+        "SET_USER_STATUS": {
+          "not_found": {
+            "notification": {
+              "title": "Idős nem található",
+              "message": "Idős nem található"
+            }
+          },
+          "unable_to_change_status": {
+            "notification": {
+              "title": "Állapotváltoztatás nem lehetséges",
+              "message": "Nem módosítható a státusz, a rangidős jelenleg a {property} státuszban van."
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Állapot nem található",
+              "message": "A megadott állapot nem létezik."
+            }
+          },
+          "user_already_has_status": {
+            "notification": {
+              "title": "Már hozzárendelt státusz",
+              "message": "A felhasználó már rendelkezik {property} státusszal"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Szenior státusz sikeresen frissítve",
+              "message": "Szenior státusz sikeresen frissítve"
+            }
+          }
+        },
+        "UPLOAD_IMAGE": {
+          "cannot_upload": {
+            "notification": {
+              "title": "Nem feltölthető",
+              "message": "{property} nem tud képet feltölteni a szenior számára"
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Szenior nem található.",
+              "message": "Szenior nem található."
+            }
+          },
+          "failed_to_create_bucket": {
+            "notification": {
+              "title": "Nem sikerült létrehozni a vödröt.",
+              "message": "Nem sikerült létrehozni a vödröt."
+            }
+          },
+          "failed_to_delete_image": {
+            "notification": {
+              "title": "A kép törlése sikertelen.",
+              "message": "A kép törlése sikertelen."
+            }
+          },
+          "failed_to_upload_image": {
+            "notification": {
+              "title": "Nem sikerült feltölteni a képet.",
+              "message": "Nem sikerült feltölteni a képet."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "A képet sikeresen feltöltöttük.",
+              "message": "A képet sikeresen feltöltöttük."
+            }
+          }
+        },
+        "GET_IMAGE": {
+          "not_found": {
+            "notification": {
+              "title": "Kép nem található",
+              "message": "Kép nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "A képet elhozták.",
+              "message": "A képet elhozták."
+            }
+          },
+          "error": {
+            "notification": {
+              "title": "Hiba a kép lekérdezésében",
+              "message": "Hiba a kép lekérdezésében"
+            }
+          }
+        },
+        "DELETE_IMAGE": {
+          "cannot_delete": {
+            "notification": {
+              "title": "Nem törölhető",
+              "message": "{property} nem tudja törölni a senior képét."
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Szenior nem található.",
+              "message": "Szenior nem található."
+            }
+          },
+          "no_image": {
+            "notification": {
+              "title": "Nincs törlendő kép.",
+              "message": "Nincs törlendő kép."
+            }
+          },
+          "error": {
+            "notification": {
+              "title": "A kép törlése sikertelen.",
+              "message": "A kép törlése sikertelen."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "A kép sikeresen törlődött.",
+              "message": "A kép sikeresen törlődött."
+            }
+          }
+        },
+        "SET_MY_PERSONAL_SETTINGS": {
+          "already_in_use": {
+            "notification": {
+              "title": "Már használatban lévő ingatlan",
+              "message": "Már használatban lévő ingatlan"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Személyes beállítások frissítése",
+              "message": "Személyes beállítások frissítése"
+            }
+          }
+        },
+        "SET_MY_FIRST_NAME": {
+          "success": {
+            "notification": {
+              "title": "Frissített keresztnév",
+              "message": "Frissített keresztnév"
+            }
+          }
+        },
+        "UPDATE_ADMIN_INSTITUTION_CONTACT": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "already_in_use": {
+            "notification": {
+              "title": "Már használatban lévő ingatlan",
+              "message": "Már használatban lévő ingatlan"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Admin elérhetőségek frissítve",
+              "message": "Admin elérhetőségek frissítve"
+            }
+          }
+        },
+        "UPDATE_ADMIN_INSTITUTION_INFO": {
+          "not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Admin elérhetőségek frissítve",
+              "message": "Admin elérhetőségek frissítve"
+            }
+          }
+        },
+        "UPDATE_ONBOARDING_STEPS": {
+          "not_found": {
+            "notification": {
+              "title": "Onboarding nem található.",
+              "message": "Onboarding nem található."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Érvénytelen lépésérték",
+              "message": "A lépésértéknek 1 és {property} között kell lennie."
+            }
+          },
+          "already_completed": {
+            "notification": {
+              "title": "A lépés már befejeződött.",
+              "message": "A lépés már befejeződött."
+            }
+          },
+          "all_steps_completed": {
+            "notification": {
+              "title": "Minden beilleszkedési lépés befejeződött.",
+              "message": "Minden beilleszkedési lépés befejeződött."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Beépítési lépés frissítve.",
+              "message": "Beépítési lépés frissítve."
+            }
+          }
+        },
+        "GET_ONBOARDING_STEPS": {
+          "success": {
+            "notification": {
+              "title": "Beépítési lépések",
+              "message": "Beépítési lépések"
+            }
+          }
+        },
+        "GET_ONBOARDING_STEP_STATUS": {
+          "not_found": {
+            "notification": {
+              "title": "Onboarding nem található.",
+              "message": "Onboarding nem található."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Érvénytelen lépésérték",
+              "message": "A lépésértéknek 1 és {tulajdonság} között kell lennie."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Beépítési lépés státusza lekérdezve.",
+              "message": "Beépítési lépés státusza lekérdezve."
+            }
+          }
+        },
+        "ASSIGN_INFORMAL_CAREGIVER_TO_SENIOR": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Gondozó nem található",
+              "message": "Gondozó nem található"
+            }
+          },
+          "already_assigned": {
+            "notification": {
+              "title": "Az idős személyhez már hozzárendelt gondozó",
+              "message": "Az idős személyhez már hozzárendelt gondozó"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Idős nem található",
+              "message": "Idős nem található"
+            }
+          },
+          "senior_already_has_ic": {
+            "notification": {
+              "title": "Az idős embernek már van egy informális gondozója.",
+              "message": "Az idős embernek már van egy informális gondozója."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Időskorúakhoz rendelt informális gondozó",
+              "message": "Időskorúakhoz rendelt informális gondozó"
+            }
+          }
+        },
+        "REVOKE_INFORMAL_CAREGIVER_FROM_SENIOR": {
+          "not_found": {
+            "notification": {
+              "title": "Nem hivatalos gondozó vagy idős személy nem található",
+              "message": "Nem hivatalos gondozó vagy idős személy nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Informális gondozót visszavonták az idősebbektől",
+              "message": "Informális gondozót visszavonták az idősebbektől"
+            }
+          }
+        },
+        "DELETE_USER": {
+          "not_found": {
+            "notification": {
+              "title": "Idős nem található",
+              "message": "Idős nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Felhasználó sikeresen törölve",
+              "message": "Felhasználó sikeresen törölve"
+            }
+          }
+        },
+        "ASSIGN_FORMAL_CAREGIVER_TO_SENIOR": {
+          "not_found": {
+            "notification": {
+              "title": "Idős nem található",
+              "message": "Idős nem található"
+            }
+          },
+          "already_assigned": {
+            "notification": {
+              "title": "Ezt a gondozót már hozzárendelték a szeniorhoz",
+              "message": "Ezt a gondozót már hozzárendelték a szeniorhoz"
+            }
+          },
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Gondozó nem található",
+              "message": "Gondozó nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Hivatalos gondozó, akit az idősekhez rendeltek",
+              "message": "Hivatalos gondozó, akit az idősekhez rendeltek"
+            }
+          }
+        },
+        "UPDATE_FORMAL_CAREIVER_ROLE": {
+          "fc_not_found": {
+            "notification": {
+              "title": "Hivatalos gondozó nem található",
+              "message": "Hivatalos gondozó nem található"
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Nem talált szerep",
+              "message": "Nem talált szerep"
+            }
+          },
+          "role_removed": {
+            "notification": {
+              "title": "Szerep törölve",
+              "message": "{property} szerep eltávolítva a gondozótól"
+            }
+          },
+          "role_added": {
+            "notification": {
+              "title": "Szerep hozzáadva",
+              "message": "{property} szerep hozzáadva a gondozóhoz"
+            }
+          }
+        },
+        "REMOVE_FORMAL_CAREGIVER_SENIOR_ASSIGNMENT": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Gondozó nem található",
+              "message": "Gondozó nem található"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Idős nem található",
+              "message": "Idős nem található"
+            }
+          },
+          "logged_in_admin_not_found": {
+            "notification": {
+              "title": "Bejelentkezett admin nem található",
+              "message": "Bejelentkezett admin nem található"
+            }
+          },
+          "not_fc": {
+            "notification": {
+              "title": "A meghatározott adminisztrátor nem hivatalos gondozó",
+              "message": "A meghatározott adminisztrátor nem hivatalos gondozó"
+            }
+          },
+          "not_same_institution": {
+            "notification": {
+              "title": "A gondozó, az idős és az adminisztrátor nem ugyanabban az intézményben van.",
+              "message": "A gondozó, az idős és az adminisztrátor nem ugyanabban az intézményben van."
+            }
+          },
+          "caregiver_not_assigned_to_senior": {
+            "notification": {
+              "title": "A megadott gondozót nem jelölték ki az idős személy mellé.",
+              "message": "A megadott gondozót nem jelölték ki az idős személy mellé."
+            }
+          },
+          "cannot_remove": {
+            "notification": {
+              "title": "Nem távolíthatja el az idős személyhez rendelt egyetlen hivatalos gondozót.",
+              "message": "Nem távolíthatja el az idős személyhez rendelt egyetlen hivatalos gondozót."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Hivatalos gondozó-szenior megbízás sikeresen eltávolítva",
+              "message": "Hivatalos gondozó-szenior megbízás sikeresen eltávolítva"
+            }
+          }
+        },
+        "ADD_INSTITUTION_ADMIN": {
+          "role_not_found": {
+            "notification": {
+              "title": "Nem talált szerep",
+              "message": "Intézményi admin szerepkör nem létezik"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Állapot nem található",
+              "message": "Státuszkör nem létezik"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Intézményi admin hozzáadva",
+              "message": "Intézményi admin hozzáadva, az aktiváló email elküldve"
+            }
+          }
+        },
+        "GET_ADMINS_INSTITUTION": {
+          "admins_not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "admins_fetched": {
+            "notification": {
+              "title": "A rendszergazdák elhozták",
+              "message": "A rendszergazdák sikeresen lekérdezték"
+            }
+          }
+        },
+        "GET_USERS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "admin_fetched": {
+            "notification": {
+              "title": "Felhasználók lekérdezett",
+              "message": "Sikeresen lekérdezett felhasználók"
+            }
+          }
+        },
+        "GET_USER_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Felhasználó nem található"
+            }
+          },
+          "user_fetched": {
+            "notification": {
+              "title": "Felhasználói adatok lekérdezése",
+              "message": "Felhasználó sikeresen lekérdezett"
+            }
+          }
+        },
+        "UPDATE_INFO_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Felhasználó nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Frissített alapinformációk",
+              "message": "A felhasználói adatok sikeresen frissültek"
+            }
+          }
+        },
+        "UPDATE_CONTACT_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Felhasználó nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Frissített elérhetőségek",
+              "message": "A felhasználó elérhetőségei sikeresen frissültek"
+            }
+          },
+          "property_already_in_use": {
+            "notification": {
+              "title": "Már használatban lévő ingatlan",
+              "message": "Az ingatlan már használatban van"
+            }
+          }
+        },
+        "GET_INSTITUTION_DETAILS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "institution_fetched": {
+            "notification": {
+              "title": "Intézményi adatok lekérdezése",
+              "message": "Intézményi adatok sikeresen lekérdezve"
+            }
+          }
+        },
+        "ADD_FORMAL_CAREGIVER": {
+          "role_not_found": {
+            "notification": {
+              "title": "Nem talált szerep",
+              "message": "A hivatalos gondozói szerep nem található meg az adatbázisban"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Állapot nem található",
+              "message": "A létrehozott állapot nem található az adatbázisban"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Hivatalos gondozót adtunk hozzá, aktiválási linket küldtünk e-mailben.",
+              "message": "Hivatalos gondozót adtunk hozzá, aktiválási linket küldtünk e-mailben."
+            }
+          }
+        },
+        "UPDATE_CAREGIVER_INFO": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Gondozó nem található",
+              "message": "Gondozó nem található"
+            }
+          },
+          "no_institution": {
+            "notification": {
+              "title": "Nincs intézmény",
+              "message": "Admin does not belong to any institution"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Gondozói információk frissítve",
+              "message": "Gondozói információk sikeresen frissítve"
+            }
+          }
+        },
+        "UPDATE_ADMIN_ROLES": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Admin nem található",
+              "message": "Admin nem található"
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Nem talált szerep",
+              "message": "Nem talált szerep"
+            }
+          },
+          "no_institution": {
+            "notification": {
+              "title": "Nincs intézmény",
+              "message": "Admin nem tartozik az intézményhez"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Admin szerepek frissítve",
+              "message": "Admin szerepek sikeresen frissítve"
+            }
+          },
+          "role_already_assigned": {
+            "notification": {
+              "title": "Már hozzárendelt szerep",
+              "message": "A szerepkör már adminhoz van rendelve"
+            }
+          },
+          "cannot_remove_role": {
+            "notification": {
+              "title": "Nem lehet eltávolítani az egyetlen szerepet az adminból",
+              "message": "Nem lehet eltávolítani az egyetlen szerepet az adminból"
+            }
+          },
+          "no_role_to_remove": {
+            "notification": {
+              "title": "Nincs eltávolítandó szerep",
+              "message": "A rendszergazda nem rendelkezik az eltávolításhoz szükséges szerepkörrel"
+            }
+          },
+          "no_role_changes": {
+            "notification": {
+              "title": "Nincs szerepváltozás",
+              "message": "Nincs szerepváltozás"
+            }
+          }
+        },
+        "GET_FORMAL_CAREGIVER_ROLES": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Gondozó nem található",
+              "message": "nem található"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Hivatalos gondozói szerepek",
+              "message": "Sikeresen lekérdezett hivatalos gondozói szerepek"
+            }
+          }
+        }
+      }
+    }
+  },
+  "user": {
+    "service": {
+      "UPDATE_USER_PHYSICAL_ACTIVITIES_SCORES": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Felhasználói tevékenységek nem találhatók",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "activities_updated": {
+          "notification": {
+            "title": "A felhasználói fizikai aktivitási pontszámok frissítése",
+            "message": "A felhasználói fizikai aktivitási pontszámok sikeresen frissültek"
+          }
+        },
+        "invalid_activity": {
+          "notification": {
+            "title": "Érvénytelen tevékenység",
+            "message": "A megadott '{activity}' tevékenység érvénytelen. Az elfogadott tevékenységek a következők: {acceptedActivities}"
+          }
+        },
+        "time_of_day_required_physical": {
+          "notification": {
+            "title": "A napszakra van szükség",
+            "message": "A napszak intenzív fizikai aktivitással járó légzőgyakorlatokhoz szükséges."
+          }
+        },
+        "time_of_day_required_breathing": {
+          "notification": {
+            "title": "A napszakra van szükség",
+            "message": "Az intenzív légzésszintű légzőgyakorlatokhoz napszakra van szükség."
+          }
+        }
+      },
+      "GET_DAY_STREAK_TROPHY": {
+        "day_streak": {
+          "notification": {
+            "title": "Tevékenységi sorozat",
+            "message": "Ön egy {streak} aktivitási sorozatot tartott fenn. napot. Csak így tovább!"
+          }
+        }
+      },
+      "GET_DASHBOARD": {
+        "dashboard_fetched": {
+          "notification": {
+            "title": "Műszerfal lekérdezett",
+            "message": "Műszerfal sikeresen lekérdezve"
+          }
+        },
+        "assessment_not_found": {
+          "notification": {
+            "title": "Nem találtak értékelést",
+            "message": "Nem találtak értékelést"
+          }
+        },
+        "not_found": {
+          "notification": {
+            "title": "Nem találtunk tevékenységet",
+            "message": "Nem találtunk tevékenységet"
+          }
+        }
+      },
+      "GET_USER_COMPLETED_ACTIVITIES": {
+        "user_completed_activities_not_found": {
+          "notification": {
+            "title": "Felhasználói tevékenységek nem találhatók",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "user_completed_activities_fetched": {
+          "notification": {
+            "title": "Felhasználó által elvégzett tevékenységek lekérdezése",
+            "message": "A felhasználó által elvégzett tevékenységek sikeresen lekérdezett"
+          }
+        }
+      },
+      "UPDATE_USER_FEEDBACK": {
+        "feedback_not_found": {
+          "notification": {
+            "title": "Visszajelzés nem található",
+            "message": "A megadott azonosítóval rendelkező visszajelzést nem találtuk."
+          }
+        },
+        "feedback_updated": {
+          "notification": {
+            "title": "Frissített visszajelzés",
+            "message": "A kihívással kapcsolatos visszajelzéseket sikeresen frissítették"
+          }
+        }
+      },
+      "ADD_USER_RATE": {
+        "rate_not_found": {
+          "notification": {
+            "title": "Az értékeléshez nem talált kihívás",
+            "message": "A megadott azonosítóval rendelkező kihívást nem sikerült megtalálni"
+          }
+        },
+        "rate_already_exists": {
+          "notification": {
+            "title": "Létezik minősítés",
+            "message": "Az adott kihíváshoz már létezik értékelés"
+          }
+        },
+        "rate_added": {
+          "notification": {
+            "title": "Értékelés hozzáadva",
+            "message": "A kihívás értékelése sikeresen hozzáadva"
+          }
+        }
+      },
+      "SET_PERSONAL_GROWTH_CHALLENGE_TO_ACTIVE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Személyes növekedési kihívás nem található",
+            "message": "Személyes növekedési kihívás nem található"
+          }
+        },
+        "challenge_marked_as_active": {
+          "notification": {
+            "title": "Aktívnak jelölt kihívás",
+            "message": "Sikeresen aktívnak jelölt kihívás"
+          }
+        }
+      },
+      "SET_PERSONAL_GROWTH_CHALLENGE_TO_COMPLETED": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Személyes növekedési kihívás nem található",
+            "message": "Személyes növekedési kihívás nem található"
+          }
+        },
+        "challenge_marked_as_completed": {
+          "notification": {
+            "title": "Teljesítettnek jelölt kihívás",
+            "message": "Sikeresen teljesítettnek jelölt kihívás"
+          }
+        },
+        "active_not_found": {
+          "notification": {
+            "title": "Nem tudja teljesíteni a kihívást",
+            "message": "A kihívás nem aktív, vagy már befejezettnek lett jelölve."
+          }
+        }
+      },
+      "GET_COMPLETED_PERSONAL_GROWTH_CHALLENGES": {
+        "completed_challenges_fetched": {
+          "notification": {
+            "title": "Személyes növekedési kihívások",
+            "message": "Személyes növekedési kihívások sikeresen elhozva"
+          }
+        }
+      },
+      "SKIP_CHALLENGE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Kihívás nem található",
+            "message": "Nem találtunk aktív kihívást a megadott azonosítóval."
+          }
+        },
+        "cannot_skip": {
+          "notification": {
+            "title": "Nem lehet kihagyni a kihívást",
+            "message": "Más kihívást nem találtunk."
+          }
+        },
+        "skipped": {
+          "notification": {
+            "title": "Kihagyott kihívás",
+            "message": "Kihívás sikeresen kihagyva."
+          }
+        }
+      },
+      "GET_PERSONAL_GROWTH_CHALLENGE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Személyes növekedési kihívás nem található",
+            "message": "Személyes növekedési kihívás nem található"
+          }
+        },
+        "challenge_fetched": {
+          "notification": {
+            "title": "Személyes növekedési kihívás",
+            "message": "Personal growth challenge fetched successfully"
+          }
+        }
+      },
+      "GET_USER_ACTIVITY": {
+        "user_activity_fetched": {
+          "notification": {
+            "title": "Felhasználói aktivitás lekérdezett",
+            "message": "Sikeresen lekérdezett felhasználói tevékenység"
+          }
+        },
+        "user_exercise_group_repetitions_not_found": {
+          "notification": {
+            "title": "Felhasználói gyakorlatcsoport ismétlések nem találhatóak",
+            "message": "Felhasználói gyakorlatcsoport ismétlések nem találhatóak"
+          }
+        },
+        "user_activity_not_found": {
+          "notification": {
+            "title": "Felhasználói tevékenység nem található",
+            "message": "Felhasználói tevékenység nem található"
+          }
+        }
+      },
+      "GET_ACTIVE_PERSONAL_GROWTH_CHALLENGE": {
+        "user_activities_not_found": {
+          "notification": {
+            "title": "Felhasználói tevékenységek nem találhatók",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "challenge_not_found": {
+          "notification": {
+            "title": "Aktív személyes növekedési kihívás nem található",
+            "message": "Aktív személyes növekedési kihívás nem található"
+          }
+        },
+        "no_more_challenges": {
+          "notification": {
+            "title": "Nincs több kihívás",
+            "message": "Nincs több kihívás"
+          }
+        },
+        "challenge_fetched": {
+          "notification": {
+            "title": "Aktív személyes növekedési kihívás",
+            "message": "Aktív személyes növekedési kihívás"
+          }
+        }
+      },
+      "CAN_SKIP_CHALLENGE": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Nem talált tevékenységek",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "can_skip": {
+          "notification": {
+            "title": "Kihívás kihagyás opció bejelölve",
+            "message": "Kihívás kihagyási lehetőség lekérdezése"
+          }
+        }
+      },
+      "ADD_GAME_FEEDBACK_INCREASED_DIFFICULTY_LEVEL": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Nem talált tevékenységek",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "difficulty_feedback_not_found": {
+          "notification": {
+            "title": "Nehézségi visszajelzés nem található",
+            "message": "Nehézségi visszajelzés nem található"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Játék visszajelzés hozzáadva",
+            "message": "Játék visszajelzés sikeresen hozzáadva"
+          }
+        }
+      },
+      "ADD_GAME_FEEDBACK_CLOSING_GAME_BEFORE_COMPLETION": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Nem talált tevékenységek",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "experience_feedback_not_found": {
+          "notification": {
+            "title": "Tapasztalati visszajelzés nem található",
+            "message": "Tapasztalati visszajelzés nem található"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Játék visszajelzés hozzáadva",
+            "message": "Játék visszajelzés sikeresen hozzáadva"
+          }
+        }
+      },
+      "GET_FEEDBACK_DISPLAY_OPTIONS": {
+        "success": {
+          "notification": {
+            "title": "Visszajelzések megjelenítési lehetőségei",
+            "message": "Visszajelzés megjelenítési opciók sikeresen lekérdezve"
+          }
+        }
+      },
+      "ADD_FEEDBACK_SECOND_LOSS": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Nem talált tevékenységek",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "experience_feedback_not_found": {
+          "notification": {
+            "title": "Nehézségi visszajelzés nem található",
+            "message": "Nehézségi visszajelzés nem található"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Játék visszajelzés hozzáadva",
+            "message": "Játék visszajelzés sikeresen hozzáadva"
+          }
+        }
+      },
+      "UPDATE_BRAIN_POINTS": {
+        "success": {
+          "notification": {
+            "title": "Agypontok frissítve",
+            "message": "Agypontok sikeresen frissítve"
+          }
+        }
+      },
+      "GET_BRAIN_POINTS": {
+        "brain_points_doesnt_exist": {
+          "notification": {
+            "title": "Agypontok nem léteznek",
+            "message": "Agypontok nem elérhetőek ennek a felhasználónak"
+          }
+        },
+        "brain_points_fetched": {
+          "notification": {
+            "title": "Agypontok lekérdezése",
+            "message": "Agypontok sikeresen lekérdezésre kerültek"
+          }
+        }
+      },
+      "GET_USER_ACTIVITIES_LIST": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Felhasználói tevékenységek nem találhatók",
+            "message": "Felhasználói tevékenységek nem találhatók"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Felhasználói tevékenységek listája",
+            "message": "Felhasználói tevékenységek listája sikeresen lekérdezve"
+          }
+        }
+      },
+      "GET_LANG": {
+        "success": {
+          "notification": {
+            "title": "Nyelv lekérdezve",
+            "message": "Nyelv sikeresen lekérdezve"
+          }
+        }
+      }
+    },
+    "auth": {
+      "service": {
+        "GENERATE_PIN": {
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Felhasználó nem található"
+            }
+          },
+          "pin_sent_to_users_email": {
+            "notification": {
+              "title": "PIN-kód, amelyet a felhasználó e-mail címére küldenek",
+              "message": "Pin kódot küldtek a felhasználó e-mail címére"
+            }
+          },
+          "pin_sent_to_caregiver": {
+            "notification": {
+              "title": "A gondozónak küldött PIN-kód",
+              "message": "Pin kódot küldtek a gondozónak"
+            }
+          }
+        },
+        "LOGOUT": {
+          "logged_out": {
+            "notification": {
+              "title": "Kijelentkezett",
+              "message": "Sikeresen kijelentkezett"
+            }
+          }
+        },
+        "VALIDATE_USER": {
+          "account_locked": {
+            "notification": {
+              "title": "Fiók zárolva",
+              "message": "Ha úgy gondolja, hogy ez hiba, vagy segítségre van szüksége, kérjük, lépjen kapcsolatba az intézményével, vagy próbálja meg újra {remainingTime} perc múlva. [{{email}] [{phone}]"
+            }
+          }
+        }
+      }
+    },
+    "games": {
+      "service": {
+        "GET_GAME_RULES": {
+          "game_not_found": {
+            "notification": {
+              "title": "A játék nem található",
+              "message": "A játék nem található"
+            }
+          },
+          "game_rules": {
+            "notification": {
+              "title": "Játékszabályok",
+              "message": "Játékszabályok behozott"
+            }
+          }
+        },
+        "GET_GAME_SCORES": {
+          "missing_view_param": {
+            "notification": {
+              "title": "Hiányzó nézetparaméter",
+              "message": "Át kell adnia a megtekintés paraméternek"
+            }
+          },
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Felhasználó nem található"
+            }
+          },
+          "scores_not_found": {
+            "notification": {
+              "title": "Nem talált pontszámok",
+              "message": "Nem talált pontszámok"
+            }
+          },
+          "game_scores": {
+            "notification": {
+              "title": "Játék pontszámok",
+              "message": "Játékeredmények lekérdezése"
+            }
+          }
+        },
+        "GET_RECENT_GAME_SCORE": {
+          "not_found_recent_scores": {
+            "notification": {
+              "title": "Nem talált friss pontszámok",
+              "message": "Nem találtam friss pontszámokat"
+            }
+          },
+          "recent_game_scores": {
+            "notification": {
+              "title": "Legutóbbi játék pontszámai",
+              "message": "Legutóbbi játék eredményei"
+            }
+          }
+        },
+        "ADD_GAME_SCORE": {
+          "user_not_found": {
+            "notification": {
+              "title": "Felhasználó nem található",
+              "message": "Felhasználó nem található"
+            }
+          },
+          "game_score_added": {
+            "notification": {
+              "title": "Játék pontszám hozzáadva",
+              "message": "Játék pontszám hozzáadva"
+            }
+          },
+          "scores_not_found": {
+            "notification": {
+              "title": "Nem talált pontszámok",
+              "message": "Nem talált pontszámok"
+            }
+          }
+        },
+        "GET_GAME_DIFFICULTY_LEVELS": {
+          "games_not_found": {
+            "notification": {
+              "title": "Játék nem található",
+              "message": "Játék nem található"
+            }
+          },
+          "game_difficulty_levels": {
+            "notification": {
+              "title": "A játék nehézségi szintjei",
+              "message": "{property} nehézségi szintek"
+            }
+          }
+        }
+      }
+    }
+  },
+  "ml": {
+    "service": {
+      "GET_GAMES_LIST": {
+        "success": {
+          "notification": {
+            "title": "Játékok listája",
+            "message": "Játékok listája sikeresen lekérdezve"
+          }
+        }
+      }
+    }
+  },
+  "physical_exercises": {
+    "exercise_for_feet_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, lábai csípőszélességben pihentetve, karjai a testén nyugszanak, fejét párnával alátámasztva. Kérjük meg a személyt, hogy húzza a lábujjait az álla felé, majd nyomja lefelé (kifelé). A személy a legjobb képességei szerint végzi el a gyakorlatot, szükség esetén segítséggel.",
+    "bending_a_leg_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, lábai csípőszélességben pihentetve, karjai a testén nyugszanak, fejét párnával alátámasztva. Kérjük meg a személyt, hogy összehúzott helyzetben húzza a sarkát a felületen a fenék felé, majd nyújtsa vissza a lábát a felületen a fekvő helyzetbe. Váltogassa a gyakorlatot először a jobb, majd a bal lábbal. A személy a legjobb képességei szerint végzi a gyakorlatot, és szükség esetén segédkezik.",
+    "lifting_the_heels_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, lábai csípőszélességben elernyednek, karjai az oldalán vannak, a feje egy párnán nyugszik; a térdei alá párnát vagy párnát helyezünk. Kérjük meg a személyt, hogy emelje fel a sarkát a fekvőfelületről, tartsa meg a pozíciót néhány másodpercig, majd lassan engedje vissza a fekvőfelületre. A személy a legjobb képességei szerint végzi el a gyakorlatot, szükség esetén segítséggel.",
+    "lifting_of_the_hips_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, karjai a teste mellett, feje egy párnán nyugszik. A személyt arra kérjük, hogy a lábait derékszögben hajtsa össze, emelje fel a fenekét a felületről, tartsa a pozíciót néhány másodpercig, majd engedje vissza a fenekét a felületre. A személy a legjobb képességei szerint végzi a gyakorlatot, és szükség esetén segítséget kap.",
+    "knee_exercise_with_a_ball_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, karjai a teste mellett, feje a párnán nyugszik, lábai derékszögben behajlítva. Helyezzünk egy labdát a személy térdei közé, és kérjük meg, hogy teljes erőből szorítsa a labdát a térdei közé, tartsa néhány másodpercig, majd engedje el. A személy a legjobb képességei szerint végzi a gyakorlatot, és szükség esetén segítséget kap.",
+    "opening_a_book_knee_exercise_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, karjai a teste mellett, feje egy párnán nyugszik, lábai derékszögben behajlítva. Kérjük meg a személyt, hogy nyissa szét a lábait kifelé, majd vissza. A személy a legjobb képességei szerint végzi a gyakorlatot, és szükség esetén segítséget kap.",
+    "touching_knee_with_an_opposite_hand_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, karjai a teste mellett, feje a párnán nyugszik, lábai derékszögben behajlítva. Kérjük meg a személyt, hogy próbálja meg bal kezével megérinteni a jobb térdét, és ismételje meg a gyakorlatot a másik kezével. A személy a legjobb képességei szerint végzi a gyakorlatot, és szükség esetén segítséget kap.",
+    "lifting_arms_above_your_head_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, feje egy párnán nyugszik, lábai derékszögben behajlítva; kérje meg, hogy karjait kulcsolja össze maga előtt, lassan emelje a feje fölé, majd lassan engedje vissza maga elé. A személy a legjobb képességei szerint végzi el a gyakorlatot, szükség esetén segítséggel.",
+    "hip_flexibility_exercise_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, lábai csípőszélesre vannak eresztve, karjai a teste mellett vannak, a feje pedig egy párnán nyugszik. Kérjük meg a személyt, hogy hajlítsa be a jobb lábát, nyújtsa ki a bal lábát, amennyire csak lehet, tartsa a pozíciót néhány másodpercig, majd lazítsa el és nyújtsa ki a jobb lábát hátrafelé. Ismételje meg a gyakorlatot a másik lábával. A személy a legjobb képességei szerint végzi el a gyakorlatot, és szükség esetén segítséget kap.",
+    "standing_on_toes_fall_prevention": "Álljon lazán és egyenesen a szék háttámlája előtt (mellkas kifelé, has befelé), lábfejei párhuzamosak és csípőszélességben helyezkedjenek el, a szék háttámlája pedig legyen ön előtt úgy, hogy mindkét kezével meg tudja fogni. Lassan emelkedjünk fel lábujjhegyre, tartsuk meg és engedjük le az egész lábfejet. Lassú négyütemes ritmusban: 1 - emelkedés, 2 - tartás, 3 - ereszkedés, 4 - pihenés. Lényeges, hogy minden gyakorlatot folyékonyan és összefüggően végezzünk, mint egy táncot. Vegye figyelembe, hogy a gyakorlat negyedik üteme arra szolgál, hogy az egész testet ellazítsa, mielőtt újra kezdené.",
+    "lifting_leg_forwards_fall_prevention": "Álljon lazán és egyenesen (mellkas kifelé, has befelé), lábfejei párhuzamosak és csípőszélesek legyenek; álljon oldalra a székhez képest úgy, hogy jobb kezével meg tudja (tudja) fogni a szék háttámláját. A testsúly a lábon van, nem a szék mellett, ezért a szék melletti lábbal gyakorolunk, hogy stabilak és biztonságosak legyünk az egyensúlyvesztéstől. Először a jobb lábat nyújtsuk előre, majd lépjünk négyütemű ritmusban: 1 - emeljük előre a lábat, 2 - tartsuk a levegőben, 3 - engedjük le a földre a kiinduló helyzetbe, 4 - pihenjünk meg, enyhén ringatózva, lazán, térdben behajlítva. Az ismétlések után forduljon fél kört, hogy bal kezével a szék háttámlájába kapaszkodjon, és ismételje meg a gyakorlatot a bal lábával.",
+    "lifting_leg_backwards_fall_prevention": "Álljon lazán és egyenesen (mellkas kifelé, has befelé), lábfejei párhuzamosak és csípőszélesek legyenek; álljon oldalra a székhez képest úgy, hogy jobb kezével meg tudja (tudja) fogni a szék háttámláját. A testsúly a lábon van, nem a szék mellett, ezért a szék melletti lábbal gyakorolunk, hogy stabilak és biztonságosak legyünk az egyensúlyvesztéstől. A szék melletti lábat emeljük vissza a padlóról olyan magasságba, ahol még stabilnak érezzük, miközben a törzsünket kissé előrehajlítjuk, majd négyütemes ritmusban lépünk: 1 - a lábat hátrafelé emeljük, 2 - a levegőben tartjuk, 3 - a padlóra engedjük a kiinduló helyzetbe, 4 - enyhén ringatózva, lazán, térdben behajlítva pihenünk. Az ismétlések után forduljon fél kört, hogy bal kezével a szék háttámlájába kapaszkodjon, és ismételje meg a gyakorlatot a bal lábával.",
+    "lifting_leg_to_the_side_fall_prevention": "Álljon lazán és egyenesen a szék háttámlája előtt (mellkas kifelé, has befelé), lábfejei párhuzamosak és csípőszélességben helyezkedjenek el, a szék háttámlája pedig legyen ön előtt úgy, hogy mindkét kezével meg tudja fogni. Először a kinyújtott jobb lábat emelje oldalra olyan magasságba, ahol még stabilnak érzi. A gyakorlatot négyütemes ritmusban végezzük: 1 - emeljük fel a lábat oldalra, 2 - tartsuk a levegőben, 3 - engedjük le a padlóra a kiinduló helyzetbe, 4 - pihenjünk meg, enyhén ringatózva, lazítva, térdhajlítással. Az ismétlések után ismételje meg a gyakorlatot a bal lábbal.",
+    "bending_knee_lifting_leg_and_touching_it_with_opposite_hand_fall_prevention": "Álljon lazán és egyenesen (mellkas kifelé, has befelé), lábfejei párhuzamosak és csípőszélesek legyenek; álljon oldalra a székhez képest úgy, hogy jobb kezével meg tudja (tudja) fogni a szék háttámláját. Emelje a szék háttámlájának támasztott láb térdét olyan magasságba, ahol még stabilnak érzi magát. Ennek során szorítsa össze a csípő- és hasizmokat azon a lábon, amelyen áll. A gyakorlat nehézségének és hatékonyságának növelése érdekében helyezze az ellenkező kezét a behajlított és felemelt láb térdére. A gyakorlatot négyütemű ritmusban végezzük: 1 - hajlítsuk be és emeljük fel a lábat (az ellenkező kézzel érintve), 2 - tartsuk a pozíciót, 3 - engedjük le a földre a kiinduló helyzetbe, 4 - pihenjünk meg, enyhén ringatózva, lazán, térdhajlítással. Az ismétlések után forduljon fél kört, hogy bal kezével meg tudja fogni a szék háttámláját, és ismételje meg a gyakorlatot a bal lábával.",
+    "leaning_the_body_forward_fall_prevention": "Úgy helyezkedünk el a szék háttámlája előtt, hogy az egy biztonsági támaszt jelentsen előttünk arra az esetre, ha túlságosan előre dőlnénk és elveszítenénk az egyensúlyunkat. Nyújtsuk ki a karjainkat a testünkre merőlegesen, a tenyerek a csuklónál felfelé néznek. Ezután egész testünkkel lassan hajoljunk előre, a testet végig egyenesen tartva, csípőnél, hasnál, mellkasnál vagy nyaknál nem hajolva, csak a bokánál. Addig dőljünk előre, amíg a lábak hátsó részén lévő izmokat és a hasizmokat használva egyensúlyozunk. Mindig az egész lábfejet (beleértve a sarkat is!) tartsd a padlón. Négyütemű ritmusban hajoljon előre: 1 - előre dől, 2 - tartsa a pozíciót, 3 - térjen vissza semleges helyzetbe, 4 - pihenjen."
+  },
+  "breathe_exercises": {
+    "breathing_with_the_prefix_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, lábai csípőszélességben pihentetve, feje egy párnán nyugszik. A legjobb, ha a gyakorlatot az illetővel együtt végezzük. A tenyereket helyezzük a mellkas alsó harmadára (bordák). Lassan lélegezzen be az orrán keresztül, érezze, hogy a mellkas kitágul a kezei alatt. Tartsa vissza a lélegzetét egy pillanatra. Lassan lélegezzünk ki zárt ajkakkal, érezve, hogy a mellkas a kezünk alatt visszatér eredeti helyzetébe.",
+    "lifting_the_elbow_away_from_the_body_exercise_in_bed": "A személy kényelmesen fekszik a hátán az ágyban, lábai csípőszélességben pihentetve, feje egy párnán nyugszik. A legjobb, ha a gyakorlatot az illetővel együtt végezzük. A karokat könyökben hajlítsa be a testre merőlegesen. Lassan lélegezzen be az orrán keresztül, és nyissa ki a karokat vállmagasságig. Tartsa vissza a lélegzetét egy pillanatra. Lassan lélegezzen ki, és engedje vissza a karokat eredeti helyzetükbe.",
+    "blowing_newspaper_strips_on_the_trapeze_exercise_in_bed": "Ehhez a gyakorlathoz szükségünk van egy trapézra. Az illető kényelmesen hanyatt fekszik az ágyban, ha teheti, fejét kissé felemelve, térdei alatt párnával, karjait a teste mellett nyugtatva - így kényelmesebb és könnyebb lesz a gyakorlat végrehajtása. Ragasszunk újságpapírcsíkokat a trapézra. Lassan lélegezzen be az orrán keresztül, és tartsa vissza a levegőt. Kilégzéskor bátorítsa a személyt, hogy a lehető legmagasabbra fújja az újságpapírcsíkokat.",
+    "blowing_the_whistle_exercise_in_bed": "Ehhez a gyakorlathoz szükségünk van egy sípra. Az illető kényelmesen hanyatt fekszik az ágyban, ha teheti, a fejét kissé felemelve, a térde alatt párnával, a karjait a teste mellett nyugtatva - ez kényelmesebbé és könnyebbé teszi a gyakorlatot az illető számára. Ha a személy elég erős, a gyakorlatot ülve, egy asztalra támaszkodva is végezheti. A személy lassan belélegzik az orrán keresztül, és visszatartja a levegőt. Kilégzéskor fújja ki a levegőt a sípján keresztül.",
+    "blowing_ping_pong_balls_exercise_in_bed": "Ehhez a gyakorlathoz szükségünk lesz egy asztalra és pingponglabdákra. Ha az illető az ágyban fekszik, emeljük fel a párnát, és helyezzük elé az asztalt, majd tegyük az asztalra a pingponglabdákat. Ha az illető elég erős, akkor a gyakorlatot ülve, az asztalra támaszkodva is végezheti. Az illető lassan belélegzi az orrán keresztül, és visszatartja a levegőt. Kilégzéskor lefújja a pingponglabdákat az asztalról.",
+    "blowing_soap_bubbles_exercise_in_bed": "Ehhez a feladathoz szükségünk van egy szappanbuborék eszközre. A gyakorlat szórakoztató és alkalmas, különösen azok számára, akiket nehezebb motiválni a légzőgyakorlatok elvégzésére. A személy az ágyban fekve vagy ülve, az ágynak támaszkodva végezheti a gyakorlatot. A személy lassan belélegzik az orrán keresztül, és visszatartja a lélegzetet. Kilégzéskor átfújja a szappanbuborékgyűrűt.",
+    "chest_expansion_breathing_exercise_sitting": "Üljön vagy álljon egyenesen. Helyezze kezeit a mellkasának alsó harmadára (bordáira).Lassan lélegezzen be az orrán keresztül, érezze, ahogy a mellkasa kitágul a kezei alatt.Tartsa vissza a lélegzetét egy pillanatra. Lassan lélegezzen ki csukott ajkakkal, és érezze, hogy a kezei alatt lévő ujjbegyek visszatérnek eredeti helyzetükbe",
+    "chest_opening_breaths_exercise_sitting": "Üljön vagy álljon egyenesen. Tegye a kezét a tarkójára. Lassan lélegezzen be az orrán keresztül, miközben a könyökét kinyitja (mintha egy könyvet nyitna ki). tartsa vissza a lélegzetét egy pillanatra. majd lassan lélegezzen ki, ajkát összezárva. nyomja össze a könyökét (becsukja a könyvet), miközben a fejét és a felsőtestét behajlítja.",
+    "abdominal_breathing_exercise_sitting": "Fekvő vagy ülő helyzetben. Lazítsa el a vállakat és a felső mellkast. Helyezze egyik kezét a hasra (a köldök magasságában), a másikat pedig a mellkas felső részére. Lassan lélegezzen be az orrán keresztül. A hasnak kifelé kell domborodnia. A hason nyugvó kéznek is jobban kell emelkednie, mint a mellkas felső részén nyugvó kéznek. Lassan lélegezzen ki a szájon keresztül, miközben a hasát leereszti."
+  },
+  "personal_growth_challenges": {
+    "challenge1": {
+      "title": "Egy tanár, akire boldogan és büszkén emlékszem",
+      "description": "Albert Einstein nagyra értékelte a tanárokat, és a tanítást olyan művészetnek nevezte, amely örömet, kreativitást és tudást ébreszt. Meséljen el egy történetet egy olyan tanárról, aki inspirálta Önt, és kérje meg a kihívás partnerét, hogy tegye ugyanezt."
+    },
+    "challenge2": {
+      "title": "Sétáljunk együtt",
+      "description": "Az ősz, akárcsak az életünk, tele van bőséggel és színekkel. Gondolkodj el az utadon: jegyezz meg egy nagyszerű eredményt, egy leküzdött nehézséget és egy boldog pillanatot. Kihívás: Kérdezd meg a kihívást jelentő partneredet a legnagyobb eredményéről vagy egy boldog pillanatáról. Figyelmesen hallgassa meg, köszönje meg, és ossza meg egy saját élményét. A megosztás segít jobban megérteni egymást."
+    },
+    "challenge3": {
+      "title": "Mire vagyok büszke és miért vagyok hálás",
+      "description": "Az ősz, akárcsak az életünk, tele van bőséggel és színekkel. Gondolkodj el az utadon: jegyezz meg egy nagyszerű eredményt, egy leküzdött nehézséget és egy boldog pillanatot. Kihívás: Kérdezd meg a kihívást jelentő partneredet a legnagyobb eredményéről vagy egy boldog pillanatáról. Figyelmesen hallgassa meg, köszönje meg, és ossza meg egy saját élményét. A megosztás segít jobban megérteni egymást."
+    },
+    "challenge4": {
+      "title": "Oszd meg velem egy kis mosolyt",
+      "description": "A jó humor és a kedves mosolyok feldobják a hangulatot. Vegyen részt egy barátságos versenyben a kihívás partnerével vagy egy Ön által kiválasztott személlyel, hogy ki tud a legtöbb embert mosolyogni és köszönteni egy nap a"
+    },
+    "challenge5": {
+      "title": "Gyökereink",
+      "description": "A gyökereink ismerete megalapoz minket. Ossza meg a családi történeteket a kihívást jelentő partnerével, akár a közvetlen családjáról, akár az őseiről van szó. Ha partnert cserél, hívjon meg egy rokont, és ossza meg ezeket a történeteket. Teremtsen jó hangulatot, és fejezze ki, hogy szeretné továbbadni ezt az értékes családi történetet."
+    },
+    "challenge6": {
+      "title": "Néhány dolog más volt",
+      "description": "Az elmúlt évtizedekben a világ gyorsan változott az utazás, a házimunka és a technológia terén. Emlékszel még arra, hogy mennyire más volt minden, amikor fiatal voltál? Ossza meg egy történetét a kihívást jelentő partnerével, és kérdezze meg az ő emlékeit is - lehet, hogy valami hasonlóra vagy másra emlékeznek..."
+    },
+    "challenge7": {
+      "title": "Egy szerelmi történet",
+      "description": "A szerelem formált minket - romantikus, szülői vagy baráti kapcsolat. Mi az első szerelmi történet, ami eszedbe jut az életedből? Oszd meg a kihívás partnerével, és kérdezd meg az ő szerelmi történetükről is"
+    },
+    "challenge8": {
+      "title": "Osszunk meg egy kis értékes emléket",
+      "description": "Ossz meg néhány értékes emléket a telefonodról a kihívás partnerével, és kérd meg őket, hogy ők is tegyék ugyanezt. Ha a fényképek nem állnak rendelkezésre, használjon egy fényképalbumot. Ossza meg a történeteket egy-két fotó mögött, az elmúlt hetek vagy hónapok pillanataira összpontosítva."
+    },
+    "challenge9": {
+      "title": "Ez a fotó/kép emlékeztet engem...",
+      "description": "A következő néhány napban vagy egy hétben figyeljetek a kihívás partnerével együtt a körülöttetek lévő fotókra és képekre. Válasszon ki egyet, amelyik tetszik, és ossza meg, amikor legközelebb találkoznak. Magyarázza el, miért tetszik, és hogy emlékeztet-e valamire."
+    },
+    "challenge10": {
+      "title": "Az otthonom",
+      "description": "Az egyik szlovén gondolkodó azt mondta, hogy a hazaszeretet adja a szabadságot, amely gyökeret ereszt. A kritikák ellenére a hazaszeretet gyökeres szabadságot ad nekünk. Tegyünk egy találkozót, hogy megosszuk egymással, mit szeretünk hazánkban. A kihívások ellenére is van mit értékelnünk."
+    },
+    "challenge11": {
+      "title": "A kedvenc könyvem",
+      "description": "Ha végiggondolja az összes könyvet, amit élete során olvasott, van olyan könyv, ami eszébe jut, esetleg olyan, amit különösen szeret? Mutassa be ezt a könyvet a kihívás partnerének, és kérdezze meg a kedvenc könyvéről."
+    },
+    "challenge12": {
+      "title": "A zene összeköt minket",
+      "description": "Ossza meg egy kedvenc dalát vagy egy olyan dalt, amelyet éppen élvez a kihívás partnerével vagy a kiválasztott személlyel, egy zenével kapcsolatos személyes történettel együtt. Kérdezze meg őket a dalpreferenciájukról. Ha lehetséges, hallgassatok meg egy-egy, mindkettőtök által javasolt dalt. Változott a zenei ízlésed az évek során?"
+    },
+    "challenge13": {
+      "title": "Levél a jövőbeni énemnek",
+      "description": "Írj egy rövid levelet a jövőbeli énednek (lehet néhány hónap múlvára, egy évre vagy 2-3 év múlvára) arról, hogy mit szeretnél elérni, hogyan szeretnél fejlődni, vagy milyen tanácsot adnál magadnak. Oszd meg ezt a partnereddel, és kérd meg, hogy ő is tegye meg ugyanezt. Beszéljétek meg a gondolataitokat és álmaitokat együtt."
+    },
+    "challenge14": {
+      "title": "Egy apró kedvesség",
+      "description": "Tégy egy apró kedvességet egy idegennek, barátnak vagy családtagnak — ez lehet akár olyan egyszerű is, mint az ajtó nyitva tartása, egy bók vagy egy rászoruló megsegítése. Bátorítsd a partneredet is, hogy ő is tegye meg ugyanezt, majd osszátok meg egymással az tapasztalataitokat."
+    },
+    "challenge15": {
+      "title": "Egy régi étel",
+      "description": "Az ételnek erős kapcsolata van az emlékeinkhez és a kultúránkhoz. Főzz vagy ossz meg egy olyan ételt, amely a gyerekkorodra, egy különleges személyre vagy az életed egy fontos eseményére emlékeztet. Hívd meg a partneredet is, hogy ő is tegye meg ugyanezt, majd beszélgessetek arról, miért jelentenek ezek az ételek sokat számotokra. Ha túl nehéz együtt főzni, egyszerűen beszéljetek a különleges ételről, és akár meg is oszthatjátok egymással a receptet."
+    },
+    "challenge16": {
+      "title": "Dolgok, amiket szeretünk csinálni",
+      "description": "Fiatalabb korodban valószínűleg sok dolgot szerettél csinálni a szabadidődben – szerettél olvasni, sportolni, táncolni, vagy esetleg gyűjtöttél valamit. Gondolj vissza az elmúlt 5-10 évre. Mi az az egy dolog, amit most szeretsz csinálni a szabadidődben? Változott ez a fiatal éveidhez képest? Oszd meg a tapasztalataidat a partnerednek, és kérd meg őt is, hogy tegye ugyanezt."
+    },
+    "challenge17": {
+      "title": "Ha életem bármelyik napját újraélhetném…",
+      "description": "Van-e olyan nap az életedben, amit szívesen élnél át újra — nem azért, hogy bármit megváltoztass, hanem csak hogy újra élvezd? Talán egy utazás, egy ünneplés, vagy egy egyszerű, tökéletes nap. Kérd meg a partneredet, hogy ő is ossza meg a sajátját.\n"
+    },
+    "challenge18": {
+      "title": "Lecke egy nehéz időszakból",
+      "description": "A nehézségekre való fókuszálás helyett ossz meg egy olyan pillanatot, amikor valamilyen kihíváson mentél keresztül, de értékes dolgot tanultál belőle. Kérd meg a partneredet, hogy ő is tegye meg ugyanezt."
+    },
+    "challenge19": {
+      "title": "Egy a kedves dolog, amit valaki tett értem",
+      "description": "Gondolj vissza egy olyan alkalomra, amikor valaki kedvességet mutatott feléd. Ez lehetett egy apró gesztus vagy egy életet megváltoztató tett is. Oszd meg a tapasztalatodat a partnereddel, majd kérd meg őt, hogy ő is mesélje el a saját történetét."
+    },
+    "challenge20": {
+      "title": "A legszebb hely, amit valaha láttam",
+      "description": "Írj le egy helyet, amelyet meglátogattál, és ahol elállt a lélegzeted. Talán természeti volt, egy város, vagy akár egy egyszerű, de különleges pillanat. Kérd meg a partneredet, hogy ő is ossza meg, mi volt számára szép és/vagy különleges."
+    },
+    "challenge21": {
+      "title": "Egy nagyon jó tanácsot kaptam…",
+      "description": "Mi az a tanács, ami igazán megmaradt benned, és segített az életedben? Ki adta neked? Milyen helyzetben hangzott el? Oszd meg, és nézd, hogy van-e a partnerednek is egy jó bölcsessége, amit átadhat."
+    },
+    "challenge22": {
+      "title": "Beszélgetésindító üveg",
+      "description": "A feladatok listája lassan a végéhez ér. De lehet, hogy még vannak ötleteid, dolgok, amikről szívesen beszélgetnél a partnereddel. Talán mindketten készíthettek egy üveget, amibe kis papírokat tesztek különböző beszélgetésindítókkal (például: „Mi az az egy dolog, amit mindig is ki szerettél volna próbálni?” vagy „Hogyan élted meg a nyugdíjazásodat? / első szerelmedet? ...”). A következő találkozókon — például mielőtt kávézni vagy sétálni mentek — kihúzhattok egy papírt az üvegből, és azt használhatjátok beszélgetési témaként."
+    }
+  },
+  "validation": {
+    "STRING": "{property} egy karakterlánc kell, hogy legyen",
+    "BOOLEAN": "{property} boolean kell, hogy legyen",
+    "PHONE_NUMBER": "Helytelen telefonszám. A helyes formátum a következő: +[country code]-[number]",
+    "EMAIL": "Email címnek email címnek kell lennie.",
+    "PAGE_SIZE_MIN": "Oldal méret legalább {constraints.0} kell legyen",
+    "PAGE_SIZE_INT": "Oldal méret egész számnak kell lennie.",
+    "PAGE_INT": "Az oldalnak egész számnak kell lennie",
+    "CAREGIVER_ROLE": "Helytelen gondozói szerep",
+    "STATUS_NAME": "Helytelen állapotnév",
+    "SORT_BY": "Helytelen érték szerinti rendezés",
+    "SORT_ORDER": "Helytelen rendezési érték",
+    "NOT_EMPTY": "{property} nem lehet üres",
+    "MIN": "Az értéknek legalább {constraints.0} kell lennie.",
+    "MAX": "Az értéknek kisebbnek vagy egyenlőnek kell lennie, mint {constraints.0}",
+    "ENUM": "{property} a következő értékek egyikének kell lennie: {constraints.1}",
+    "AUTH_PASSWORD": "A jelszónak legalább 8 karaktert kell tartalmaznia, beleértve egy nagybetűt, egy kisbetűt, egy számjegyet és legalább egy speciális karaktert.",
+    "UNIQUE": "{tulajdonság} egyedinek kell lennie",
+    "NUMBER": "{property} egy számnak kell lennie",
+    "DATE": "{property} egy dátumnak kell lennie",
+    "LENGTH": "{property} legyen {constraints.0} karakter hosszúságú",
+    "WAKE_UP_TIME_FORMAT": "{property} egy érvényes időformátumnak kell lennie (HH:mm)",
+    "TIME_OF_DAY": "{property} csak akkor adható meg, ha a name az egyik érték: {acceptedValues}",
+    "FEEDBACK_RATING": "{property} csak akkor adható meg, ha a rating az egyik érték: {acceptedValues}",
+    "EXCLUDED_VALUES": "A {property} minden egyes értékének a következő értékek egyikének kell lennie: {allowedValues}",
+    "EMAIL_ALREADY_EXIST": "E-mail cím már létezik",
+    "PHONE_NUMBER_ALREADY_EXIST": "Telefonszám már létezik",
+    "INSTITUTION_NAME_ALREADY_EXIST": "Intézmény neve már létezik"
+  },
+  "notificationEmails": {
+    "performance_decline": {
+      "subject": "Teljesítménycsökkenés",
+      "body": "Az Ön felügyelete alatt álló idős {name} gondozásával kapcsolatos teljesítménymutatókban csökkenést észleltünk. Kérjük, tekintse át az alábbi részleteket, hogy megértse a helyzetet, és tegye meg a szükséges lépéseket a jólétük biztosítása érdekében.<br><br>Részletesebb betekintésért kérjük, látogasson el az idős {name} profiljára.",
+      "button": "Ellenőrizze a címet."
+    },
+    "user_inactive_for_7_plus_days": {
+      "subject": "7+ napja inaktív felhasználó",
+      "body": "Látjuk, hogy {name} több mint 7 napja nem aktív. Kérjük, ellenőrizze, hogy jól van-e.",
+      "button": "Ellenőrizze az állapotot"
+    },
+    "monitoring_visit_request": {
+      "subject": "Monitoring látogatási kérelem",
+      "body": "A {name} számára ellenőrző látogatásra van szükség. Kérjük, hogy a látogatást hamarosan ütemezze be és fejezze be."
+    },
+    "new_senior_assigned": {
+      "subject": "Új rangidős hozzárendelt",
+      "body": "Egy új rangidős lett Önhöz rendelve.",
+      "button": "Senior részletek megtekintése"
+    },
+    "new_informal_caregiver_assigned_to_senior": {
+      "subject": "Új informális gondozó kijelölése",
+      "body": "Új informális gondozót jelöltek ki egy idős ember mellé.",
+      "button": "Gondozói részletek megtekintése"
+    },
+    "new_formal_caregiver_assigned_to_senior": {
+      "subject": "Új hivatalos gondozót jelöltek ki az idősekhez",
+      "body": "Új hivatalos gondozót jelöltek ki {name} számára. Kérjük, tekintse át a részleteket, és biztosítsa a zökkenőmentes és zökkenőmentes átmenetet a további gondozásukhoz.",
+      "button": "Gondozói részletek megtekintése"
+    },
+    "user_completed_their_daily_assignment": {
+      "subject": "A felhasználó teljesítette a napi feladatát",
+      "body": "Örömmel értesítjük, hogy {name} sikeresen teljesítette a napi feladatát. Folytassák a jó munkát, és továbbra is támogassák a fejlődésüket."
+    },
+    "new_note_added": {
+      "subject": "Új jegyzet felvéve",
+      "body": "{name} profiljához új megjegyzés került hozzáadásra. Kérjük, olvassa át a fontos frissítéseket, és tegye meg a szükséges lépéseket.",
+      "button": "Jegyzet megtekintése"
+    },
+    "new_document_uploaded": {
+      "subject": "Új dokumentum feltöltése",
+      "body": "Új dokumentumot töltöttek fel {name} számára. Kérjük, tekintse át ezt a dokumentumot, hogy tájékozott maradjon és biztosítsa a megfelelő ellátást.",
+      "button": "Dokumentum megtekintése"
+    },
+    "new_care_plan_assigned": {
+      "subject": "Új gondozási terv hozzárendelve",
+      "body": "Új gondozási terv került hozzárendelésre {name} számára. A gondozási terv áttekintéséhez és a kezdéshez kattintson az alábbi linkre.",
+      "button": "Ellenőrizze a gondozási tervet"
+    },
+    "first_entry_email" : {
+      "activate_your_account" : "Aktiválja fiókját",
+      "welcome": "Üdvözöljük a Procareful oldalán! A fiók aktiválásához és a kezdéshez kattintson az alábbi linkre"
+    },
+    "landing_page_email": {
+      "download_our_app": "Töltse le alkalmazásunkat",
+      "thank_you": "Köszönjük érdeklődését alkalmazásunk iránt! Az alkalmazást az alábbi linken töltheti le"
+    },
+    "password_change_email": {
+      "confirm_password_change": "Erősítse meg a jelszó változtatást",
+      "change_pass_info": "Nemrég kérte Procareful-fiókja jelszavának megváltoztatását. Kérjük, erősítse meg ezt a módosítást az alábbi ellenőrző kód megadásával webhelyünkön.",
+      "contact_institution": "Ha nem Ön kérte ezt a módosítást, kérjük, haladéktalanul lépjen kapcsolatba az intézményével.",
+      "info": "A jelszó sikeresen megváltozott"
+    },
+    "pin_code_email": {
+      "complete_verification_process": "Az ellenőrzési folyamat befejezéséhez adja meg az ellenőrző kódot alább. Ez a kód segít nekünk biztosítani fiókja biztonságát és ellenőrizni személyazonosságát.",
+      "verification_code": "Ellenőrző kód"
+    },
+    "footer": "Ha úgy gondolja, hogy ez tévedés, kérjük, hagyja figyelmen kívül ezt az e-mailt.",
+    "or_click_link": "Vagy kattintson egy linkre",
+    "important": "Fontos",
+    "expire_link": "Ez a link {time} órán belül lejár.",
+    "expire_code": "Ez az ellenőrző kód {time} órán belül lejár",
+    "activate": "Aktiválja",
+    "download": "Letöltés",
+    "hello": "Szia"
+  },
+  "assessment_report": {
+    "keys": {
+      "k_moca": "MoCA",
+      "k_ipaq": "IPAQ",
+      "k_psqi": "PSQI",
+      "k_eq_vas": "EQ-VAS",
+      "k_eq_5d_5l": "EQ-5D-5L",
+      "k_de_jong_gierveld": "De Jong Gierveld Scale (Short)",
+      "k_condition_assessment_report": "Idősebb egészségügyi jelentés",
+      "k_senior": "Idős",
+      "k_formal_caregiver": "Korábbi gondozó",
+      "k_summary": "Összefoglaló",
+      "k_area": "Terület",
+      "k_questionnaire": "Kérdőív",
+      "k_results": "Eredmények",
+      "k_cognitive_abilities": "Kognitív képességek",
+      "k_physical_activity_level": "Fizikai aktivitás szintje",
+      "k_screening": "Szűrés",
+      "k_emotional_loneliness": "Érzelmi magány (EL)",
+      "k_social_loneliness": "Társadalmi magány (SL)",
+      "k_motivation": "Motiváció",
+      "k_quality_of_life": "Életminőség",
+      "k_general_health": "Általános egészségi állapot",
+      "k_sleep": "Alvás",
+      "k_question": "Kérdés",
+      "k_answer": "Válasz",
+      "k_additional_notes": "Jegyzetek",
+      "k_currently_bedridden": "Jelenleg ágyhoz van kötve?",
+      "k_can_walk_without_support": "Tud néhány lépésnél többet járni támasz nélkül?",
+      "k_severe_balance_problems": "Súlyos egyensúlyi problémái vannak?",
+      "k_vigorous_activity_days_last_week": "Az elmúlt 7 napban hány napon végzett erőteljes fizikai tevékenységet, például nehéz emelést, ásást, aerobicot vagy gyors kerékpározást?",
+      "k_vigorous_activity_minutes_per_day": "Mennyi időt töltött általában erőteljes fizikai tevékenységgel az említett napok egyikén?",
+      "k_moderate_activity_days_last_week": "Az elmúlt 7 napban hány napon végzett mérsékelt fizikai tevékenységet, például könnyű terhek cipelését, rendszeres kerékpározást vagy páros teniszt? A gyaloglás nem tartozik ide.",
+      "k_moderate_activity_minutes_per_day": "Mennyi időt töltött általában mérsékelt fizikai tevékenységgel az említett napok egyikén?",
+      "k_walking_days_last_week": "Az elmúlt 7 napban hány napon sétált legalább 10 percet egyhuzamban?",
+      "k_walking_minutes_per_day": "Mennyi időt töltöttél általában sétával egy-egy ilyen napon?",
+      "k_time_sitting_last_week": "Az elmúlt 7 napban mennyi időt töltött ülve egy hétköznapon?",
+      "k_experience_of_emptiness": "Az üresség általános érzését tapasztalom [EL]",
+      "k_miss_having_people_around": "Hiányoznak az emberek körülöttem [EL]",
+      "k_feel_rejected": "Gyakran érzem magam elutasítva [EL]",
+      "k_rely_on_people": "Rengeteg ember van, akire számíthatok, ha problémáim vannak [SL]",
+      "k_trust_completely": "Sok ember van, akiben teljesen megbízom [SL]",
+      "k_enough_people_feel_close": "Van elég ember, akihez közel érzem magam [SL]",
+      "k_mobility": "Mobilitás",
+      "k_self_care": "Öngondoskodás",
+      "k_usual_activities": "Szokásos tevékenységek",
+      "k_pain_discomfort": "Fájdalom/Kényelmek",
+      "k_anxiety_depression": "Szorongás/depresszió",
+      "k_general_health_desc": "Az idősek jelenlegi egészségi állapotának értékelése egy 0-tól 100-ig terjedő skálán.",
+      "k_bed_time": "Az elmúlt hónapban általában hány órakor feküdt le este?",
+      "k_fall_asleep_duration": "Az elmúlt hónap során általában mennyi időbe (percekben) telt, amíg elaludt minden este?",
+      "k_wake_up_time": "Az elmúlt hónapban általában hány órakor kelt fel reggel?",
+      "k_actual_sleep_hours": "Az elmúlt hónapban hány órát aludt ténylegesen éjszaka?",
+      "k_trouble_sleeping": "Az elmúlt hónapban milyen gyakran volt gondja az alvással, mert...",
+      "k_cannot_sleep_within_30_minutes": "Nem tud elaludni 30 percen belül",
+      "k_wake_up_midnight_or_early_morning": "Az éjszaka közepén vagy kora reggel felébredt",
+      "k_need_to_use_bathroom": "Fel kell kelnie, hogy kimehessen a mosdóba",
+      "k_cannot_breathe_comfortably": "Nem tud kényelmesen lélegezni",
+      "k_cough_or_snore_loudly": "Hangosan köhög vagy horkol",
+      "k_feel_too_cold": "Túl hidegnek érzem magam",
+      "k_feel_too_hot": "Túl forrónak érzem magam",
+      "k_had_bad_dreams": "Rosszat álmodtam",
+      "k_other_reasons_for_trouble_sleeping": "Egyéb okok",
+      "k_medicine_for_sleep": "Az elmúlt egy hónapban milyen gyakran szedett gyógyszert az alvás segítésére (felírt vagy „recept nélkül kapható”)?",
+      "k_trouble_staying_awake_frequency": "Az elmúlt hónapban milyen gyakran volt gondja azzal, hogy ébren maradjon vezetés, evés, evés, evés, evés, evés, evés, evés, evés, evés, evés közben? étkezés vagy társadalmi tevékenység közben?",
+      "k_enthusiasm_to_get_things_done": "Az elmúlt egy hónapban mennyire okozott gondot Önnek, hogy eléggé lépést tartson lelkesedést ahhoz, hogy elvégezze a dolgait?",
+      "k_sleep_quality_rating": "Az elmúlt hónapban hogyan értékelné az alvásminőségét összességében?",
+      "k_have_bed_partner_or_room_mate": "Van ágy- vagy szobatársa?",
+      "k_room_mate_or_bed_partner": "Ha van szobatársa vagy ágypartnere, kérdezze meg tőle, hogy az elmúlt hónapban milyen gyakran volt...",
+      "k_loud_snoring": "Hangos horkolás",
+      "k_breathing_pause": "Hosszú szünetek a lélegzetvételek között alvás közben",
+      "k_legs_twitching": "Rángatózó vagy rángatózó lábak alvás közben",
+      "k_sleep_disorientation": "Zavarodottság vagy zavarodottság alvás közben",
+      "k_cough_or_snore_loudly_room_mate": "Hangosan köhög vagy horkol",
+      "k_feel_too_cold_room_mate": "Túl hidegnek érzem magam",
+      "k_feel_too_hot_room_mate": "Túl forrónak érzem magam",
+      "k_had_bad_dreams_room_mate": "Rosszat álmodtam",
+      "k_have_pain_room_mate": "Fájdalmai vannak",
+      "k_other_restlessness": "Egyéb nyugtalanság alvás közben; kérjük, írja le."
+    },
+    "answers": {
+      "frequency": {
+        "not_past_month": "Az elmúlt hónapban nem",
+        "less_than_once": "Kevesebb, mint hetente egyszer",
+        "once_or_twice": "Hetente egyszer vagy kétszer",
+        "three_or_more_times": "Háromszor vagy többször hetente"
+      },
+      "quality": {
+        "very_good": "Nagyon jó",
+        "fairly_good": "Meglehetősen jó",
+        "fairly_bad": "Meglehetősen rossz",
+        "very_bad": "Nagyon rossz"
+      },
+      "enthusiasm": {
+        "no_problem": "Egyáltalán nem probléma",
+        "very_slight_problem": "Csak nagyon csekély probléma",
+        "somewhat_a_problem": "Valamennyire probléma",
+        "a_very_big_problem": "Hatalmas probléma"
+      },
+      "levels": {
+        "low": "Alacsony",
+        "medium": "Közepes",
+        "high": "Magas",
+        "intense": "Erős",
+        "light": "Fény",
+        "moderate": "Mérsékelt"
+      },
+      "activities": {
+        "bedridden_activities": "Ágyhoz kötött beteg",
+        "mobility_limitation_activities": "Mobilitás korlátozása",
+        "without_limitation_activities": "Nincs korlátozás"
+      },
+      "common": {
+        "yes": "Igen",
+        "no": "Nem",
+        "more_or_less": "Többé-kevésbé"
+      },
+      "quality_of_life": {
+        "mobility": {
+          "none": "Nem okoz gondot a járás",
+          "slight": "Enyhe problémáim vannak a járás közben",
+          "moderate": "Közepes problémáim vannak a járás közben",
+          "severe": "Súlyos problémáim vannak a járás közben",
+          "extreme": "Nem tudok járni"
+        },
+        "self_care": {
+          "none": "Nincs gondom a mosakodással vagy öltözködéssel",
+          "slight": "Enyhe problémáim vannak a mosakodással vagy öltözködéssel",
+          "moderate": "Közepes gondjaim vannak a mosakodással vagy öltözködéssel",
+          "severe": "Súlyos problémáim vannak a mosakodással vagy öltözködéssel",
+          "extreme": "Képtelen vagyok mosakodni vagy öltözködni"
+        },
+        "usual_activities": {
+          "none": "Nincs gondom a szokásos tevékenységeim elvégzésével",
+          "slight": "Enyhe problémáim vannak a szokásos tevékenységeim elvégzésével",
+          "moderate": "Mérsékelt problémáim vannak a szokásos tevékenységeim elvégzésével",
+          "severe": "Súlyos problémáim vannak a szokásos tevékenységeim elvégzésével",
+          "extreme": "Képtelen vagyok a szokásos tevékenységeimet végezni"
+        },
+        "pain_discomfort": {
+          "none": "Nincs fájdalom vagy kellemetlenség",
+          "slight": "Enyhe fájdalmat vagy kellemetlenséget érzek",
+          "moderate": "Mérsékelt fájdalmat vagy kellemetlenséget érzek",
+          "severe": "Súlyos fájdalmaim vagy kellemetlenségeim vannak",
+          "extreme": "Szélsőséges fájdalmat vagy kellemetlenséget érzek"
+        },
+        "anxiety_depression": {
+          "none": "Nem vagyok szorongó vagy depressziós",
+          "slight": "Enyhén szorongok vagy depressziós vagyok",
+          "moderate": "Közepesen szorongok vagy depressziós vagyok",
+          "severe": "Súlyosan szorongok vagy depressziós vagyok",
+          "extreme": "Rendkívül szorongó vagy depressziós vagyok"
+        }
+      },
+      "bed_partner_or_room_mate": {
+        "no_partner_or_roommate": "Nincs ágy- vagy szobatárs",
+        "partner_in_other_room": "Társ/szobatárs a másik szobában",
+        "partner_same_room_not_bed": "Partner ugyanabban a szobában, de nem ugyanabban az ágyban",
+        "partner_same_bed": "Partner ugyanabban az ágyban"
+      }
+    }
+  }
+}

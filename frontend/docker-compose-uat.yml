@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  admin:
+    image: hub.britenet.com.pl/procareful/webapp:${VITE_APP_VERSION}
+    build:
+      dockerfile: ./apps/procareful-admin/Dockerfile
+      context: .
+    ports:
+      - '127.0.0.1:8080:80'
+    restart: always
+  senior:
+    image: hub.britenet.com.pl/procareful/senior:${VITE_APP_VERSION}
+    build:
+      dockerfile: ./apps/procareful/Dockerfile
+      context: .
+    ports:
+      - '127.0.0.1:8081:80'
+    restart: always

@@ -1,0 +1,2656 @@
+{
+  "healthy": "Server is healthy!",
+  "notification": {
+    "negative": {
+      "common": {
+        "validation": {
+          "title": "Pogreška provjere valjanosti",
+          "message": "Došlo je do problema tijekom provjere valjanosti unesenih podataka. Provjerite svoje podatke i pokušajte ponovno"
+        }
+      }
+    }
+  },
+  "common": {
+    "admin_not_found": {
+      "notification": {
+        "title": "Administrator nije pronađen",
+        "message": "Navedeni administrator ne postoji."
+      }
+    },
+    "user_not_found": {
+      "notification": {
+        "title": "Korisnik nije pronađen",
+        "message": "Navedeni korisnik ne postoji."
+      }
+    },
+    "users_not_found": {
+      "notification": {
+        "title": "Korisnici nisu pronađeni",
+        "message": "Nije pronađen nijedan korisnik."
+      }
+    }
+  },
+  "admin_institution": {
+    "GET_FORMAL_CAREGIVERS": {
+      "notification": {
+        "title": "Formalni njegovatelji",
+        "message": "Formalni njegovatelji dohvaćeni"
+      }
+    }
+  },
+  "admin": {
+    "service": {
+      "RESEND_ACTIVATION_LINK": {
+        "admin_not_found": {
+          "notification": {
+            "title": "Administrator nije pronađen",
+            "message": "Navedeni administrator ne postoji."
+          }
+        },
+        "cannot_resend_link": {
+          "notification": {
+            "title": "Nije moguće ponovno poslati aktivacijsku poveznicu",
+            "message": "Aktivacijska poveznica može se ponovno poslati samo za administratore sa statusom 'kreiran'."
+          }
+        },
+        "forbidden": {
+          "notification": {
+            "title": "Zabranjeno",
+            "message": "Nemate dozvolu za ponovno slanje aktivacijskih poveznica."
+          }
+        },
+        "link_resent": {
+          "notification": {
+            "title": "Aktivacijska poveznica ponovno poslana",
+            "message": "Aktivacijska poveznica ponovno je poslana administratoru."
+          }
+        }
+      },
+      "CHANGE_INSTITUTION_OWNER": {
+        "owner_not_found": {
+          "notification": {
+            "title": "Stari vlasnik nije pronađen",
+            "message": "Navedeni stari vlasnik ne postoji."
+          }
+        },
+        "institution_not_found": {
+          "notification": {
+            "title": "Ustanova nije pronađena",
+            "message": "Navedena ustanova ne postoji ili ima status neaktivna."
+          }
+        },
+        "institution_changed": {
+          "notification": {
+            "title": "Promjena vlasnika ustanove",
+            "message": "Uspješno promijenjen vlasnik ustanove."
+          }
+        }
+      },
+      "DEACTIVATE_INSTITUTION": {
+        "institution_not_found": {
+          "notification": {
+            "title": "Ustanova nije pronađena",
+            "message": "Navedena ustanova ne postoji ili ima status neaktivna."
+          }
+        },
+        "status_not_found": {
+          "notification": {
+            "title": "Status neaktivan nije pronađen",
+            "message": "Navedeni status nije pronađen."
+          }
+        },
+        "deactivated": {
+          "notification": {
+            "title": "Ustanova deaktivirana",
+            "message": "Ustanova i njezini administratori uspješno deaktivirani"
+          }
+        }
+      },
+      "ACTIVATE_INSTITUTION": {
+        "institution_not_found": {
+          "notification": {
+            "title": "Ustanova nije pronađena",
+            "message": "Navedena institucija ne postoji ili je već aktivna."
+          }
+        },
+        "status_not_found": {
+          "notification": {
+            "title": "Status nije pronađen",
+            "message": "Navedeni status nije pronađen."
+          }
+        },
+        "activated": {
+          "notification": {
+            "title": "Ustanova aktivirana",
+            "message": "Ustanova i njezini administratori uspješno aktivirani"
+          }
+        }
+      }
+    },
+    "caregiver": {
+      "service": {
+        "ADD_USER": {
+          "status_not_found": {
+            "notification": {
+              "title": "Status nije pronađen",
+              "message": "Navedeni status {property} ne postoji."
+            }
+          },
+          "user_added": {
+            "notification": {
+              "title": "Korisnik dodan",
+              "message": "Korisnik je uspješno dodan."
+            }
+          }
+        },
+        "GET_USERS": {
+          "users_not_found": {
+            "notification": {
+              "title": "Korisnici nisu pronađeni",
+              "message": "Nije pronađen nijedan korisnik."
+            }
+          },
+          "users_fetched": {
+            "notification": {
+              "title": "Korisnici dohvaćeni",
+              "message": "Korisnici su uspješno dohvaćeni."
+            }
+          }
+        },
+        "UPDATE_USER_INFO": {
+          "data_updated": {
+            "notification": {
+              "title": "Podaci ažurirani",
+              "message": "Podaci o korisniku su uspješno ažurirani."
+            }
+          }
+        },
+        "GET_MY_USER": {
+          "user_fetched": {
+            "notification": {
+              "title": "Korisnik dohvaćen",
+              "message": "Vaši korisnički podaci uspješno su dohvaćeni."
+            }
+          }
+        },
+        "UPDATE_CONTACT_TO_USER": {
+          "property_in_use": {
+            "notification": {
+              "title": "Svojstvo se koristi",
+              "message": "Svojstvo je već u upotrebi."
+            }
+          },
+          "data_updated": {
+            "notification": {
+              "title": "Podaci ažurirani",
+              "message": "Kontakt podaci korisnika su ažurirani."
+            }
+          }
+        },
+        "ASSIGN_USERS_ADDRESS": {
+          "address_updated": {
+            "notification": {
+              "title": "Adresa ažurirana",
+              "message": "Adresa korisnika je uspješno ažurirana."
+            }
+          }
+        },
+        "EXECUTE_TRANSACTION": {
+          "failed_to_update": {
+            "notification": {
+              "title": "Transakcija nije uspjela",
+              "message": "Ažuriranje nije uspjelo."
+            }
+          }
+        },
+        "GET_USER_INFO": {
+          "user_fetched": {
+            "notification": {
+              "title": "Podaci o korisniku dohvaćeni",
+              "message": "Podaci o korisniku su uspješno dohvaćeni."
+            }
+          }
+        },
+        "ASSIGN_IC_AS_SUPPORTING_CONTACT_TO_SENIOR": {
+          "ic_not_found": {
+            "notification": {
+              "title": "Neslužbeni skrbnik nije pronađen",
+              "message": "Neslužbeni skrbnik nije pronađen"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "senior_already_assigned": {
+            "notification": {
+              "title": "Korisnik je već dodijeljen ovom neformalnom njegovatelju",
+              "message": "Korisnik je već dodijeljen ovom neformalnom njegovatelju"
+            }
+          },
+          "senior_already_assigned_different_IC": {
+            "notification": {
+              "title": "Korisnik je već dodijeljen drugom neformalnom njegovatelju",
+              "message": "Korisnik je već dodijeljen drugom neformalnom njegovatelju"
+            }
+          },
+          "supporting_contact_already_assigned": {
+            "notification": {
+              "title": "Korisnik je već dodijelio ovog neformalnog skrbnika kao kontakt za podršku",
+              "message": "Korisnik je već dodijelio ovog neformalnog skrbnika kao kontakt za podršku"
+            }
+          },
+          "caregiver_assigned": {
+            "notification": {
+              "title": "Dodijeljen neformalni skrbnik korisnika",
+              "message": "Dodijeljen neformalni skrbnik korisnika"
+            }
+          }
+        },
+        "ADD_FAMILY_DOCTOR": {
+          "already_assigned": {
+            "notification": {
+              "title": "Liječnik već imenovan",
+              "message": "Obiteljski liječnik s navedenim telefonskim brojem već je dodijeljen ovom korisniku"
+            }
+          },
+          "doctor_added": {
+            "notification": {
+              "title": "Liječnik dodan",
+              "message": "Obiteljski liječnik je uspješno dodan korisniku."
+            }
+          }
+        },
+        "UPDATE_EMERGENCY_CONTACT": {
+          "contact_not_found": {
+            "notification": {
+              "title": "Kontakt nije pronađen",
+              "message": "Navedeni kontakt za hitne slučajeve nije pronađen."
+            }
+          },
+          "contact_updated": {
+            "notification": {
+              "title": "Kontakt ažuriran",
+              "message": "Kontakt podaci za hitne slučajeve uspješno su ažurirani."
+            }
+          }
+        },
+        "GET_FAMILY_DOCTOR": {
+          "doctor_not_found": {
+            "notification": {
+              "title": "Liječnik nije pronađen",
+              "message": "Nije pronađen obiteljski liječnik."
+            }
+          },
+          "doctors_fetched": {
+            "notification": {
+              "title": "Liječnici dokvaćeni",
+              "message": "Obiteljski liječnici uspješno su dohvaćeni."
+            }
+          }
+        },
+        "ADD_EMERGENCY_CONTACT": {
+          "already_assigned": {
+            "notification": {
+              "title": "Već dodijeljeno",
+              "message": "Kontakt za hitne slučajeve s navedenim {conflictMessages} već je dodijeljen ovom korisniku"
+            }
+          },
+          "already_assigned2": {
+            "notification": {
+              "title": "Već dodijeljeno",
+              "message": "Kontakt za hitne slučajeve s navedenim {conflictMessages} već je dodijeljen ovom korisniku"
+            }
+          },
+          "ic_already_assigned": {
+            "notification": {
+              "title": "Već dodijeljen neformalni skrbnik",
+              "message": "Ovaj korisnik ima već dodijeljenog neformalnog skrbnika, ne možete dodijeliti drugog."
+            }
+          },
+          "email_required": {
+            "notification": {
+              "title": "Potrebna adresa e-pošte",
+              "message": "Adresa e-pošte nužna je za korisnika koji ima ulogu neformalnom skrbnika."
+            }
+          },
+          "contact_added": {
+            "notification": {
+              "title": "Kontakt dodan",
+              "message": "Kontakt za hitne slučajeve uspješno je dodan."
+            }
+          },
+          "contact_cannot_be_added": {
+            "notification": {
+              "title": "Ovaj korisnik ne može biti neformalni skrbnik",
+              "message": "Korisnik s navedenom adresom e-pošte ili brojem telefona nije registriran kao neformalni skrbnik."
+            }
+          },
+          "contact_already_exists": {
+            "notification": {
+              "title": "Kontakt za hitne slučajeve već postoji.",
+              "message": "Kontakt za hitne slučajeve već postoji."
+            }
+          }
+        },
+        "GET_EMERGENCY_CONTACT": {
+          "contact_fetched": {
+            "notification": {
+              "title": "Kontakt dohvaćen",
+              "message": "Kontakt podaci za hitne slučajeve uspješno su dohvaćeni."
+            }
+          }
+        },
+        "GET_PERSONAL_DETAILS": {
+          "details_fetched": {
+            "notification": {
+              "title": "Pojedinosti dohvaćene",
+              "message": "Osobni podaci uspješno su dohvaćeni."
+            }
+          }
+        },
+        "DELETE_EMERGENCY_CONTACT": {
+          "contact_not_found": {
+            "notification": {
+              "title": "Kontakt nije pronađen",
+              "message": "Navedeni kontakt za hitne slučajeve nije pronađen."
+            }
+          },
+          "contact_deleted": {
+            "notification": {
+              "title": "Kontakt izbrisan",
+              "message": "Kontakt za hitne slučajeve uspješno je izbrisan."
+            }
+          }
+        },
+        "ADD_ADDITIONAL_INFO": {
+          "failed_to_create": {
+            "notification": {
+              "title": "Stvaranje nije uspjelo",
+              "message": "Stvaranje dodatnih informacija nije uspjelo."
+            }
+          },
+          "assessment_not_found": {
+            "notification": {
+              "title": "Procjena nije pronađena",
+              "message": "Navedena procjena nije pronađena."
+            }
+          },
+          "failed_to_upload": {
+            "notification": {
+              "title": "Prijenos nije uspio",
+              "message": "Prijenos dodatnih informacija nije uspio."
+            }
+          },
+          "info_added": {
+            "notification": {
+              "title": "Podaci dodani",
+              "message": "Dodatne informacije su uspješno dodane."
+            }
+          }
+        },
+        "ADD_USER_ASSESSMENT": {
+          "moca_too_low": {
+            "notification": {
+              "title": "MoCA ocjena preniska",
+              "message": "MoCA bodovanje je prenisko da bi se korisniku dodijelila ocjena"
+            }
+          },
+          "user_bedridden": {
+            "notification": {
+              "title": "Korisnik prikovan za krevet",
+              "message": "Dodatna polja ne bi trebala biti navedena kada je korisnik vezan za krevet, ne može hodati bez potpore i ima ozbiljne probleme s ravnotežom"
+            }
+          },
+          "assessment_failed": {
+            "notification": {
+              "title": "Dodavanje procjene nije uspjelo",
+              "message": "Greška poslužitelja. Ocjena korisnika nije uspjela."
+            }
+          },
+          "assessment_added": {
+            "notification": {
+              "title": "Procjena dodana",
+              "message": "Ocjena korisnika je uspješno dodana."
+            }
+          }
+        },
+        "GET_SENIOR_FORM_STEPS": {
+          "user_form_not_found": {
+            "notification": {
+              "title": "Obrazac nije pronađen",
+              "message": "Nisu pronađeni koraci korisničkog obrasca."
+            }
+          },
+          "user_form_fetched": {
+            "notification": {
+              "title": "Obrazac dohvaćen",
+              "message": "Koraci korisničkog obrasca uspješno su dohvaćeni."
+            }
+          }
+        },
+        "UPDATE_ADD_SENIOR_FORM_STEPS": {
+          "form_not_found": {
+            "notification": {
+              "title": "Obrazac nije pronađen",
+              "message": "Navedeni obrazac nije pronađen."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Nevažeća vrijednost koraka",
+              "message": "Vrijednost koraka mora biti između 1 i {property}."
+            }
+          },
+          "already_completed": {
+            "notification": {
+              "title": "Korak je već dovršen",
+              "message": "Korak obrasca je već dovršen."
+            }
+          },
+          "forms_completed": {
+            "notification": {
+              "title": "Koraci su dovršeni",
+              "message": "Svi koraci obrasca za starije osobe su dovršeni."
+            }
+          },
+          "form_step_updated": {
+            "notification": {
+              "title": "Korak obrasca ažuriran",
+              "message": "Korak obrasca je uspješno ažuriran."
+            }
+          }
+        },
+        "GET_USER_ASSESSMENT_SCORES": {
+          "scores_not_found": {
+            "notification": {
+              "title": "Rezultati nisu pronađeni",
+              "message": "Za korisnika nisu pronađeni rezultati procjene."
+            }
+          },
+          "score_fetched": {
+            "notification": {
+              "title": "Rezultati dohvaćeni",
+              "message": "Ocjene korisnika uspješno su dohvaćene."
+            }
+          }
+        },
+        "GET_MOBILITY_LEVEL": {
+          "not_found": {
+            "notification": {
+              "title": "Razina mobilnosti nije pronađena",
+              "message": "Za korisnika nisu pronađeni rezultati procjene."
+            }
+          },
+          "level_fetched": {
+            "notification": {
+              "title": "Razina mobilnosti dohvaćena",
+              "message": "Razina mobilnosti je uspješno dohvaćena."
+            }
+          }
+        },
+        "VIEW_DOCUMENTS": {
+          "documents_not_found": {
+            "notification": {
+              "title": "Dokumenti nisu pronađeni",
+              "message": "Nisu pronađeni nikakvi dokumenti"
+            }
+          },
+          "error_fetching_document": {
+            "notification": {
+              "title": "Pogreška pri dohvaćanju dokumenta",
+              "message": "Pogreška pri dohvaćanju dokumenta"
+            }
+          },
+          "document_not_found": {
+            "notification": {
+              "title": "Dokument nije pronađen",
+              "message": "Dokument nije pronađen"
+            }
+          },
+          "documents_fetched": {
+            "notification": {
+              "title": "Dokumenti preuzeti",
+              "message": "Dokumenti su uspješno dohvaćeni"
+            }
+          }
+        },
+        "GET_DOCUMENTS": {
+          "documents_fetched": {
+            "notification": {
+              "title": "Dokumenti preuzeti",
+              "message": "Dokumenti su uspješno dohvaćeni"
+            }
+          }
+        },
+        "DELETE_SENIOR_DOCUMENT": {
+          "document_not_found": {
+            "notification": {
+              "title": "Dokument nije pronađen",
+              "message": "Nije pronađen nijedan dokument za korisnika."
+            }
+          },
+          "failed_to_delete_document": {
+            "notification": {
+              "title": "Brisanje dokumenta nije uspjelo",
+              "message": "Došlo je do problema tijekom brisanja dokumenta. Pokušajte ponovno kasnije."
+            }
+          },
+          "document_deleted": {
+            "notification": {
+              "title": "Dokument izbrisan",
+              "message": "Dokument je uspješno obrisan."
+            }
+          }
+        },
+        "CHECK_IF_INFORMAL_CAREGIVERS_EXISTS": {
+          "informal_caregiver_found": {
+            "notification": {
+              "title": "Pronađen neformalni skrbnik",
+              "message": "Pronađen neformalni skrbnik"
+            }
+          },
+          "informal_caregiver_not_found": {
+            "notification": {
+              "title": "Neslužbeni skrbnik nije pronađen",
+              "message": "Neslužbeni skrbnik nije pronađen"
+            }
+          }
+        },
+        "GET_SENIOR_DOCUMENT": {
+          "document_not_found": {
+            "notification": {
+              "title": "Dokument nije pronađen",
+              "message": "Dokument za ovog korisnika nije pronađen."
+            }
+          },
+          "document_retrieved": {
+            "notification": {
+              "title": "Dokument je preuzet",
+              "message": "Dokument je uspješno dohvaćen."
+            }
+          },
+          "failed_to_get_document": {
+            "notification": {
+              "title": "Dohvaćanje dokumenta nije uspjelo",
+              "message": "Došlo je do problema prilikom preuzimanja dokumenta. Pokušajte ponovno kasnije."
+            }
+          }
+        },
+        "SEND_LANDING_PAGE_LINK_VIA_EMAIL": {
+          "email_sent": {
+            "notification": {
+              "title": "E-pošta poslana",
+              "message": "E-pošta je uspješno poslana"
+            }
+          },
+          "no_email_address": {
+            "notification": {
+              "title": "Slanje e-pošte nije uspjelo",
+              "message": "Ovaj korisnik nema adresu e-pošte"
+            }
+          }
+        },
+        "GET_SECURITY_CODE": {
+          "code_fetched": {
+            "notification": {
+              "title": "Sigurnosni kod je dohvaćen",
+              "message": "Sigurnosni kod je dohvaćen"
+            }
+          }
+        },
+        "DELETE_USER": {
+          "user_deleted": {
+            "notification": {
+              "title": "Korisnik izbrisan",
+              "message": "Korisnik je uspješno izbrisan"
+            }
+          }
+        },
+        "NEED_DISPLAY_PERFORMANCE_WARNING": {
+          "performance_not_found": {
+            "notification": {
+              "title": "Izvedba nije pronađena",
+              "message": "Informacija o učinku nije pronađena"
+            }
+          },
+          "assessment_not_found": {
+            "notification": {
+              "title": "Procjena nije pronađena",
+              "message": "Korisnička procjena nije pronađena"
+            }
+          },
+          "performance_check_not_needed_user_created": {
+            "notification": {
+              "title": "Provjera izvedbe nije potrebna",
+              "message": "Nije prošlo 30 dana od kreiranja korisnika."
+            }
+          },
+          "performance_check_not_needed_last_warning": {
+            "notification": {
+              "title": "Provjera izvedbe nije potrebna",
+              "message": "Nedavno je poslano upozorenje o učinku."
+            }
+          },
+          "below_above_required_level": {
+            "notification": {
+              "title": "Provjera izvedbe dovršena",
+              "message": "Učinak korisnika je {property} potrebna razina na temelju njihove motivacije."
+            }
+          }
+        },
+        "SEND_PERFORMANCE_WARNING": {
+          "formal_caregiver_not_found": {
+            "notification": {
+              "title": "Nije pronađeno",
+              "message": "Formalni njegovatelj nije pronađen"
+            }
+          },
+          "warning_sent": {
+            "notification": {
+              "title": "Upozorenje poslano",
+              "message": "Obavijest s upozorenjem o učinku je poslana"
+            }
+          }
+        }
+      },
+      "dashboards": {
+        "service": {
+          "GET_MOST_ACTIVE_SENIORS": {
+            "users_fetched": {
+              "notification": {
+                "title": "Korisnici dohvaćeni",
+                "message": "Korisnik je uspješno dohvaćen."
+              }
+            }
+          },
+          "GET_DASHBOARD_INSTITUTION_VIEW": {
+            "caregivers_not_found": {
+              "notification": {
+                "title": "Nije pronađen niti jedan njegovatelj",
+                "message": "Nije pronađen niti jedan njegovatelj"
+              }
+            },
+            "dashboard_fetched": {
+              "notification": {
+                "title": "Kontrolna ploča dohvaćena",
+                "message": "Nadzorna ploča je uspješno dohvaćena"
+              }
+            }
+          },
+          "GET_DASHBOARD_GAMES_ENGAGEMENT": {
+            "engagement_retrieved": {
+              "notification": {
+                "title": "Dohvaćeni podaci o angažmanu u igrama",
+                "message": "Podaci o angažmanu u kognitivnim igrama uspješno su dohvaćeni"
+              }
+            }
+          },
+          "GET_USER_PERFORMANCE": {
+            "performance_fetched": {
+              "notification": {
+                "title": "Dohvaćena izvedba korisnika",
+                "message": "Informacije o učinku korisnika uspješno dohvaćene"
+              }
+            },
+            "no_schedule": {
+              "notification": {
+                "title": "Raspored nije pronađen",
+                "message": "Korisnik još nema dodijeljen raspored tako da nema podataka o učinku"
+              }
+            }
+          },
+          "EDIT_CARE_PLAN_REASON": {
+            "assessment_not_found": {
+              "notification": {
+                "title": "Procjena nije pronađena",
+                "message": "Procjena nije pronađena"
+              }
+            },
+            "care_plan_reason_updated": {
+              "notification": {
+                "title": "Rrazlog izmene plana skrbi je ažuriran",
+                "message": "Rrazlog izmene plana skrbi je ažuriran"
+              }
+            }
+          },
+          "GET_PHYSICAL_ACTIVITY_PERFORMANCE": {
+            "performance_fetched": {
+              "notification": {
+                "title": "Izvedba tjelesne aktivnosti dohvaćena",
+                "message": "Izvedba tjelesne aktivnosti uspješno je dohvaćena"
+              }
+            }
+          }
+        }
+      },
+      "schedules": {
+        "service": {
+          "CAN_ASSIGN_USER_SCHEDULE": {
+            "user_condition_assessment_scores_not_found": {
+              "notification": {
+                "title": "Rezultati procjene stanja korisnika nisu pronađeni",
+                "message": "Rezultati procjene stanja korisnika nisu pronađeni"
+              }
+            },
+            "cannot_assign_different_phys_activity": {
+              "notification": {
+                "title": "Nije moguće dodijeliti korisnika drugoj tjelesnoj aktivnosti",
+                "message": "Nije moguće dodijeliti korisnika drugoj tjelesnoj aktivnosti"
+              }
+            },
+            "can_assign_user_schedule": {
+              "notification": {
+                "title": "Može dodijeliti raspored za korisnika",
+                "message": "Može dodijeliti raspored za korisnika"
+              }
+            }
+          },
+          "GENERATE_SCHEDULES": {
+            "cannot_be_generated": {
+              "notification": {
+                "title": "Rasporedi za ovog korisnika ne mogu se generirati.",
+                "message": "Rasporedi za ovog korisnika ne mogu se generirati."
+              }
+            },
+            "success": {
+              "notification": {
+                "title": "Kreirane su tri vrste rasporeda",
+                "message": "Kreirane su tri vrste rasporeda"
+              }
+            }
+          },
+          "GET_USER_SCHEDULE": {
+            "not_found": {
+              "notification": {
+                "title": "Raspored korisnika nije pronađen",
+                "message": "Raspored korisnika nije pronađen"
+              }
+            },
+            "success": {
+              "notification": {
+                "title": "Dohvaćen raspored korisnika",
+                "message": "Dohvaćen raspored korisnika"
+              }
+            }
+          },
+          "FIND_CONDITION_ASSESSMENT": {
+            "activities_already_exist": {
+              "notification": {
+                "title": "Aktivnosti korisnika već postoje",
+                "message": "Aktivnosti za navedenog korisnika već postoje u bazi podataka"
+              }
+            },
+            "assessment_not_found": {
+              "notification": {
+                "title": "Procjena stanja korisnika nije pronađena",
+                "message": "Navedena procjena stanja ne postoji"
+              }
+            }
+          },
+          "ADD_CUSTOM_SCHEDULE": {
+            "added": {
+              "notification": {
+                "title": "Dodane aktivnosti korisnika",
+                "message": "Dodane aktivnosti korisnika"
+              }
+            },
+            "updated": {
+              "notification": {
+                "title": "Aktivnosti korisnika ažurirane",
+                "message": "Aktivnosti korisnika ažurirane"
+              }
+            },
+            "custom_updated": {
+              "notification": {
+                "title": "Prilagođeni raspored ažuriran",
+                "message": "Prilagođeni raspored ažuriran"
+              }
+            }
+          },
+          "GET_WALKING_TIME": {
+            "success": {
+              "notification": {
+                "title": "Dohvaćeno vrijeme hodanja",
+                "message": "Dohvaćeno vrijeme hodanja"
+              }
+            }
+          }
+        }
+      }
+    },
+    "auth": {
+      "service": {
+        "HANDLE_LOGIN": {
+          "code_sent": {
+            "notification": {
+              "title": "Kontrolni kod poslan",
+              "message": "Kontrolni kod poslan na e-poštu."
+            }
+          },
+          "logged_in": {
+            "notification": {
+              "title": "Prijava uspješna",
+              "message": "Prijavili ste se."
+            }
+          }
+        },
+        "VALIDATE_VERIFICATION_CODE": {
+          "code_not_found": {
+            "notification": {
+              "title": "Kontrolni kod nije pronađen",
+              "message": "Kontrolni kod nije pronađen ili ste već prijavljeni."
+            }
+          },
+          "not_authenticated": {
+            "notification": {
+              "title": "Korisnik nije autentificiran",
+              "message": "Korisnik nije autentificiran."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Provjera uspješna",
+              "message": "Provjera je uspjela, prijavljeni ste."
+            }
+          },
+          "failure": {
+            "notification": {
+              "title": "Provjera valjanosti neuspješna",
+              "message": "Nevažeći kontrolni kod ili korisnik nije pronađen."
+            }
+          }
+        },
+        "LOGOUT": {
+          "logged_out": {
+            "notification": {
+              "title": "Odjava je uspjela",
+              "message": "Uspješna odjava."
+            }
+          }
+        },
+        "SEND_FORGOT_PASSWORD_EMAIL": {
+          "success": {
+            "notification": {
+              "title": "E-pošta poslana",
+              "message": "Poslana je e-pošta s uputama za ponovno postavljanje lozinke."
+            }
+          }
+        },
+        "RESET_ADMIN_PASSWORD": {
+          "forbidden": {
+            "notification": {
+              "title": "Zabranjeno",
+              "message": "Nemate pristup ovom resursu."
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Nije pronađen nijedan korisnik s navedenim podacima."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Uspjeh",
+              "message": "Lozinka je uspješno spremljena."
+            }
+          }
+        },
+        "SIGNUP": {
+          "invalid_credentials": {
+            "notification": {
+              "title": "Nevažeće vjerodajnice",
+              "message": "Naveli ste nevažeće vjerodajnice."
+            }
+          },
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Nije pronađen nijedan korisnik s navedenim podacima."
+            }
+          },
+          "already_active": {
+            "notification": {
+              "title": "Već aktivan",
+              "message": "Korisnik je već aktivan"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Status nije pronađen",
+              "message": "Navedeni status ne postoji."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Uspjeh",
+              "message": "Prijavljeni ste."
+            }
+          }
+        },
+        "GET_ME": {
+          "success": {
+            "notification": {
+              "title": "Uspjeh",
+              "message": "Podaci o administratoru dohvaćeni."
+            }
+          }
+        },
+        "VERIFY_SIGNUP_CREDENTIALS": {
+          "invalid_credentials": {
+            "notification": {
+              "title": "Nevažeće vjerodajnice",
+              "message": "Naveli ste nevažeće vjerodajnice."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Važeće vjerodajnice",
+              "message": "Pristupni podaci su važeći, nastavite s prijavom"
+            }
+          }
+        },
+        "SAVE_NEW_PASSWORD_TO_DB": {
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Nije pronađen nijedan korisnik s navedenim podacima."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Uspjeh",
+              "message": "Spremanje nove lozinke u bazu podataka."
+            }
+          }
+        },
+        "CHANGE_PASSWORD": {
+          "current_password_mismatch": {
+            "notification": {
+              "title": "Lozinke se ne podudaraju",
+              "message": "Trenutna lozinka ne odgovara vašoj postojećoj lozinci"
+            }
+          },
+          "same_as_current": {
+            "notification": {
+              "title": "Nova lozinka mora biti drugačija",
+              "message": "Nova lozinka mora se razlikovati od trenutne"
+            }
+          },
+          "new_password_mismatch": {
+            "notification": {
+              "title": "Lozinke se ne podudaraju",
+              "message": "Polja Nova lozinka i Potvrdi novu lozinku se ne podudaraju"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Lozinka ažurirana",
+              "message": "Lozinka je uspješno ažurirana"
+            }
+          }
+        },
+        "CHANGE_PASSWORD_CONFIRM": {
+          "forbidden": {
+            "notification": {
+              "title": "Zabranjeno",
+              "message": "Nemate pristup ovom resursu."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Lozinka promijenjena, prijavite se ponovno s novom lozinkom",
+              "message": "Lozinka je uspješno promijenjena, prijavite se ponovno s novom lozinkom"
+            }
+          }
+        }
+      }
+    },
+    "admin_institution": {
+      "service": {
+        "UPDATE_MY_INSTITUTION_DETAILS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Administrator nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci o ustanovi ažurirani",
+              "message": "Podaci o ustanovi uspješno su ažurirani"
+            }
+          },
+          "institution_not_assigned": {
+            "notification": {
+              "title": "Administrator nema dodijeljenu instituciju",
+              "message": "Administrator nema dodijeljenu instituciju"
+            }
+          },
+          "property_already_in_use": {
+            "notification": {
+              "title": "Svojstvo je već u uporabi",
+              "message": "Svojstvo je već u uporabi"
+            }
+          }
+        },
+        "GET_INFORMAL_CAREGIVER": {
+          "not_found": {
+            "notification": {
+              "title": "Neformalni skrbnik nije pronađen",
+              "message": "Neformalni skrbnik nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci o neformalnom skrbniku",
+              "message": "Podaci o neformalnom skrbniku"
+            }
+          }
+        },
+        "ADD_INFORMAL_CAREGIVER": {
+          "status_not_found": {
+            "notification": {
+              "title": "Status nije pronađen",
+              "message": "Navedeni status {property} ne postoji."
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Uloga nije pronađena",
+              "message": "Navedena uloga {property} ne postoji."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dodan je neformalni skrbnik, aktivacijska poveznica poslana e-poštom.",
+              "message": "Dodan je neformalni skrbnik, aktivacijska poveznica poslana e-poštom."
+            }
+          }
+        },
+        "UPDATE_WORKING_HOURS": {
+          "user_or_institution_not_found": {
+            "notification": {
+              "title": "Korisnik ili institucija nisu pronađeni"
+            }
+          },
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Njegovatelj nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Radno vrijeme je uspješno ažurirano",
+              "message": "Radno vrijeme je uspješno ažurirano"
+            }
+          }
+        },
+        "GET_WORKING_HOURS": {
+          "no_working_hours_for_this_institution": {
+            "notification": {
+              "title": "Za ovu ustanovu nema radnog vremena"
+            }
+          },
+          "no_working_hours_for_this_caregiver": {
+            "notification": {
+              "title": "Za ovog njegovatelja nema radnog vremena"
+            }
+          },
+          "admin_institution_not_found": {
+            "notification": {
+              "title": "Administrator ili institucija nisu pronađeni",
+              "message": "Administrator ili institucija nisu pronađeni"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Detalji radnog vremena",
+              "message": "Detalji radnog vremena"
+            }
+          }
+        },
+        "GET_INSTITUTION_ADMIN": {
+          "not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Administrator nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci o administratoru ustanove",
+              "message": "Podaci o administratoru ustanove"
+            }
+          }
+        },
+        "EDIT_SENIORS_FORMAL_CAREGIVER": {
+          "fc_not_assigned": {
+            "notification": {
+              "title": "Ovaj korisnik nema dodijeljenog formalnog njegovatelja",
+              "message": "Ovaj korisnik nema dodijeljenog formalnog njegovatelja"
+            }
+          },
+          "fc_not_found": {
+            "notification": {
+              "title": "Formalni njegovatelj nije pronađen",
+              "message": "Formalni njegovatelj nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Ažuriran formalni skrbnik korisnika",
+              "message": "Ažuriran formalni skrbnik korisnika"
+            }
+          }
+        },
+        "SET_USER_STATUS": {
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "unable_to_change_status": {
+            "notification": {
+              "title": "Nije moguće promijeniti status",
+              "message": "Nije moguće promijeniti status, korisnik trenutno ima status {property}"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Status nije pronađen",
+              "message": "Navedeni status ne postoji."
+            }
+          },
+          "user_already_has_status": {
+            "notification": {
+              "title": "Status je već dodijeljen",
+              "message": "Korisnik već ima status {property}"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Status korisnika uspješno je ažuriran",
+              "message": "Status korisnika uspješno je ažuriran"
+            }
+          }
+        },
+        "UPLOAD_IMAGE": {
+          "cannot_upload": {
+            "notification": {
+              "title": "Ne može se učitati",
+              "message": "{property} ne može učitati sliku korisnika"
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen.",
+              "message": "Korisnik nije pronađen."
+            }
+          },
+          "failed_to_create_bucket": {
+            "notification": {
+              "title": "Izrada spremnika nije uspjela.",
+              "message": "Izrada spremnika nije uspjela."
+            }
+          },
+          "failed_to_delete_image": {
+            "notification": {
+              "title": "Brisanje slike nije uspjelo.",
+              "message": "Brisanje slike nije uspjelo."
+            }
+          },
+          "failed_to_upload_image": {
+            "notification": {
+              "title": "Prijenos slike nije uspio.",
+              "message": "Prijenos slike nije uspio."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Slika je uspješno učitana.",
+              "message": "Slika je uspješno učitana."
+            }
+          }
+        },
+        "GET_IMAGE": {
+          "not_found": {
+            "notification": {
+              "title": "Slika nije pronađena",
+              "message": "Slika nije pronađena"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Slika je dohvaćena.",
+              "message": "Slika je dohvaćena."
+            }
+          },
+          "error": {
+            "notification": {
+              "title": "Pogreška pri dohvaćanju slike",
+              "message": "Pogreška pri dohvaćanju slike"
+            }
+          }
+        },
+        "DELETE_IMAGE": {
+          "cannot_delete": {
+            "notification": {
+              "title": "Ne može se izbrisati",
+              "message": "{property} ne može izbrisati sliku korisnika."
+            }
+          },
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen.",
+              "message": "Korisnik nije pronađen."
+            }
+          },
+          "no_image": {
+            "notification": {
+              "title": "Nema slike za brisanje.",
+              "message": "Nema slike za brisanje."
+            }
+          },
+          "error": {
+            "notification": {
+              "title": "Brisanje slike nije uspjelo.",
+              "message": "Brisanje slike nije uspjelo."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Slika je uspješno izbrisana.",
+              "message": "Slika je uspješno izbrisana."
+            }
+          }
+        },
+        "SET_MY_PERSONAL_SETTINGS": {
+          "already_in_use": {
+            "notification": {
+              "title": "Svojstvo je već u uporabi",
+              "message": "Svojstvo je već u uporabi"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Osobne postavke ažurirane",
+              "message": "Osobne postavke ažurirane"
+            }
+          }
+        },
+        "SET_MY_FIRST_NAME": {
+          "success": {
+            "notification": {
+              "title": "Ime ažurirano",
+              "message": "Ime ažurirano"
+            }
+          }
+        },
+        "UPDATE_ADMIN_INSTITUTION_CONTACT": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Administrator nije pronađen"
+            }
+          },
+          "already_in_use": {
+            "notification": {
+              "title": "Svojstvo je već u uporabi",
+              "message": "Svojstvo je već u uporabi"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci o kontaktu administratora ažurirani",
+              "message": "Podaci o kontaktu administratora ažurirani"
+            }
+          }
+        },
+        "UPDATE_ADMIN_INSTITUTION_INFO": {
+          "not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Administrator nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci o kontaktu administratora ažurirani",
+              "message": "Podaci o kontaktu administratora ažurirani"
+            }
+          }
+        },
+        "UPDATE_ONBOARDING_STEPS": {
+          "not_found": {
+            "notification": {
+              "title": "Uključivanje nije pronađeno.",
+              "message": "Uključivanje nije pronađeno."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Nevažeća vrijednost koraka",
+              "message": "Vrijednost koraka mora biti između 1 i {property}"
+            }
+          },
+          "already_completed": {
+            "notification": {
+              "title": "Korak je već dovršen.",
+              "message": "Korak je već dovršen."
+            }
+          },
+          "all_steps_completed": {
+            "notification": {
+              "title": "Svi koraci uključivanja su dovršeni.",
+              "message": "Svi koraci uključivanja su dovršeni."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Korak uključivanja je ažuriran.",
+              "message": "Korak uključivanja je ažuriran."
+            }
+          }
+        },
+        "GET_ONBOARDING_STEPS": {
+          "success": {
+            "notification": {
+              "title": "Koraci za uključivanje",
+              "message": "Koraci za uključivanje"
+            }
+          }
+        },
+        "GET_ONBOARDING_STEP_STATUS": {
+          "not_found": {
+            "notification": {
+              "title": "Uključivanje nije pronađeno.",
+              "message": "Uključivanje nije pronađeno."
+            }
+          },
+          "invalid_step_value": {
+            "notification": {
+              "title": "Nevažeća vrijednost koraka",
+              "message": "Vrijednost koraka mora biti između 1 i {property}."
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dohvaćen status koraka uključivanja.",
+              "message": "Dohvaćen status koraka uključivanja."
+            }
+          }
+        },
+        "ASSIGN_INFORMAL_CAREGIVER_TO_SENIOR": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Njegovatelj nije pronađen",
+              "message": "Njegovatelj nije pronađen"
+            }
+          },
+          "already_assigned": {
+            "notification": {
+              "title": "Njegovatelj je već dodijeljen ovom korisniku",
+              "message": "Njegovatelj je već dodijeljen ovom korisniku"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "senior_already_has_ic": {
+            "notification": {
+              "title": "Korisnik već ima dodijeljenog neformalnog skrbnika",
+              "message": "Korisnik već ima dodijeljenog neformalnog skrbnika"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Neformalni skrbnik dodijeljen korisniku",
+              "message": "Neformalni skrbnik dodijeljen korisniku"
+            }
+          }
+        },
+        "REVOKE_INFORMAL_CAREGIVER_FROM_SENIOR": {
+          "not_found": {
+            "notification": {
+              "title": "Neformalni skrbnik ili korisnik nisu pronađeni",
+              "message": "Neformalni skrbnik ili korisnik nisu pronađeni"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Neformalni skrbnik opozvan za ovog korisnika",
+              "message": "Neformalni skrbnik opozvan za ovog korisnika"
+            }
+          }
+        },
+        "DELETE_USER": {
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Korisnik je uspješno izbrisan",
+              "message": "Korisnik je uspješno izbrisan"
+            }
+          }
+        },
+        "ASSIGN_FORMAL_CAREGIVER_TO_SENIOR": {
+          "not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "already_assigned": {
+            "notification": {
+              "title": "Ovaj njegovatelj već je dodijeljen korisniku",
+              "message": "Ovaj njegovatelj već je dodijeljen korisniku"
+            }
+          },
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Njegovatelj nije pronađen",
+              "message": "Njegovatelj nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Formalni njegovatelj dodijeljen korisniku",
+              "message": "Formalni njegovatelj dodijeljen korisniku"
+            }
+          }
+        },
+        "UPDATE_FORMAL_CAREIVER_ROLE": {
+          "fc_not_found": {
+            "notification": {
+              "title": "Formalni njegovatelj nije pronađen",
+              "message": "Formalni njegovatelj nije pronađen"
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Uloga nije pronađena",
+              "message": "Uloga nije pronađena"
+            }
+          },
+          "role_removed": {
+            "notification": {
+              "title": "Uloga uklonjena",
+              "message": "{property} uloga uklonjena iz profila njegovatelja"
+            }
+          },
+          "role_added": {
+            "notification": {
+              "title": "Dodana uloga",
+              "message": "Uloga {property} dodana njegovatelju"
+            }
+          }
+        },
+        "REMOVE_FORMAL_CAREGIVER_SENIOR_ASSIGNMENT": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Njegovatelj nije pronađen",
+              "message": "Njegovatelj nije pronađen"
+            }
+          },
+          "senior_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "logged_in_admin_not_found": {
+            "notification": {
+              "title": "Prijavljeni administrator nije pronađen",
+              "message": "Prijavljeni administrator nije pronađen"
+            }
+          },
+          "not_fc": {
+            "notification": {
+              "title": "Navedeni administrator nije formalni njegovatelj",
+              "message": "Navedeni administrator nije formalni njegovatelj"
+            }
+          },
+          "not_same_institution": {
+            "notification": {
+              "title": "Njegovatelj, korisnici i administrator nisu u istoj ustanovi",
+              "message": "Njegovatelj, korisnici i administrator nisu u istoj ustanovi"
+            }
+          },
+          "caregiver_not_assigned_to_senior": {
+            "notification": {
+              "title": "Navedeni njegovatelj nije dodijeljen korisniku",
+              "message": "Navedeni njegovatelj nije dodijeljen korisniku"
+            }
+          },
+          "cannot_remove": {
+            "notification": {
+              "title": "Ne možete ukloniti jedinog službenog njegovatelja dodijeljenog korisniku",
+              "message": "Ne možete ukloniti jedinog službenog njegovatelja dodijeljenog korisniku"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Veza formalni skrbnik-korisnik uspješno je uklonjena",
+              "message": "Veza formalni skrbnik-korisnik uspješno je uklonjena"
+            }
+          }
+        },
+        "ADD_INSTITUTION_ADMIN": {
+          "role_not_found": {
+            "notification": {
+              "title": "Uloga nije pronađena",
+              "message": "Uloga administratora institucije ne postoji"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Status nije pronađen",
+              "message": "Kreirani status ne postoji"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dodan administrator institucije",
+              "message": "Administrator institucije dodan, aktivacijski link poslan e-poštom"
+            }
+          }
+        },
+        "GET_ADMINS_INSTITUTION": {
+          "admins_not_found": {
+            "notification": {
+              "title": "Administratori nisu pronađeni",
+              "message": "Nije pronađen nijedan administrator"
+            }
+          },
+          "admins_fetched": {
+            "notification": {
+              "title": "Administratori dohvaćeni",
+              "message": "Administratori su uspješno dohvaćeni"
+            }
+          }
+        },
+        "GET_USERS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Nije pronađen nijedan administrator"
+            }
+          },
+          "admin_fetched": {
+            "notification": {
+              "title": "Korisnici dohvaćeni",
+              "message": "Korisnici su uspješno dohvaćeni"
+            }
+          }
+        },
+        "GET_USER_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "user_fetched": {
+            "notification": {
+              "title": "Podaci o korisniku dohvaćeni",
+              "message": "Korisnik je uspješno dohvaćen"
+            }
+          }
+        },
+        "UPDATE_INFO_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Osnovne informacije ažurirane",
+              "message": "Podaci o korisniku uspješno su ažurirani"
+            }
+          }
+        },
+        "UPDATE_CONTACT_BY_ID": {
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci za kontakt ažurirani",
+              "message": "Podaci o kontaktu korisnika uspješno su ažurirani"
+            }
+          },
+          "property_already_in_use": {
+            "notification": {
+              "title": "Svojstvo je već u uporabi",
+              "message": "Svojstvo je već u uporabi"
+            }
+          }
+        },
+        "GET_INSTITUTION_DETAILS": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Administrator nije pronađen"
+            }
+          },
+          "institution_fetched": {
+            "notification": {
+              "title": "Podaci o ustanovi dohvaćeni",
+              "message": "Podaci o ustanovi uspješno dohvaćeni"
+            }
+          }
+        },
+        "ADD_FORMAL_CAREGIVER": {
+          "role_not_found": {
+            "notification": {
+              "title": "Uloga nije pronađena",
+              "message": "Uloga formalnog njegovatelja nije pronađena u bazi podataka"
+            }
+          },
+          "status_not_found": {
+            "notification": {
+              "title": "Status nije pronađen",
+              "message": "Kreirani status nije pronađen u bazi podataka"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dodan formalni njegovatelj, aktivacijska poveznica poslana e-poštom.",
+              "message": "Dodan formalni njegovatelj, aktivacijska poveznica poslana e-poštom."
+            }
+          }
+        },
+        "UPDATE_CAREGIVER_INFO": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Njegovatelj nije pronađen",
+              "message": "Njegovatelj nije pronađen"
+            }
+          },
+          "no_institution": {
+            "notification": {
+              "title": "Nema institucije",
+              "message": "Administrator ne pripada niti jednoj instituciji"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Podaci o njegovatelju ažurirani",
+              "message": "Podaci o njegovatelju uspješno su ažurirani"
+            }
+          }
+        },
+        "UPDATE_ADMIN_ROLES": {
+          "admin_not_found": {
+            "notification": {
+              "title": "Administrator nije pronađen",
+              "message": "Administrator nije pronađen"
+            }
+          },
+          "role_not_found": {
+            "notification": {
+              "title": "Uloga nije pronađena",
+              "message": "Uloga nije pronađena"
+            }
+          },
+          "no_institution": {
+            "notification": {
+              "title": "Nema institucije",
+              "message": "Administrator ne pripada ustanovi"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Ažurirane su administratorske uloge",
+              "message": "Uloge administratora uspješno su ažurirane"
+            }
+          },
+          "role_already_assigned": {
+            "notification": {
+              "title": "Uloga je već dodijeljena",
+              "message": "Uloga je već dodijeljena administratoru"
+            }
+          },
+          "cannot_remove_role": {
+            "notification": {
+              "title": "Nije moguće ukloniti jedinu ulogu iz administratora",
+              "message": "Nije moguće ukloniti jedinu ulogu iz administratora"
+            }
+          },
+          "no_role_to_remove": {
+            "notification": {
+              "title": "Nema uloge za uklanjanje",
+              "message": "Administrator nema ulogu za uklanjanje"
+            }
+          },
+          "no_role_changes": {
+            "notification": {
+              "title": "Nema promjena uloga",
+              "message": "Nema promjena uloga"
+            }
+          }
+        },
+        "GET_FORMAL_CAREGIVER_ROLES": {
+          "caregiver_not_found": {
+            "notification": {
+              "title": "Njegovatelj nije pronađen",
+              "message": "nije pronađeno"
+            }
+          },
+          "success": {
+            "notification": {
+              "title": "Dohvaćene službene uloge njegovatelja",
+              "message": "Uloge formalnog njegovatelja uspješno su dohvaćene"
+            }
+          }
+        }
+      }
+    }
+  },
+  "user": {
+    "service": {
+      "UPDATE_USER_PHYSICAL_ACTIVITIES_SCORES": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti korisnika nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "activities_updated": {
+          "notification": {
+            "title": "Rezultati tjelesne aktivnosti korisnika su ažurirani",
+            "message": "Rezultati tjelesne aktivnosti korisnika uspješno su ažurirani"
+          }
+        },
+        "invalid_activity": {
+          "notification": {
+            "title": "Nevažeća aktivnost",
+            "message": "Navedena aktivnost '{activity}' nije važeća. Prihvaćene aktivnosti su: {acceptedActivities}"
+          }
+        },
+        "time_of_day_required_physical": {
+          "notification": {
+            "title": "Potrebno je doba dana",
+            "message": "Vrijeme u danu je potrebno za vježbe disanja uz intenzivnu razinu tjelesne aktivnosti."
+          }
+        },
+        "time_of_day_required_breathing": {
+          "notification": {
+            "title": "Potrebno je doba dana",
+            "message": "Doba dana potrebno definirati je za vježbe disanja s intenzivnom razinom."
+          }
+        }
+      },
+      "GET_DAY_STREAK_TROPHY": {
+        "day_streak": {
+          "notification": {
+            "title": "Niz aktivnosti",
+            "message": "Ostvarili ste niz aktivnosti od {streak} dana. Samo tako nastavi!"
+          }
+        }
+      },
+      "GET_DASHBOARD": {
+        "dashboard_fetched": {
+          "notification": {
+            "title": "Kontrolna ploča dohvaćena",
+            "message": "Nadzorna ploča je uspješno dohvaćena"
+          }
+        },
+        "assessment_not_found": {
+          "notification": {
+            "title": "Nije pronađena procjena",
+            "message": "Nije pronađena procjena"
+          }
+        },
+        "not_found": {
+          "notification": {
+            "title": "Nema pronađenih aktivnosti",
+            "message": "Nema pronađenih aktivnosti"
+          }
+        }
+      },
+      "GET_USER_COMPLETED_ACTIVITIES": {
+        "user_completed_activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti korisnika nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "user_completed_activities_fetched": {
+          "notification": {
+            "title": "Dovršene aktivnosti korisnika su dohvaćene",
+            "message": "Aktivnosti koje je korisnik dovršio uspješno su dohvaćene"
+          }
+        }
+      },
+      "UPDATE_USER_FEEDBACK": {
+        "feedback_not_found": {
+          "notification": {
+            "title": "Povratne informacije nisu pronađene",
+            "message": "Povratne informacije s navedenim ID-om nisu pronađene"
+          }
+        },
+        "feedback_updated": {
+          "notification": {
+            "title": "Povratne informacije ažurirane",
+            "message": "Povratne informacije o izazovu uspješno su ažurirane"
+          }
+        }
+      },
+      "ADD_USER_RATE": {
+        "rate_not_found": {
+          "notification": {
+            "title": "Izazov nije pronađen za ocjenjivanje",
+            "message": "Izazov s navedenim ID-om nije pronađen"
+          }
+        },
+        "rate_already_exists": {
+          "notification": {
+            "title": "Ocjena postoji",
+            "message": "Ocjena za navedeni izazov već postoji"
+          }
+        },
+        "rate_added": {
+          "notification": {
+            "title": "Dodana ocjena",
+            "message": "Ocjena izazova je uspješno dodana"
+          }
+        }
+      },
+      "SET_PERSONAL_GROWTH_CHALLENGE_TO_ACTIVE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Izazov osobnog razvoja nije pronađen",
+            "message": "Izazov osobnog razvoja nije pronađen"
+          }
+        },
+        "challenge_marked_as_active": {
+          "notification": {
+            "title": "Izazov označen kao aktivan",
+            "message": "Izazov je uspješno označen kao aktivan"
+          }
+        }
+      },
+      "SET_PERSONAL_GROWTH_CHALLENGE_TO_COMPLETED": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Izazov osobnog razvoja nije pronađen",
+            "message": "Izazov osobnog razvoja nije pronađen"
+          }
+        },
+        "challenge_marked_as_completed": {
+          "notification": {
+            "title": "Izazov je označen kao dovršen",
+            "message": "Izazov je označen kao uspješno dovršen"
+          }
+        },
+        "active_not_found": {
+          "notification": {
+            "title": "Ne mogu dovršiti izazov",
+            "message": "Izazov nije aktivan ili je već označen kao dovršen."
+          }
+        }
+      },
+      "GET_COMPLETED_PERSONAL_GROWTH_CHALLENGES": {
+        "completed_challenges_fetched": {
+          "notification": {
+            "title": "Dohvaćeni izazovi osobnog rasta",
+            "message": "Izazovi osobnog rasta uspješno dohvaćeni"
+          }
+        }
+      },
+      "SKIP_CHALLENGE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Izazov nije pronađen",
+            "message": "Nije pronađen nijedan aktivni izazov s navedenim ID-om."
+          }
+        },
+        "cannot_skip": {
+          "notification": {
+            "title": "Nije moguće preskočiti izazov",
+            "message": "Nema drugih izazova."
+          }
+        },
+        "skipped": {
+          "notification": {
+            "title": "Izazov preskočen",
+            "message": "Izazov je uspješno preskočen."
+          }
+        }
+      },
+      "GET_PERSONAL_GROWTH_CHALLENGE": {
+        "challenge_not_found": {
+          "notification": {
+            "title": "Izazov osobnog razvoja nije pronađen",
+            "message": "Izazov osobnog razvoja nije pronađen"
+          }
+        },
+        "challenge_fetched": {
+          "notification": {
+            "title": "Dohvaćen je izazov osobnog rasta",
+            "message": "Izazov osobnog rasta uspješno je dohvaćen"
+          }
+        }
+      },
+      "GET_USER_ACTIVITY": {
+        "user_activity_fetched": {
+          "notification": {
+            "title": "Aktivnost korisnika dohvaćena",
+            "message": "Aktivnost korisnika uspješno dohvaćena"
+          }
+        },
+        "user_exercise_group_repetitions_not_found": {
+          "notification": {
+            "title": "Ponavljanja grupe vježbi korisnika nisu pronađena",
+            "message": "Ponavljanja grupe vježbi korisnika nisu pronađena"
+          }
+        },
+        "user_activity_not_found": {
+          "notification": {
+            "title": "Aktivnost korisnika nije pronađena",
+            "message": "Aktivnost korisnika nije pronađena"
+          }
+        }
+      },
+      "GET_ACTIVE_PERSONAL_GROWTH_CHALLENGE": {
+        "user_activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti korisnika nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "challenge_not_found": {
+          "notification": {
+            "title": "Izazov aktivnog osobnog rasta nije pronađen",
+            "message": "Izazov aktivnog osobnog rasta nije pronađen"
+          }
+        },
+        "no_more_challenges": {
+          "notification": {
+            "title": "Nema više izazova",
+            "message": "Nema više izazova"
+          }
+        },
+        "challenge_fetched": {
+          "notification": {
+            "title": "Dohvaćen izazov aktivnog osobnog rasta",
+            "message": "Dohvaćen izazov aktivnog osobnog rasta"
+          }
+        }
+      },
+      "CAN_SKIP_CHALLENGE": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "can_skip": {
+          "notification": {
+            "title": "Opcija preskakanja izazova je označena",
+            "message": "Dohvaćena opcija preskakanja izazova"
+          }
+        }
+      },
+      "ADD_GAME_FEEDBACK_INCREASED_DIFFICULTY_LEVEL": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "difficulty_feedback_not_found": {
+          "notification": {
+            "title": "Povratne informacije o poteškoći nisu pronađene",
+            "message": "Povratne informacije o poteškoći nisu pronađene"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Dodane povratne informacije o igri",
+            "message": "Povratne informacije o igri uspješno su dodane"
+          }
+        }
+      },
+      "ADD_GAME_FEEDBACK_CLOSING_GAME_BEFORE_COMPLETION": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "experience_feedback_not_found": {
+          "notification": {
+            "title": "Povratne informacije o iskustvu nisu pronađene",
+            "message": "Povratne informacije o iskustvu nisu pronađene"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Dodane povratne informacije o igri",
+            "message": "Povratne informacije o igri uspješno su dodane"
+          }
+        }
+      },
+      "GET_FEEDBACK_DISPLAY_OPTIONS": {
+        "success": {
+          "notification": {
+            "title": "Dohvaćene opcije prikaza povratnih informacija",
+            "message": "Opcije prikaza povratnih informacija uspješno su dohvaćene"
+          }
+        }
+      },
+      "ADD_FEEDBACK_SECOND_LOSS": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "experience_feedback_not_found": {
+          "notification": {
+            "title": "Povratne informacije o poteškoći nisu pronađene",
+            "message": "Povratne informacije o poteškoći nisu pronađene"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Dodane povratne informacije o igri",
+            "message": "Povratne informacije o igri uspješno su dodane"
+          }
+        }
+      },
+      "UPDATE_BRAIN_POINTS": {
+        "success": {
+          "notification": {
+            "title": "Bodovi kognitivnih igrara ažurirani",
+            "message": "Bodovi kognitivnih igra uspješno ažurirani"
+          }
+        }
+      },
+      "GET_BRAIN_POINTS": {
+        "brain_points_doesnt_exist": {
+          "notification": {
+            "title": "Bodovi kognitivnih igrara ne postoje",
+            "message": "Bodovi kognitivnih igara nisu dostupni ovom korisniku"
+          }
+        },
+        "brain_points_fetched": {
+          "notification": {
+            "title": "Bodovi kognitivnih igrara dohvaćeni",
+            "message": "Bodovi kognitivnih igara uspješno dohvaćeni"
+          }
+        }
+      },
+      "GET_USER_ACTIVITIES_LIST": {
+        "activities_not_found": {
+          "notification": {
+            "title": "Aktivnosti korisnika nisu pronađene",
+            "message": "Aktivnosti korisnika nisu pronađene"
+          }
+        },
+        "success": {
+          "notification": {
+            "title": "Dohvaćen popis aktivnosti korisnika",
+            "message": "Popis aktivnosti korisnika uspješno je dohvaćen"
+          }
+        }
+      },
+      "GET_LANG": {
+        "success": {
+          "notification": {
+            "title": "Jezik je dohvaćen",
+            "message": "Jezik je uspješno dohvaćen"
+          }
+        }
+      }
+    },
+    "auth": {
+      "service": {
+        "GENERATE_PIN": {
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "pin_sent_to_users_email": {
+            "notification": {
+              "title": "Pin kod poslan na adresu e-pošte korisnika",
+              "message": "Pin kod je poslan na e-adresu korisnika"
+            }
+          },
+          "pin_sent_to_caregiver": {
+            "notification": {
+              "title": "Pin kod poslan njegovatelju",
+              "message": "Pin kod je poslan njegovatelju"
+            }
+          }
+        },
+        "LOGOUT": {
+          "logged_out": {
+            "notification": {
+              "title": "Odjavljen",
+              "message": "Uspješna odjava"
+            }
+          }
+        },
+        "VALIDATE_USER": {
+          "account_locked": {
+            "notification": {
+              "title": "Račun zaključan",
+              "message": "Ako smatrate da je ovo pogreška ili vam je potrebna pomoć, obratite se svojoj ustanovi ili pokušajte ponovno za {remainingTime} minuta. [{email}] [{phone}]"
+            }
+          }
+        }
+      }
+    },
+    "games": {
+      "service": {
+        "GET_GAME_RULES": {
+          "game_not_found": {
+            "notification": {
+              "title": "Igra nije pronađena",
+              "message": "Igra nije pronađena"
+            }
+          },
+          "game_rules": {
+            "notification": {
+              "title": "Pravila igre",
+              "message": "Dohvaćena su pravila igre"
+            }
+          }
+        },
+        "GET_GAME_SCORES": {
+          "missing_view_param": {
+            "notification": {
+              "title": "Nedostaje parametar prikaza",
+              "message": "Morate proći parametar prikaza"
+            }
+          },
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "scores_not_found": {
+            "notification": {
+              "title": "Rezultati nisu pronađeni",
+              "message": "Rezultati nisu pronađeni"
+            }
+          },
+          "game_scores": {
+            "notification": {
+              "title": "Rezultati igre",
+              "message": "Dohvaćeni rezultati igre"
+            }
+          }
+        },
+        "GET_RECENT_GAME_SCORE": {
+          "not_found_recent_scores": {
+            "notification": {
+              "title": "Nedavni rezultati nisu pronađeni",
+              "message": "Nisu pronađeni nedavni rezultati"
+            }
+          },
+          "recent_game_scores": {
+            "notification": {
+              "title": "Nedavni rezultati igara",
+              "message": "Dohvaćeni rezultati nedavnih igara"
+            }
+          }
+        },
+        "ADD_GAME_SCORE": {
+          "user_not_found": {
+            "notification": {
+              "title": "Korisnik nije pronađen",
+              "message": "Korisnik nije pronađen"
+            }
+          },
+          "game_score_added": {
+            "notification": {
+              "title": "Dodan rezultat igre",
+              "message": "Dodan rezultat igre"
+            }
+          },
+          "scores_not_found": {
+            "notification": {
+              "title": "Rezultati nisu pronađeni",
+              "message": "Rezultati nisu pronađeni"
+            }
+          }
+        },
+        "GET_GAME_DIFFICULTY_LEVELS": {
+          "games_not_found": {
+            "notification": {
+              "title": "Igre nisu pronađene",
+              "message": "Igre nisu pronađene"
+            }
+          },
+          "game_difficulty_levels": {
+            "notification": {
+              "title": "Razine težine igre",
+              "message": "{property} dohvaćene razine težine"
+            }
+          }
+        }
+      }
+    }
+  },
+  "ml": {
+    "service": {
+      "GET_GAMES_LIST": {
+        "success": {
+          "notification": {
+            "title": "Popis igara dohvaćen",
+            "message": "Popis igara uspješno dohvaćen"
+          }
+        }
+      }
+    }
+  },
+  "physical_exercises": {
+    "exercise_for_feet_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, opuštenih nogu u širini kukova, ruku naslonjenih na tijelu, glave naslonjene na jastuk. Zamolite osobu da povuče nožne prste prema bradi i zatim ih gurne prema dolje. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebna.",
+    "bending_a_leg_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, opuštenih nogu u širini kukova, ruku naslonjenih na tijelu, glave naslonjene na jastuk. Zamolite osobu da povuče petu po površini prema stražnjici u savijajući nogu u koljenu te da ju zatim ispruži natrag na površinu kreveta. Izmjenite vježbu s desnom, a zatim lijevom nogom. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "lifting_the_heels_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, opuštenih nogu u širini kukova, ruku ispruženih uz tijelo, glave naslonjene na jastuk; dodatni jastuk ili jastučić treba postaviti ispod koljena. Zamolite osobu da podigne pete s površine, zatim da zadrži taj položaj nekoliko sekundi te da pete potom polako spustiti na površinu. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "lifting_of_the_hips_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, ruku ispruženih uz tijelo, glave naslonjene na jastuk. Zamolite osobu da savije noge pod pravim kutom, podigne stražnjicu s površine, zadrži položaj nekoliko sekundi , te ju potom spustite natrag na površinu. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "knee_exercise_with_a_ball_exercise_in_bed": "Osoba leži udobno na leđima u krevetu, ruku ispruženih uz tijelo, glave naslonjene na jastuk, a nogu savijenih pod pravim kutom. Stavite loptu između koljena osobe i zamolite je da svom snagom stisne loptu između koljena. Stisak treba zadržati nekoliko sekundi nakon čega se stisak može opustiti. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "opening_a_book_knee_exercise_exercise_in_bed": "Osoba leži udobno na leđima u krevetu, ruku ispruženih uz tijelo, glave naslonjene na jastuk, a nogu savijenih pod pravim kutom. Zamolite osobu da noge raširi prema vani odvajajući koljena, te da ih potom ponovo skupi. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "touching_knee_with_an_opposite_hand_exercise_in_bed": "Osoba leži udobno na leđima u krevetu, ruku ispruženih uz tijelo, glave naslonjene na jastuk, a nogu savijenih pod pravim kutom. Zamolite osobu da dotakne desno koljeno sa svojom lijevom rukom te da potom vježbu ponovi s drugom rukom i nogom. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "lifting_arms_above_your_head_exercise_in_bed": "Osoba leži udobno na leđima u krevetu, glave naslonjene na jastuk, a nogu savijenih pod pravim kutom. Zamolite osobu da prekriži ruke ispred sebe, zatim ih polako podignu iznad glave i potom vrate natrag ispred sebe. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "hip_flexibility_exercise_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, opuštenih nogu u širini kukova, ruku ispruženih uz tijelo, glave naslonjene na jastuk. Zamolite osobu da savije desnu nogu, potom da ispruži lijevu nogu što je više moguće. Položaj je potrebno zadržati nekoliko senkundi, nakon čega treba ispružiti i opustiti desnu nogu. Vježbu potom treba odraditi s drugom nogom. Osoba izvodi vježbu najbolje što može, uz pomoć ako je potrebno.",
+    "standing_on_toes_fall_prevention": "Stanite opušteno i uspravno ispred stražnje strane naslona stolca tako da se objema rukama možete uhvatiti za naslon. Stopala vam trebaju biti paralelna i u širini kukova, prsa prema van, a trbuh unutra. Polako se podignite na prste, zadržite položaj te se potom spustite na cijelo stopalo. Vježbu treba izvoditi u sporom četverotaktnom ritmu: 1 - podizanje 2 - zadržavanje, 3 - spuštanje, 4 - odmor. Bitno je raditi sve elemente vježbe tečno i povezano, poput plesa. Imajte na umu da je četvrti element vježbe namijenjen opuštanju cijelog tijela prije ponovnog izvođenja vježbe.",
+    "lifting_leg_forwards_fall_prevention": "Stanite opušteno i uspravno s bočne strane sjedalice tako da desnom rukom možete držati naslon. Stopala vam trebaju biti paralelna i u širini kukova, prsa prema van, a trbuh unutra. Težina tijela treba biti na nozi, a ne na sjedalici, kako biste kroz opterećenje mogli vježbati nogu bez da pritom izgubite ravnotežu. Vježbu treba provoditi u ritmu od četiri takta: 1 - podignite nogu prema naprijed, 2 - zadržite je u zraku, 3 - spustite je na pod u početni položaj, 4 - odmorite se lagano njišući, opuštenih i savijenih koljena. Nakon što završite ciklus vježbe s jednom nogom, okrenite se pola kruga tako da se lijevom rukom možete uhvatiti za naslon sjedalice i ponovite vježbu lijevom nogom.",
+    "lifting_leg_backwards_fall_prevention": "Stanite opušteno i uspravno s bočne strane stolice tako da desnom rukom možete držati naslon stolice. Stopala vam trebaju biti paralelna i u širini kukova, prsa prema van, a trbuh unutra. Težina tijela je na nozi, a ne na stolici, tako da možemo vježbati nogom uz stolicu uz zadržavanje ravnoteže. Nogu uz stolac podignite od poda natrag do visine u kojoj se još uvijek osjećate stabilno dok istovremeno lagano naginjete trup prema naprijed. Vježbu treba provoditi u ritmu od četiri takta: 1 - podignite nogu prema natrag, 2 - zadržite u zraku, 3 - spustite je na pod u početni položaj, 4 - odmorite se lagano njišući, opuštenih i savijenih koljena. Vježbu ponovite s lijevom nogom. Nakon izvođenja vježbe s desnom nogom, okrenite se pola kruga tako da se lijevom rukom možete uhvatiti za naslon stolca i ponovite vježbu lijevom nogom.",
+    "lifting_leg_to_the_side_fall_prevention": "Stanite opušteno i uspravno ispred stražnje strane naslona stolca tako da se objema rukama možete uhvatiti za naslon. Stopala vam trebaju biti paralelna i u širini kukova, prsa prema van, a trbuh unutra. Prvo podignite ispruženu nogu u stranu do visine u kojoj se još osjećate stabilnima. Izvedite vježbu u ritmu od četiri takta: 1 - podignite nogu u stranu, 2 - držite je u zraku, 3 - spustite je na pod u početni položaj, 4 - odmorite se lagano njišući, opuštenih i savijenih koljena. Vježbu ponovite s lijevom nogom.",
+    "bending_knee_lifting_leg_and_touching_it_with_opposite_hand_fall_prevention": "Stanite opušteno i uspravno s bočne strane stolice tako da desnom rukom možete držati naslon stolice. Stopala vam trebaju biti paralelna i u širini kukova, prsa prema van, a trbuh unutra. Podignite koljeno noge uz bliže stolcu do visine u kojoj se još osjećate stabilno. Pritom stisnite trbušne mišiće i mišiće noge na kojoj stojite. Da biste povećali težinu i učinkovitost vježbe, stavite suprotnu ruku na koljeno podignute noge. Vježba se izvodi u četverotaktnom ritmu: 1 - savijte i podignite nogu (dodirujući je suprotnom rukom), 2 - zadržite položaj, 3 - spustite nogu na tlo u početni položaj, 4 - odmorite se lagano njišući, opuštenih i savijenih koljena. Nakon završetka vježbe s prvom nogom, okrenite se pola kruga tako da se lijevom rukom možete uhvatiti za naslon stolca te ponovite vježbu s lijevom nogom.",
+    "leaning_the_body_forward_fall_prevention": "Postavimo se ispred naslona stolice tako da nam bude sigurnosni oslonac u slučaju da se previše nagnemo prema naprijed i izgubimo ravnotežu. Ruke ispružite okomito na tijelo s dlanovima okrenuti prema gore. Zatim se polako nagnite cijelim tijelom naprijed, cijelo vrijeme držite tijelo ravno, bez savijanja u kukovima, trbuhu, prsima ili vratu. Savijanje se smije događati samo u gležnjevima. Naginjite se prema naprijed dokle god možete održavati ravnotežu koristeći mišiće. Uvijek držite cijelo stopalo (uključujući i petu!) na podu. Vježbu provodite u ritmu od četiri takta: 1 - nagnite se naprijed, 2 - zadržite položaj, 3 - vratite se u neutralni položaj, 4 - odmorite se."
+  },
+  "breathe_exercises": {
+    "breathing_with_the_prefix_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, opuštenih nogu u širini kukova, glave naslonjene na jastuk. Vježbu je najbolje raditi zajedno s osobom. Stavite dlanove na donju trećinu prsa (rebra). Polako udahnite kroz nos, osjećajući kako se prsa šire pod vašim rukama. Zadržite dah na trenutak. Polako izdahnite zatvorenih usana, osjećajući kako se prsa ispod naših ruku vraćaju u prvobitni položaj.",
+    "lifting_the_elbow_away_from_the_body_exercise_in_bed": "Osoba udobno leži na leđima u krevetu, opuštenih nogu u širini kukova, glave naslonjene na jastuk. Vježbu je najbolje raditi zajedno s osobom. Ruke savijte u laktovima pod pravim kutom u odnosu na tijelo. Polako udahnite kroz nos i raširite ruke do visine ramena. Polako izdahnite, spuštajući ruke u prvobitni položaj.",
+    "blowing_newspaper_strips_on_the_trapeze_exercise_in_bed": "Za ovu vježbu potreban je trapez za koji treba zalijepiti trake papira. Osoba leži udobno na leđima u krevetu, ako može, s blago podignutom glavom i jastukom ispod koljena, a rukama naslonjenim uz tijelo - to će osobi omogućiti ugodnije i lakše izvođenje vježbe. Zamolite osobu da polako udahne kroz nos te potom zadržiti dah. Pri izdisaju potaknite osobu da otpuhne novinske trake što je više moguće.",
+    "blowing_the_whistle_exercise_in_bed": "Za ovu vježbu potrebna nam je zviždaljka. Osoba leži udobno na leđima u krevetu, ako može, malo uzdignute glave s jastukom ispod koljena te ruku ispruženih uz tijelo - to će osobi omogućiti ugodnije i lakše izvođenje vježbe. Ako je osoba dovoljno jaka, vježbu može izvoditi i sjedeći u stolici oslanjajući ruke na stolu. Osoba polako udiše kroz nos i zadržava dah. Pri izdisaju upuhuje zrak kroz zviždaljku.",
+    "blowing_ping_pong_balls_exercise_in_bed": "Za ovu vježbu trebat će nam stol i loptice za stolni tenis. Ako osoba leži u krevetu, podignite jastuk i stavite stol ispred nje, a zatim stavite loptice za stolni tenis na stol. Ako je osoba dovoljno jaka, vježbu može izvoditi i sjedeći oslanjajući ruke na stolu. Osoba polako udiše kroz nos i zadržava dah. Prilikom izdisaja otpuhuje loptice za stolni tenis sa stola.",
+    "blowing_soap_bubbles_exercise_in_bed": "Za ovu vježbu potreban je alat (prsten) za puhanje mjehurića od sapunice. Vježba je zabavna i posebno prikladna za osobe koje je teže motivirati na vježbe disanja. Osoba vježbu može izvoditi ležeći ili sjedeći naslonjena u krevetu. Osoba polako udiše kroz nos i zadržava dah. Pri izdisaju osoba treba usmjeriti zrak kroz prsten za stvarnje mjehurića od sapunice.",
+    "chest_expansion_breathing_exercise_sitting": "Stanite ili sjednite uspravno. Stavite ruke na donju trećinu prsa (rebra). Polako udahnite kroz nos, osjećajući kako vam se prsa šire pod rukama. Zadržite dah na trenutak. Polako izdahnite zatvorenih usana i osjetite kako vam se vrhovi prstiju vraćaju se u prvobitni položaj.",
+    "chest_opening_breaths_exercise_sitting": "Stanite ili sjednite uspravno. Stavite ruke na stražnji dio vrata. Polako udahnite kroz nos, otvarajući laktove (kao da otvarate knjigu). Zadržite dah na trenutak. Zatim polako izdahnite zatvorenih usana. Tijekom izdisaja približavajte laktove (zatvaranje knjige) dok savijate glavu i gornji dio trupa prema dolje.",
+    "abdominal_breathing_exercise_sitting": "Ležeći ili sjedeći uspravno. Opustite ramena i gornji dio prsnog koša. Stavite jednu ruku na trbuh (u razini pupka), a drugu na gornji dio prsnog koša. Polako udahnite kroz nos. Trbuh treba izbočiti prema van. Također, ruka položena na trbuh treba se podići više od ruke položene na gornji dio prsa. Polako izdahnite kroz usta dok spuštate trbuh."
+  },
+  "personal_growth_challenges": {
+    "challenge1": {
+      "title": "Učittelj kojeg se sjećam sa srećom i ponosom",
+      "description": "Albert Einstein cijenio je učitelje, nazivajući podučavanje umjetnošću koja budi radost, kreativnost i znanje. Podijelite priču o učitelju koji vas je inspirirao i zamolite svog partnera izazova da učini isto."
+    },
+    "challenge2": {
+      "title": "Hodajmo zajedno",
+      "description": "Pozovite partnera skojim radite izazov ili nekoga koga dugo niste vidjeli u šetnju. Promatrajte svoju okolinu i podijelite međusobno barem jednu dobru stvar koja se nedavno dogodila. Ako je hodanje teško, zajedno odradite omiljenu vježbu."
+    },
+    "challenge3": {
+      "title": "Na čemu sam ponosan/a i zahvalan/a",
+      "description": "Jesen, poput naših života, puna je obilja i boja. Razmislite o svom putovanju: zabilježite veliko postignuće, prevladanu poteškoću i sretan trenutak. Izazov: Pitajte svog partnera u izazovu o njegovom/njezinom najvećem postignuću ili sretnom trenutku. Slušajte pažljivo, zahvalite im i podijelite jedno svoje iskustvo. Dijeljenje nam pomaže da se bolje razumijemo."
+    },
+    "challenge4": {
+      "title": "Podijeli mali osmijeh sa mnom",
+      "description": "Dobro raspoloženje i ljubazni osmijesi mogu podići raspoloženje. Uključite se u prijateljsko natjecanje sa svojim partnerom u izazovu ili nekim koga odaberete da vidite tko se može nasmiješiti i pozdraviti najviše ljudi u jednom danu."
+    },
+    "challenge5": {
+      "title": "Naši korijeni",
+      "description": "Poznavanje naših korijena nas centrira. Podijelite obiteljske priče sa svojim partnerom u izazovu, bilo iz vaše uže obitelji ili predaka. Ako promijenite partnera u izazovu, pozovite rođaka i podijelite te priče. Stvorite dobru atmosferu i izrazite svoju želju da prenesete ovu vrijednu obitelj povijesti."
+    },
+    "challenge6": {
+      "title": "Neke su stvari bile drugačije",
+      "description": "Posljednjih desetljeća svijet se brzo promijenio, kako u putovanjima, tako i kućnim poslovima i tehnologiji. Sjećate li se kako su stvari bile drugačije kad ste bili mladi? Podijelite priču sa svojim partnerom u izazovu te ih pitajte o njihovim sjećanjima—možda će se prisjetiti nečeg sličnog, a možda drugačijeg."
+    },
+    "challenge7": {
+      "title": "Ljubavna priča",
+      "description": "Ljubav je oblikovala tko smo - romantična, roditeljska ili prijateljska. Koja je prva ljubavna priča iz vašeg života koja vam pada na pamet? Podijelite je sa svojim partnerom u izazovu i pitajte o njegovoj/njezinoj ljubavnoj priči."
+    },
+    "challenge8": {
+      "title": "Podijelimo malu dragocjenu uspomenu",
+      "description": "Podijelite nekoliko dragocjenih uspomena spremljenih na svom telefonu sa svojim partnerom u izazovu i zamolite ih da i oni učine isto. Ako vam fotografije nisu dostupne na telefonu, upotrijebite foto album. Podijelite priče iza jedne ili dvije fotografije, fokusirajući se na trenutke iz posljednjih tjedana ili mjeseci."
+    },
+    "challenge9": {
+      "title": "Ova fotografija/slika me podsjeća na…",
+      "description": "Tijekom sljedećih nekoliko dana ili tjedan dana obratite pozornost na fotografije i slike u vašem okruženju. Odaberite onu koja vam se sviđa i podijelite je sa svojim partnerom u izazovu sljedeći put kad se sretnete. Objasnite si međusobno zašto vam se sviđa i podsjeća li vas na nešto."
+    },
+    "challenge10": {
+      "title": "Moj dom",
+      "description": "Jedan od Slovenskih mislilaca je rekao da nam ljubav prema našoj domovini daje ukorijenjenu slobodu. Unatoč kritikama, ljubav prema našoj domovini daje nam ukorijenjenu slobodu. Hajdemo na jednom od sustreta podijeliti ono što volimo o našoj zemlji. Unatoč izazovima, ima mnogo toga za cijeniti."
+    },
+    "challenge11": {
+      "title": "Moja omiljena knjiga",
+      "description": "Razmišljajući o svim knjigama koje ste pročitali u životu, postoji li vam neka knjiga koja vam pada na pamet, možda knjiga koja vam se posebno sviđa? Poklonite tu knjigu svom partneru u izazovu i pitajte za njezinu/njegovu najdražu knjigu."
+    },
+    "challenge12": {
+      "title": "Glazba nas povezuje",
+      "description": "Sa svojim partnerom u izazovu podijelite omiljenu pjesmu ili onu u kojoj trenutno uživate, a uključite i osobnu priču vezanu uz glazbu. Pitajte ih za pjesmu koju oni preferiraju. Ako je moguće, poslušajte jednu pjesmu koju je svatko od vas predložio. Je li se vaš glazbeni ukus promijenio tijekom godina?"
+    },
+    "challenge13": {
+      "title": "Pismo mom budućem ja",
+      "description": "Napiši kratko pismo svom budućem ja (za nekoliko mjeseci, godinu ili 2–3 godine), u kojem ćeš opisati što želiš postići, kako želiš rasti ili koji savjet bi dao/la samome sebi. Podijeli pismo sa svojim partnerom u izazovu i zamoli ga da učini isto. Zajedno razgovarajte o svojim mislima i snovima."
+    },
+    "challenge14": {
+      "title": "Mali čin ljubaznosti",
+      "description": "Učini nešto lijepo za neznanca, prijatelja ili člana obitelji – nešto jednostavno poput držanja vrata, davanja komplimenta ili pomoći nekome u potrebi. Potakni i svog partnera u izazovu da učini isto, a zatim podijelite iskustva."
+    },
+    "challenge15": {
+      "title": "Obrok iz prošlosti",
+      "description": "Hrana ima snažnu vezu s našim uspomenama i kulturom. Skuhaj ili podijeli jelo koje te podsjeća na djetinjstvo, posebnu osobu ili važan događaj u životu. Pozovi partnera u izazovu da napravi isto i razgovarajte o tome zašto su vam ta jela značajna. Ako je kuhanje preteško, možete samo razgovarati o posebnom jelu i možda podijeliti recept."
+    },
+    "challenge16": {
+      "title": "Stvari koje volimo raditi",
+      "description": "Kao dijete si vjerojatno volio/la raditi razne stvari u slobodno vrijeme – čitati, baviti se sportom, plesati ili nešto sakupljati. Prisjeti se posljednjih 5–10 godina. Što sada voliš raditi u slobodno vrijeme? Je li se to promijenilo od djetinjstva? Podijeli svoje iskustvo s partnerom u izazovu i pitaj ga za njegova iskustva."
+    },
+    "challenge17": {
+      "title": "Kad bih mogao/la ponovno proživjeti jedan dan u životu…",
+      "description": "Postoji li dan u tvom životu koji bi volio/la ponovno doživjeti – ne da nešto promijeniš, već da ga još jednom proživiš? Možda putovanje, slavlje ili savršen običan dan. Pitaj i svog partnera u izazovu da podijeli svoj poseban dan."
+    },
+    "challenge18": {
+      "title": "Lekcija iz teškog razdoblja",
+      "description": "Umjesto da se usredotočiš na poteškoće, podijeli trenutak kad si prošao/la kroz izazov, ali si iz toga naučio/la nešto vrijedno. Potakni i partnera da učini isto."
+    },
+    "challenge19": {
+      "title": "Ljubazno djelo koje je netko učinio za mene",
+      "description": "Prisjeti se trenutka kada ti je netko pokazao ljubaznost. Možda je to bila mala gesta ili čin koji ti je promijenio život. Podijeli svoje iskustvo s partnerom u izazovu i zamoli ga da ispriča svoju priču."
+    },
+    "challenge20": {
+      "title": "Najljepše mjesto koje sam ikada vidio/la",
+      "description": "Opiši mjesto koje si posjetio/la, a koje ti je oduzelo dah. Možda je to bila priroda, grad ili poseban, jednostavan trenutak. Pitaj svog partnera u izazovu koje je njemu/njoj bilo najljepše ili najposebnije mjesto."
+    },
+    "challenge21": {
+      "title": "Dobar savjet koji sam dobio/la…",
+      "description": "Koji ti je savjet ostao urezan u pamćenje i pomogao ti u životu? Tko ti ga je dao? U kojoj situaciji? Podijeli ga i saznaj ima li tvoj partner u izazovu neku mudrost za podijeliti."
+    },
+    "challenge22": {
+      "title": "Staklenka za početak razgovora",
+      "description": "Popis izazova se bliži kraju. No možda imaš još ideja i tema o kojima želiš razgovarati sa svojim partnerom. Možete zajedno pripremiti staklenku s papirićima na kojima pišu različita početna pitanja za razgovor (npr. \"Što je nešto što si oduvijek htio/htjela isprobati?\" ili \"Kako si doživio/la svoju mirovinu? / prvu ljubav? …\"). Na sljedećim susretima – možda prije kave ili šetnje – izvučete jedan papirić i koristite ga kao temu za razgovor."
+    }
+  },
+  "validation": {
+    "STRING": "{property} mora biti niz",
+    "BOOLEAN": "{property} mora biti boolean",
+    "PHONE_NUMBER": "Netočan telefonski broj. Ispravan format je: +[kôd države]-[broj]",
+    "EMAIL": "E-pošta mora biti u formatu e-pošte",
+    "PAGE_SIZE_MIN": "veličina stranice mora biti najmanje {constraints.0}",
+    "PAGE_SIZE_INT": "veličina stranice mora biti cijeli broj",
+    "PAGE_INT": "stranica mora biti cijeli broj",
+    "CAREGIVER_ROLE": "Neispravna uloga njegovatelja",
+    "STATUS_NAME": "Netočan naziv statusa",
+    "SORT_BY": "Neispravno sortiranje po vrijednosti",
+    "SORT_ORDER": "Netočna vrijednost redoslijeda sortiranja",
+    "NOT_EMPTY": "{property} ne može biti prazno",
+    "MIN": "Vrijednost mora biti najmanje {constraints.0}",
+    "MAX": "Vrijednost mora biti manja ili jednaka {constraints.0}",
+    "ENUM": "{property} mora biti jedna od sljedećih vrijednosti: {constraints.1}",
+    "AUTH_PASSWORD": "Lozinka mora sadržavati najmanje 8 znakova, uključujući jedno veliko slovo, jedno malo slovo, jedan broj i najmanje jedan poseban znak.",
+    "UNIQUE": "{property} mora biti jedinstveno",
+    "NUMBER": "{property} mora biti broj",
+    "DATE": "{property} mora biti datum",
+    "LENGTH": "{property} mora imati {constraints.0} znakova",
+    "WAKE_UP_TIME_FORMAT": "{property} mora biti važeći format vremena (HH:mm)",
+    "TIME_OF_DAY": "{property} se može navesti samo ako je naziv jedna od vrijednosti: {acceptedValues}",
+    "FEEDBACK_RATING": "{property} se može navesti samo ako je ocjena jedna od vrijednosti: {acceptedValues}",
+    "EXCLUDED_VALUES": "Svaka vrijednost u {property} mora biti jedna od sljedećih vrijednosti: {allowedValues}",
+    "EMAIL_ALREADY_EXIST": "E-mail adresa već postoji",
+    "PHONE_NUMBER_ALREADY_EXIST": "Broj telefona već postoji",
+    "INSTITUTION_NAME_ALREADY_EXIST": "Naziv institucije već postoji"
+  },
+  "notificationEmails": {
+    "performance_decline": {
+      "subject": "Pad performansi",
+      "body": "Primijetili smo pad u metrici učinka koja se odnosi na korisnika {name} pod vašim nadzorom. Pregledajte sljedeće detalje kako biste razumjeli situaciju i poduzeli potrebne radnje kako biste osigurali njihovu dobrobit.<br><br>Za detaljnije uvide posjetite profil korisnika {name}.",
+      "button": "Provjeriti"
+    },
+    "user_inactive_for_7_plus_days": {
+      "subject": "Korisnik neaktivan 7+ dana",
+      "body": "Vidimo da {name} nije aktivan/aktivna više od 7 dana. Provjerite ih kako biste bili sigurni da su dobro.",
+      "button": "Provjerite status"
+    },
+    "monitoring_visit_request": {
+      "subject": "Zahtjev za nadzornu posjetu",
+      "body": "Potreban je nadzorna posjeta za {name}. Zakažite i završite posjetu što prije."
+    },
+    "new_senior_assigned": {
+      "subject": "Dodijeljen novi korisnik",
+      "body": "Dodijeljen vam je novi korisnik.",
+      "button": "Pogledajte pojedinosti o korisniku"
+    },
+    "new_informal_caregiver_assigned_to_senior": {
+      "subject": "Dodijeljen novi neformalni skrbnik",
+      "body": "Korisniku je dodijeljen novi neformalni skrbnik",
+      "button": "Pogledajte pojedinosti o njegovatelju"
+    },
+    "new_formal_caregiver_assigned_to_senior": {
+      "subject": "Novi formalni njegovatelj dodijeljen je korisniku",
+      "body": "Novi formalninjegovatelj dodijeljen je {name}. Pregledajte pojedinosti i osigurajte jednostavan i besprijekoran prijelaz za njihovu kontinuiranu njegu.",
+      "button": "Pogledajte pojedinosti o njegovatelju"
+    },
+    "user_completed_their_daily_assignment": {
+      "subject": "Korisnik je završio svoj dnevni zadatak",
+      "body": "Zadovoljstvo nam je obavijestiti vas da je {name} uspješno izvršio svoj dnevni zadatak. Nastavite s dobrim radom i nastavite podržavati njihov napredak."
+    },
+    "new_note_added": {
+      "subject": "Dodana je nova bilješka",
+      "body": "Nova bilješka je dodana na profil {name}. Pregledajte ovu bilješku radi važnih ažuriranja i poduzmite sve potrebne radnje.",
+      "button": "Pogledajte bilješku"
+    },
+    "new_document_uploaded": {
+      "subject": "Učitan je novi dokument",
+      "body": "Novi dokument je učitan za {name}. Pregledajte ovaj dokument kako biste bili informirani i osigurali pravilnu njegu.",
+      "button": "Pregledajte dokument"
+    },
+    "new_care_plan_assigned": {
+      "subject": "Dodijeljen novi plan skrbi",
+      "body": "Novi plan skrbi dodijeljen je {name}. Da biste pregledali plan skrbi i započeli, kliknite poveznicu u nastavku.",
+      "button": "Provjerite Plan skrbi"
+    },
+    "first_entry_email" : {
+      "activate_your_account" : "Aktivirajte svoj račun",
+      "welcome": "Dobrodošli u Procareful! Da biste aktivirali svoj račun i započeli, kliknite na donju poveznicu"
+    },
+    "landing_page_email": {
+      "download_our_app": "Preuzmite našu aplikaciju",
+      "thank_you": "Zahvaljujemo na interesu za našu aplikaciju! Aplikaciju možete preuzeti putem sljedeće poveznice:"
+    },
+    "password_change_email": {
+      "confirm_password_change": "Potvrdite promjenu lozinke",
+      "change_pass_info": "Nedavno ste zatražili promjenu lozinke za svoj Procareful račun. Molimo potvrdite ovu promjenu unosom kontrolnog koda ispod na našoj web stranici.",
+      "contact_institution": "Ako niste zatražili ovu promjenu, odmah kontaktirajte svoju instituciju.",
+      "info": "Lozinka je uspješno promijenjena"
+    },
+    "pin_code_email": {
+      "complete_verification_process": "Da biste dovršili postupak registracije, unesite donji kontrolni kôd. Ovaj kôd će nam pomoći da osiguramo sigurnost vašeg računa i potvrdimo vaš identitet.",
+      "verification_code": "Kontrolni kod"
+    },
+    "footer": "Ako smatrate da je ovo pogreška, zanemarite ovu e-poruku",
+    "or_click_link": "Ili kliknite na poveznicu",
+    "important": "Važno",
+    "expire_link": "Ova će poveznica isteći za {time} sati.",
+    "expire_code": "Ovaj kontrolni kod istječe za {time} sati",
+    "activate": "Aktivirajte",
+    "download": "Preuzimanje",
+    "hello": "Pozdrav"
+  },
+  "assessment_report": {
+    "keys": {
+      "k_moca": "MoCA",
+      "k_ipaq": "IPAQ",
+      "k_psqi": "PSQI",
+      "k_eq_vas": "EQ-VAS",
+      "k_eq_5d_5l": "EQ-5D-5L",
+      "k_de_jong_gierveld": "De Jong Gierveld Scale (Short)",
+      "k_condition_assessment_report": "Zdravstveno izvješće starije osobe",
+      "k_senior": "Korisnici/Starije osobe",
+      "k_formal_caregiver": "Formalni njegovatelji",
+      "k_summary": "Sažetak",
+      "k_area": "Područje",
+      "k_questionnaire": "Upitnik",
+      "k_results": "Rezultati",
+      "k_cognitive_abilities": "Kognitivne sposobnosti",
+      "k_physical_activity_level": "Razina tjelesne aktivnosti",
+      "k_screening": "Procjena",
+      "k_emotional_loneliness": "Emocionalna usamljenost (EU)",
+      "k_social_loneliness": "Društvena usamljenost (DU)",
+      "k_motivation": "Motivacija",
+      "k_quality_of_life": "Kvaliteta života",
+      "k_general_health": "Opće zdravlje",
+      "k_sleep": "San",
+      "k_question": "Pitanje",
+      "k_answer": "Odgovor",
+      "k_additional_notes": "Bilješke",
+      "k_currently_bedridden": "Jeste li trenutno vezani za krevet?",
+      "k_can_walk_without_support": "Možete li hodati više od nekoliko koraka bez potpore?",
+      "k_severe_balance_problems": "Imate li ozbiljnih problema s ravnotežom?",
+      "k_vigorous_activity_days_last_week": "Tijekom posljednjih 7 dana, koliko ste se dana bavili intenzivnim fizičkim aktivnostima poput dizanja utega, kopanja, aerobika ili brze vožnje bicikla?",
+      "k_vigorous_activity_minutes_per_day": "Koliko ste prosječno vremena u jednom takvom danu, proveli baveći se intenzivnim tjelesnim aktivnostima?",
+      "k_moderate_activity_days_last_week": "Tijekom posljednjih 7 dana, koliko ste se dana bavili umjerenim tjelesnim aktivnostima poput nošenja manjeg tereta, vožnje bicikla uobičajenim tempom ili tenisa u parovima? Nemojte uključivati hodanje.",
+      "k_moderate_activity_minutes_per_day": "Koliko ste prosječno vremena u jednom takvom danu, proveli baveći se umjerenim tjelesnim aktivnostima?",
+      "k_walking_days_last_week": "Tijekom posljednjih 7 dana, koliko ste dana hodali barem 10 minuta u komadu?",
+      "k_walking_minutes_per_day": "Koliko ste prosječno vremena u jednom takvom danu, proveli u šetnji?",
+      "k_time_sitting_last_week": "Tijekom posljednjih 7 dana, koliko ste vremena u tjednu proveli sjedeći?",
+      "k_experience_of_emptiness": "Osjećam opću prazninu [EU]",
+      "k_miss_having_people_around": "Nedostaju mi ljudi u blizini [EU]",
+      "k_feel_rejected": "Često se osjećam odbačeno [EU]",
+      "k_rely_on_people": "Ima puno ljudi na koje se mogu osloniti kada imam problema [DU]",
+      "k_trust_completely": "Ima mnogo ljudi kojima mogu potpuno vjerovati [DU]",
+      "k_enough_people_feel_close": "Ima dovoljno ljudi s kojima se osjećam bliskim [DU]",
+      "k_mobility": "Pokretljivost",
+      "k_self_care": "Skrb o sebi",
+      "k_usual_activities": "Uobičajene aktivnosti",
+      "k_pain_discomfort": "Bol/Nelagoda",
+      "k_anxiety_depression": "Tjeskoba/Potištenost",
+      "k_general_health_desc": "Procjena trenutnog zdravstvenog stanja korisnika na ljestvici od 0 do 100.",
+      "k_bed_time": "Tijekom posljednjih mjesec dana, kada ste obično išli na spavanje?",
+      "k_fall_asleep_duration": "Tijekom posljednjih mjesec dana, koliko Vam je minuta bilo potrebno da zaspete?",
+      "k_wake_up_time": "Tijekom posljednjih mjesec dana, kada ste obično ujutro ustajali iz kreveta?",
+      "k_actual_sleep_hours": "Tijekom posljednjih mjesec dana, koliko sati ste u krevetu proveli spavajući? (Ovaj broj sati se može razlikovati od broja sati provedenih u krevetu.)",
+      "k_trouble_sleeping": "Tijekom posljednjih mjesec dana, koliko često ste imali problema sa spavanjem jer...",
+      "k_cannot_sleep_within_30_minutes": "Niste mogli zaspati duže od 30 minuta",
+      "k_wake_up_midnight_or_early_morning": "Ste se budili tijekom noći ili u ranu zoru",
+      "k_need_to_use_bathroom": "Ste morali ustajati iz kreveta radi odlaska u wc",
+      "k_cannot_breathe_comfortably": "Niste mogli normalno disati tijekom noći",
+      "k_cough_or_snore_loudly": "Ste kašljali ili glasno hrkali tijekom noći",
+      "k_feel_too_cold": "Vam je bilo hladno tijekom noći",
+      "k_feel_too_hot": "Vam je bilo pretoplo tijekom noći",
+      "k_had_bad_dreams": "Ste ružno sanjali",
+      "k_other_reasons_for_trouble_sleeping": "Drugi razlozi",
+      "k_medicine_for_sleep": "Tijekom posljednjih mjesec dana, koliko često ste uzimali lijekove za spavanje (sa i bez recepta)?",
+      "k_trouble_staying_awake_frequency": "Tijekom posljednjih mjesec dana, koliko često ste teško ostajali budni dok ste vozili, jeli ili bili uključeni u društvene aktivnosti?",
+      "k_enthusiasm_to_get_things_done": "Tijekom posljednjih mjesec dana, koliko Vam je teško bilo održati razinu dobrog raspoloženja?",
+      "k_sleep_quality_rating": "Tijekom posljednjih mjesec dana, kako biste ukupno ocijenili kvalitetu Vašeg spavanja?",
+      "k_have_bed_partner_or_room_mate": "Spavate li sami u krevetu ili u sobi?",
+      "k_room_mate_or_bed_partner": "Ako Vam partner spava u istoj sobi ili krevetu, pitajte ga koliko često ste u proteklih mjesec dana…",
+      "k_loud_snoring": "Glasno hrkali",
+      "k_breathing_pause": "Imali dugačke prekide disanja dok ste spavali",
+      "k_legs_twitching": "Imali grčeve ili trzajeve nogu dok ste spavali",
+      "k_sleep_disorientation": "Imali epizide dezorijentacije ili zbunjenosti dok ste spavali",
+      "k_cough_or_snore_loudly_room_mate": "Ste kašljali ili glasno hrkali tijekom noći",
+      "k_feel_too_cold_room_mate": "Vam je bilo hladno tijekom noći",
+      "k_feel_too_hot_room_mate": "Vam je bilo pretoplo tijekom noći",
+      "k_had_bad_dreams_room_mate": "Ste ružno sanjali",
+      "k_have_pain_room_mate": "Ste imali bolove tijekom noći",
+      "k_other_restlessness": "Ostale nemire dok ste spavali; molimo navedite"
+    },
+    "answers": {
+      "frequency": {
+        "not_past_month": "Nikad tijekom posljednjeg mjeseca",
+        "less_than_once": "Rjeđe nego jednom tjedno",
+        "once_or_twice": "Jedan ili dva puta tjedno",
+        "three_or_more_times": "Tri ili više puta tjedno"
+      },
+      "quality": {
+        "very_good": "Vrlo dobro",
+        "fairly_good": "Dobro",
+        "fairly_bad": "Loše",
+        "very_bad": "Vrlo loše"
+      },
+      "enthusiasm": {
+        "no_problem": "Uopće nije bilo teško",
+        "very_slight_problem": "Samo mali problem",
+        "somewhat_a_problem": "Donekle problem",
+        "a_very_big_problem": "Ogroman problem"
+      },
+      "levels": {
+        "low": "Niska",
+        "medium": "Srednja",
+        "high": "Visoka",
+        "intense": "Intenzivno",
+        "light": "Blago",
+        "moderate": "Umjereno"
+      },
+      "activities": {
+        "bedridden_activities": "Vezan za krevet",
+        "mobility_limitation_activities": "Ograničenja pokretljivosti",
+        "without_limitation_activities": "Bez ograničenja"
+      },
+      "common": {
+        "yes": "Da",
+        "no": "Ne",
+        "more_or_less": "Više ili manje"
+      },
+      "quality_of_life": {
+        "mobility": {
+          "none": "Nemam problema u kretanju uokolo",
+          "slight": "Imam neznatnih problema u kretanju uokolo",
+          "moderate": "Imam umjerenih problema u kretanju uokolo",
+          "severe": "Imam velikih problema u kretanju uokolo",
+          "extreme": "Ne mogu hodati uokolo"
+        },
+        "self_care": {
+          "none": "Nemam problema prati se ili oblačiti",
+          "slight": "Imam neznatnih problema kada se perem ili oblačim",
+          "moderate": "Imam umjerenih problema kada se perem ili oblačim",
+          "severe": "Imam ozbiljnih problema kada se perem ili oblačim",
+          "extreme": "Ne mogu se samostalno prati ili oblačiti"
+        },
+        "usual_activities": {
+          "none": "Nemam problema u obavljanju svojih uobičajenih aktivnosti",
+          "slight": "Imam neznatnih problema u obavljanju svojih uobičajenih aktivnosti",
+          "moderate": "Imam umjerenih problema u obavljanju svojih uobičajenih aktivnosti",
+          "severe": "Imam velikih problema u obavljanju svojih uobičajenih aktivnosti",
+          "extreme": "Ne mogu obavljati svoje uobičajene aktivnosti"
+        },
+        "pain_discomfort": {
+          "none": "Ne osjećam bol ili nelagodu",
+          "slight": "Osjećam neznatnu bol ili nelagodu",
+          "moderate": "Osjećam umjerenu bol ili nelagodu",
+          "severe": "Osjećam jaku bol ili nelagodu",
+          "extreme": "Osjećam krajnju bol ili nelagodu"
+        },
+        "anxiety_depression": {
+          "none": "Nisam tjeskoban ili potišten",
+          "slight": "Neznatno sam tjeskoban ili potišten",
+          "moderate": "Umjereno sam tjeskoban ili potišten",
+          "severe": "Jako sam tjeskoban ili potišten",
+          "extreme": "Krajnje sam tjeskoban ili potišten"
+        }
+      },
+      "bed_partner_or_room_mate": {
+        "no_partner_or_roommate": "Sam(a) i u krevetu i u sobi",
+        "partner_in_other_room": "Partner spava u drugoj sobi",
+        "partner_same_room_not_bed": "Partner spava u istoj sobi, ali u drugom krevetu",
+        "partner_same_bed": "Partner spava u istom krevetu"
+      }
+    }
+  }
+}

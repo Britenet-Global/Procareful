@@ -1,0 +1,1 @@
+export { TargetWordTag } from './TargetWordTag';

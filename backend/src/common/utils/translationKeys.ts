@@ -1,0 +1,13 @@
+export const TValidationKey = 'translation.validation';
+export const TAdminAuthResponseKey = 'translation.admin.auth';
+export const TAdminCaregiverResponseKey = 'translation.admin.caregiver';
+export const TCommonResponseKey = 'translation.common';
+export const TUserAuthResponseKey = 'translation.user.auth';
+export const TUserGamesResponseKey = 'translation.user.games';
+export const TDashboardsResponseKey = 'translation.admin.caregiver.dashboards';
+export const TAdminResponseKey = 'translation.admin';
+export const TUserResponseKey = 'translation.user';
+export const TMLResponseKey = 'translation.ml';
+export const TAdminInstitutionResponseKey = 'translation.admin.admin_institution';
+export const TSchedulesResponseKey = 'translation.admin.caregiver.schedules';
+export const TAssessmentReportAnswerKeys = 'translation.assessment_report.answers';

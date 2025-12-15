@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 62.5%;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+body {
+  font-size: 1.6rem;
+  /* disable auto refresh in chrome when user swipe from top edge to bottom */
+  overscroll-behavior: contain;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.ant-layout-content {
+  margin-right: 0 !important;
+}
+
+.ant-table-thead > tr > th {
+  color: #1f2933 !important;
+  font-weight: 700 !important;
+}
+
+.ant-card-head-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+strong,
+.ant-notification-notice-message {
+  font-weight: 700 !important;
+}
+
+.ant-table-body {
+  overflow-y: auto !important;
+}
+
+tbody.ant-table-tbody > tr.ant-table-row:last-child > td.ant-table-cell {
+  border-bottom: none !important;
+}
+
+.ant-dropdown-menu-item svg {
+  font-size: 1.6rem !important;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem !important;
+  margin-top: 1.5rem !important;
+}
+
+::-moz-scrollbar {
+  width: 1.2rem !important;
+  margin-top: 1.5rem !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #132d4d1f !important;
+  border-radius: 1rem !important;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #132d4d1f !important;
+  border-radius: 1rem !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0037660a !important;
+}
+
+::-moz-scrollbar-track {
+  background-color: #0037660a !important;
+}
+
+.ant-modal-title {
+  font-weight: 700 !important;
+}
+
+.ant-dropdown-menu {
+  border-radius: 0.4rem !important;
+}
+
+.ant-select-dropdown {
+  border-radius: 0.6rem;
+}
+
+.ant-table-placeholder {
+  & .ant-table-cell {
+    border-bottom: none !important;
+  }
+}
+
+.ant-tabs-nav-more {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem !important;
+
+  & > .anticon.anticon-ellipsis {
+    width: 100%;
+    height: 100%;
+  }
+
+  & svg {
+    width: 2em !important;
+    height: 2em !important;
+  }
+}

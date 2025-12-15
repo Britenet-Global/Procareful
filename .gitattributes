@@ -1,0 +1,19 @@
+# Enforce Unix newlines
+* text=auto eol=lf
+
+# Explicitly declare text files you want to always be normalized and converted to native line endings on checkout.
+*.c text
+*.h text
+*.java text
+*.js text
+*.ts text
+*.tsx text
+*.json text
+*.css text
+*.scss text
+*.html text
+*.md text
+*.svg text
+*.xml text
+*.yml text
+*.yaml text

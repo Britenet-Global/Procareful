@@ -1,0 +1,42 @@
+# General
+node_modules/
+dist/
+out/
+build/
+coverage/
+*.log
+*.log.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environments
+.env
+.env.*
+!.env.example
+!.env.test
+!.env.production
+
+# Frontend - NX
+.nx/
+tmp/
+/frontend/dist/
+/frontend/tmp/
+/frontend/coverage/
+
+# Backend - NestJS
+/backend/dist/
+/backend/coverage/
+
+# Misc
+.npm
+package-lock.json.lock
+yarn-error.log
+pnpm-debug.log

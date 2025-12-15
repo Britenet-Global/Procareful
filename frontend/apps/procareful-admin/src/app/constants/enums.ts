@@ -1,0 +1,76 @@
+export enum PathRoutes {
+  InitialPath = '/',
+  Login = '/login',
+  LoginConfirmation = '/login-confirmation',
+  ForgotPassword = '/forgot-password',
+  ForgotPasswordConfirmation = '/forgot-password-confirmation',
+  Signup = '/signup/:token',
+  Dashboard = '/dashboard',
+  Seniors = '/seniors',
+  SeniorEdit = '/seniors/edit-senior',
+  SeniorFormalCaregiverProfile = '/seniors/edit-senior/formal-caregiver-profile',
+  SeniorAddEntry = '/seniors/add-senior',
+  SeniorAddPersonalInfo = '/seniors/add-senior/personal-info',
+  SeniorAddConditionAssessment = '/seniors/add-senior/condition-assessment',
+  SeniorDownloadAssessmentReport = '/seniors/add-senior/condition-assessment/download-assessment-report',
+  SeniorAddSupportingContacts = '/seniors/add-senior/supporting-contacts',
+  SeniorAddAssignActivities = '/seniors/add-senior/assign-activities',
+  SeniorBuildCustomSchedule = '/seniors/add-senior/assign-activities/build-custom-schedule',
+  SeniorProfile = '/seniors/senior-profile',
+  SeniorEditProfileAssignActivities = '/seniors/senior-profile/assign-activities',
+  SeniorEditProfileEditSchedule = '/seniors/senior-profile/edit-schedule',
+  Trainings = '/trainings',
+  InformalCaregivers = '/informal-caregivers',
+  FormalCaregivers = '/formal-caregivers',
+  Support = '/support',
+  NotFound = '/not-found',
+  Institutions = '/institutions',
+  InstitutionDetailsHeadAdmin = '/institutions/institution-details',
+  InstitutionsAdd = '/institutions/add-institution',
+  ChangeInstitutionOwner = '/institutions/institution-details/change-owner',
+  Settings = '/settings',
+  NotificationPreferences = '/settings/notification-preferences',
+  ManageYourProfile = '/manage-your-profile',
+  ProfessionalProfile = '/settings/professional-profile',
+  Institution = '/institution',
+  InstitutionDetails = '/institution/institution-details',
+  InstitutionUsers = '/institution/users',
+  SupportManagement = '/institution/support-management',
+  InstitutionAdmins = '/institution/institution-admins',
+  SeniorEditInstitution = '/institution/edit-senior',
+  FormalCaregiverAdd = '/institution/add-formal-caregiver',
+  FormalCaregiverEdit = '/institution/edit-formal-caregiver',
+  AddInstitutionAdmin = '/institution/add-institution-admin',
+  EditInstitutionAdmin = '/institution/edit-institution-admin',
+  InformalCaregiverAdd = '/institution/add-informal-caregiver',
+  InformalCaregiverEdit = '/institution/edit-informal-caregiver',
+  ResetPassword = '/reset-password',
+  ResetPasswordConfirmation = '/reset-password-confirmation',
+  OnboardingEntry = '/onboarding',
+  ActivateSeniorApp = '/seniors/activate-senior-app',
+  NotificationsCenter = '/notifications-center',
+}
+
+export enum CategoryType {
+  MedicalHistory = 'Medical History',
+  Activities = 'Activities',
+  Mentality = 'Mentality',
+  GameProgress = 'Game Progress',
+  NoCategory = 'No category',
+}
+
+export const PaginationSize = {
+  Small: 5,
+  Large: 10,
+};
+
+export enum CarePlanEditParams {
+  ConfirmUpdate = 'confirm-update',
+  EditCarePlan = 'edit-care-plan',
+  UpdateCarePlan = 'update-care-plan',
+  SeniorConditionChanged = 'senior-condition-changed',
+}
+
+export enum PersonalGrowth {
+  NotAssigned = 'not assigned',
+}

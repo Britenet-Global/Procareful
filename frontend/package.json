@@ -1,0 +1,29 @@
+{
+  "name": "procareful",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run generate-api && npx nx serve",
+    "build:procareful-admin": "npx nx build procareful-admin",
+    "build:procareful": "npx nx build procareful",
+    "build:all-apps": "npm run build:procareful-admin && npm run build:procareful",
+    "generate-api": "orval --config orval.config.ts && npm run format-api",
+    "format-api": "prettier --write --ignore-path .prettierignore libs/common/src/api/*.ts",
+    "lint": "npx nx lint",
+    "lint:fix": "npx nx lint --fix",
+    "prettier": "npx nx format:check",
+    "prettier:fix": "npx nx format:write",
+    "jsdom": "23.2.0",
+    "lint-staged": "15.2.1",
+    "nx": "17.3.1",
+    "orval": "6.27.1",
+    "prettier": "3.2.4",
+    "sass": "1.69.7",
+    "ts-node": "10.9.2",
+    "vite": "5.2.9",
+    "vite-plugin-dts": "3.7.1",
+    "vite-plugin-pwa": "0.19.0",
+    "vite-plugin-svgr": "4.2.0",
+    "vitest": "1.3.1"
+  }
+}

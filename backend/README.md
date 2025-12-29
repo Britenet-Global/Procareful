@@ -11,7 +11,6 @@ This is the backend for the Procareful application, built with [NestJS](https://
 - **Storage**: MinIO (S3 compatible)
 - **Validation**: class-validator & class-transformer
 - **Documentation**: Swagger (OpenAPI)
-- **Testing**: Jest
 
 ## Getting Started 🚀
 
